@@ -1,0 +1,18 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/dashboard" android:layout_width="fill_parent" android:layout_height="fill_parent" android:orientation="vertical" android:background="#34629d">
+	
+	<LinearLayout android:layout_width="fill_parent" android:layout_height="0px" android:layout_weight="8" android:layout_gravity="center">
+        <FrameLayout android:layout_width="0px" android:layout_height="fill_parent" android:layout_weight="2"/>
+		<LinearLayout android:layout_width="0px" android:layout_height="fill_parent" android:layout_weight="3" android:orientation="vertical" android:layout_gravity="center" android:gravity="center">
+			<ImageView android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1" android:scaleType="fitCenter" android:src="@drawable/settingsinputmode"/>
+			<TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:gravity="center" android:textColor="#FFFFFF" android:text="@string/layoutInputKeysTips" android:textSize="30sp"/>
+        </LinearLayout>
+        <FrameLayout android:layout_width="0px" android:layout_height="fill_parent" android:layout_weight="2"/>
+    </LinearLayout>
+	
+	<LinearLayout android:layout_width="fill_parent" android:layout_height="0px" android:layout_weight="2" android:layout_gravity="center_vertical" android:paddingLeft="30dp" android:paddingRight="30dp">
+		<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:gravity="center_vertical">
+			<ar.com.lrusso.blindcommunicator.SingleLineTextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:gravity="center_horizontal" android:textColor="#FFFFFF" android:background="@drawable/rounded_corner" android:textSize="80sp" android:id="@+id/message" android:text="_" />
+		</RelativeLayout>
+	</LinearLayout>
+
+</LinearLayout>
