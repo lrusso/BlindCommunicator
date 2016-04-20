@@ -15,7 +15,7 @@ How to use it:
 - Slide up and down to browse the menus
 - Slide right to select an option
 
-How can i type a message? You have three ways available:
+How can i type a message? You have four ways available:
 - Use your device keyboard
 - Use the voice recognition system with up to 10 possible interpretations to select from (may require Internet).
 - Use the touchscreen and slide up and down through characters and symbols and slide right to input the selected character.
