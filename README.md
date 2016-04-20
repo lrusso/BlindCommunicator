@@ -19,6 +19,7 @@ How can i type a message? You have three ways available:
 - Use your device keyboard
 - Use the voice recognition system with up to 10 possible interpretations to select from (may require Internet).
 - Use the touchscreen and slide up and down through characters and symbols and slide right to input the selected character.
+- Use the traditional software keyboard with TalkBack activated.
 
 How to manage a call:
 - Slide up to answer the call
