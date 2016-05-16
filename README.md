@@ -36,3 +36,5 @@ Translator (italian): Sofia Spoltore <sofia.spoltore@gmail.com> https://www.face
 Translator (portuguese): Gilberto Ferreira
 
 Translator (french): Gustavo Ferreyra
+
+Translator (german): Liliana Anzaudo <liliana.anzaudo@yahoo.com.ar> http://www.latraducciones.com
