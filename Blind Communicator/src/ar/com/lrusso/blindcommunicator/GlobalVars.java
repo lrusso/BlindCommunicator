@@ -169,6 +169,14 @@ public class GlobalVars extends Application
 			{
 			return "fr"; //TO WORK IN FRENCH
 			}
+		else if (Locale.getDefault().getLanguage().startsWith("de"))
+			{
+			return "de"; //TO WORK IN DEUTSCH
+			}
+		else if (Locale.getDefault().getLanguage().startsWith("ru"))
+			{
+			return "ru"; //TO WORK IN RUSSIAN
+			}
 		else
 			{
 			return "en"; //TO WORK IN ENGLISH AS DEFAULT
