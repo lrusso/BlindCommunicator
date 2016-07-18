@@ -37,4 +37,6 @@ Translator (portuguese): Gilberto Ferreira
 
 Translator (french): Gustavo Ferreyra
 
+Translator (russian): Xenia Sergejew
+
 Translator (german): Liliana Anzaudo <liliana.anzaudo@yahoo.com.ar> http://www.latraducciones.com
