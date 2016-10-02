@@ -127,7 +127,6 @@ public class MessagesInboxDeleteAll extends Activity
 			    	{
 			    	}
 				}
-		    c.close();
 			}
 			catch(NullPointerException e)
 			{

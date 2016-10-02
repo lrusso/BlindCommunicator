@@ -83,10 +83,6 @@ public class MessagesCheckThread extends AsyncTask<Integer, String, Boolean>
 			catch(Exception e)
 			{
 			}
-		if (cursor!=null)
-			{
-			cursor.close();
-			}
 		return false;
 		}
 

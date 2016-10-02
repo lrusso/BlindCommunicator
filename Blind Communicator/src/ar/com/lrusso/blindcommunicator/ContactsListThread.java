@@ -34,7 +34,6 @@ public class ContactsListThread extends AsyncTask<String, String, Boolean>
 					{
 					}
 				}
-			cursor.close();
 			Collections.sort(GlobalVars.contactDataBase,new Comparator<String>(){public int compare(String s1, String s2){return s1.compareToIgnoreCase(s2);}});
 			}
 			catch(NullPointerException e)

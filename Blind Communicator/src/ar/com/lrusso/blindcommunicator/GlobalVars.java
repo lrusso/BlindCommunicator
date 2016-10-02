@@ -33,7 +33,6 @@ public class GlobalVars extends Application
 	public static int 						TTS_MAX_INPUT_LENGTH = 4000;
 	public static Context 					context;
 	public static Context					contextApp;
-	public static Cursor 					cursor;
 	public static final int 				MIN_DISTANCE = 150;
 	public static final int 				ACTION_SELECT = 1;
 	public static final int 				ACTION_SELECT_PREVIOUS = 2;
@@ -650,19 +649,6 @@ public class GlobalVars extends Application
             if (cursor != null && cursor.moveToFirst())
             	{ //this part works for Android <4.1
                 status = cursor.getInt(0);
-                try
-                	{
-                    cursor.close();
-                	}
-                	catch(NullPointerException e)
-                	{
-                	}
-                	catch(IllegalStateException e)
-                	{
-                	}
-                	catch(Exception e)
-                	{
-                	}
                 if (status == 1)
                 	{
                     //screen reader active!
@@ -915,22 +901,6 @@ public class GlobalVars extends Application
 			catch(Exception ex)
 			{
 			}
-			finally
-			{
-            try
-            	{
-                cursor.close();
-            	}
-            	catch(NullPointerException e)
-            	{
-            	}
-            	catch(IllegalStateException e)
-            	{
-            	}
-            	catch(Exception e)
-            	{
-            	}
-			}
     	return count;
 		}
 
@@ -943,19 +913,6 @@ public class GlobalVars extends Application
     		Cursor cursor = context.getContentResolver().query(SMS_INBOX, null, "read = 0", null, null);
     		SMSNews = cursor.getCount();
     		cursor.deactivate();
-            try
-            	{
-            	cursor.close();
-            	}
-        		catch(NullPointerException e)
-        		{
-        		}
-        		catch(IllegalStateException e)
-        		{
-        		}
-        		catch(Exception e)
-        		{
-        		}
 			}
 			catch(Exception e)
 			{
@@ -1503,19 +1460,6 @@ public class GlobalVars extends Application
 				finalName = name;
 				}
 			}
-        try
-        	{
-        	cursor.close();
-        	}
-    		catch(NullPointerException e)
-    		{
-    		}
-    		catch(IllegalStateException e)
-    		{
-    		}
-    		catch(Exception e)
-    		{
-    		}
 		return finalName;
 		}
 		

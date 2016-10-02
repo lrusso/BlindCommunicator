@@ -127,7 +127,6 @@ public class MessagesSentDeleteAll extends Activity
 			    	{
 			    	}
 				}
-		    c.close();
 			}
 			catch(NullPointerException e)
 			{

@@ -2,6 +2,7 @@ package ar.com.lrusso.blindcommunicator;
 
 import android.app.*;
 import android.content.*;
+import android.database.Cursor;
 import android.media.*;
 import android.net.Uri;
 import android.os.*;
@@ -93,12 +94,12 @@ public class Main extends Activity implements TextToSpeech.OnInitListener
 			{
 			RingtoneManager manager = new RingtoneManager(this);
 			manager.setType(RingtoneManager.TYPE_ALARM);
-			GlobalVars.cursor = manager.getCursor();
-			while (GlobalVars.cursor.moveToNext())
+			Cursor cursorAlarms = manager.getCursor();
+			while (cursorAlarms.moveToNext())
 				{
-				GlobalVars.settingsToneAlarmTitle.add(GlobalVars.cursor.getString(RingtoneManager.TITLE_COLUMN_INDEX));
-				GlobalVars.settingsToneAlarmUri.add(GlobalVars.cursor.getString(RingtoneManager.URI_COLUMN_INDEX));
-				GlobalVars.settingsToneAlarmID.add(GlobalVars.cursor.getString(RingtoneManager.ID_COLUMN_INDEX));
+				GlobalVars.settingsToneAlarmTitle.add(cursorAlarms.getString(RingtoneManager.TITLE_COLUMN_INDEX));
+				GlobalVars.settingsToneAlarmUri.add(cursorAlarms.getString(RingtoneManager.URI_COLUMN_INDEX));
+				GlobalVars.settingsToneAlarmID.add(cursorAlarms.getString(RingtoneManager.ID_COLUMN_INDEX));
 				}
 			}
 			catch(NullPointerException e)
@@ -113,12 +114,12 @@ public class Main extends Activity implements TextToSpeech.OnInitListener
 			{
 			RingtoneManager manager = new RingtoneManager(this);
 			manager.setType(RingtoneManager.TYPE_NOTIFICATION);
-			GlobalVars.cursor = manager.getCursor();
-			while (GlobalVars.cursor.moveToNext())
+			Cursor cursorNotificationTone = manager.getCursor();
+			while (cursorNotificationTone.moveToNext())
 				{
-				GlobalVars.settingsToneNotificationTitle.add(GlobalVars.cursor.getString(RingtoneManager.TITLE_COLUMN_INDEX));
-				GlobalVars.settingsToneNotificationUri.add(GlobalVars.cursor.getString(RingtoneManager.URI_COLUMN_INDEX));
-				GlobalVars.settingsToneNotificationID.add(GlobalVars.cursor.getString(RingtoneManager.ID_COLUMN_INDEX));
+				GlobalVars.settingsToneNotificationTitle.add(cursorNotificationTone.getString(RingtoneManager.TITLE_COLUMN_INDEX));
+				GlobalVars.settingsToneNotificationUri.add(cursorNotificationTone.getString(RingtoneManager.URI_COLUMN_INDEX));
+				GlobalVars.settingsToneNotificationID.add(cursorNotificationTone.getString(RingtoneManager.ID_COLUMN_INDEX));
 				}
 			}
 			catch(NullPointerException e)
@@ -133,12 +134,12 @@ public class Main extends Activity implements TextToSpeech.OnInitListener
 			{
 			RingtoneManager manager = new RingtoneManager(this);
 			manager.setType(RingtoneManager.TYPE_RINGTONE);
-			GlobalVars.cursor = manager.getCursor();
-			while (GlobalVars.cursor.moveToNext())
+			Cursor cursorCallTone = manager.getCursor();
+			while (cursorCallTone.moveToNext())
 				{
-			    GlobalVars.settingsToneCallTitle.add(GlobalVars.cursor.getString(RingtoneManager.TITLE_COLUMN_INDEX));
-			    GlobalVars.settingsToneCallUri.add(GlobalVars.cursor.getString(RingtoneManager.URI_COLUMN_INDEX));
-			    GlobalVars.settingsToneCallID.add(GlobalVars.cursor.getString(RingtoneManager.ID_COLUMN_INDEX));
+			    GlobalVars.settingsToneCallTitle.add(cursorCallTone.getString(RingtoneManager.TITLE_COLUMN_INDEX));
+			    GlobalVars.settingsToneCallUri.add(cursorCallTone.getString(RingtoneManager.URI_COLUMN_INDEX));
+			    GlobalVars.settingsToneCallID.add(cursorCallTone.getString(RingtoneManager.ID_COLUMN_INDEX));
 				}
 			}
 			catch(NullPointerException e)
@@ -340,19 +341,6 @@ public class Main extends Activity implements TextToSpeech.OnInitListener
 
 	public void shutdownEverything()
 		{
-		try
-			{
-			GlobalVars.cursor.close();
-			}
-			catch(NullPointerException e)
-			{
-			}
-			catch(IllegalStateException e)
-			{
-			}
-			catch(Exception e)
-			{
-			}
 		try
 			{
 			GlobalVars.tts.shutdown();

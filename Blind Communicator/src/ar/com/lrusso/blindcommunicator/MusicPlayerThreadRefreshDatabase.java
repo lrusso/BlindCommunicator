@@ -107,17 +107,6 @@ public class MusicPlayerThreadRefreshDatabase extends AsyncTask <String, String,
 			{
 			}
 
-		try
-			{
-			cur.close();
-			}
-			catch(NullPointerException e)
-			{
-			}
-			catch(Exception e)
-			{
-			}
-
 		//DELETE ANY REPETEAD ARTISTS|ALBUM|TRACK|TITLE
 		HashSet<String> hashSet = new HashSet<String>(GlobalVars.musicPlayerDatabaseFull);
 		GlobalVars.musicPlayerDatabaseFull.clear();

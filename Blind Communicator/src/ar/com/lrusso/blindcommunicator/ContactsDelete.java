@@ -161,10 +161,6 @@ public class ContactsDelete extends Activity
 			catch (Exception e)
 			{
 			}
-			finally
-			{
-			cur.close();
-			}
 		return false;
 		}
 	}

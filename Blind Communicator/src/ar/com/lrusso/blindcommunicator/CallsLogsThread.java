@@ -58,7 +58,6 @@ public class CallsLogsThread extends AsyncTask<Activity, String, Boolean>
 												seconds + GlobalVars.context.getResources().getString(R.string.layoutCallsLogsSeconds) +
 												"|" + idCall);
 				}
-			managedCursor.close();
 			}
 			catch(Exception e)
 			{
