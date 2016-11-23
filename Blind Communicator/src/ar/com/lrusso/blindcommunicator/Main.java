@@ -271,24 +271,52 @@ public class Main extends Activity implements TextToSpeech.OnInitListener
 		GlobalVars.selectTextView(status,false);
 		
 		//UPDATE ALARM COUNTER
-		GlobalVars.setText(alarms,false, getResources().getString(R.string.mainAlarms) + " (" + GlobalVars.getPendingAlarmsForTodayCount() + ")");
-		
-		if (GlobalVars.deviceIsAPhone()==true)
+		try
 			{
-			messages.setText(GlobalVars.context.getResources().getString(R.string.mainMessages) + " (" + String.valueOf(GlobalVars.getMessagesUnreadCount()) + ")");
+			GlobalVars.setText(alarms,false, getResources().getString(R.string.mainAlarms) + " (" + GlobalVars.getPendingAlarmsForTodayCount() + ")");
 			}
+			catch(IllegalStateException e)
+			{
+			}
+			catch(Exception e)
+			{
+			}
+		
+		try
+			{
+			if (GlobalVars.deviceIsAPhone()==true)
+				{
+				messages.setText(GlobalVars.context.getResources().getString(R.string.mainMessages) + " (" + String.valueOf(GlobalVars.getMessagesUnreadCount()) + ")");
+				}
+			}
+			catch(IllegalStateException e)
+			{
+			}
+			catch(Exception e)
+			{
+			}
+		
 		if (speakOnResume==true)
 			{
 			GlobalVars.talk(getResources().getString(R.string.layoutMainOnResume));
 			}
 		
-		if (GlobalVars.deviceIsAPhone()==true)
+		try
 			{
-			calls.setText(GlobalVars.context.getResources().getString(R.string.mainCalls) + " (" + String.valueOf(GlobalVars.getCallsMissedCount()) + ")");
+			if (GlobalVars.deviceIsAPhone()==true)
+				{
+				calls.setText(GlobalVars.context.getResources().getString(R.string.mainCalls) + " (" + String.valueOf(GlobalVars.getCallsMissedCount()) + ")");
+				}
+				else
+				{
+				calls.setText(GlobalVars.context.getResources().getString(R.string.mainCalls) + " (0)");
+				}
 			}
-			else
+			catch(IllegalStateException e)
 			{
-			calls.setText(GlobalVars.context.getResources().getString(R.string.mainCalls) + " (0)");
+			}
+			catch(Exception e)
+			{
 			}
 		}
     
