@@ -1449,16 +1449,25 @@ public class GlobalVars extends Application
 		
 	public static String getContactNameFromPhoneNumber(String phone)
 		{
-		String finalName = null;
-		Cursor cursor = GlobalVars.context.getContentResolver().query(ContactsContract.CommonDataKinds.Phone.CONTENT_URI, null, null,null, null);
-		while (cursor.moveToNext())
+		String finalName = "";
+		try
 			{
-			String name =cursor.getString(cursor.getColumnIndex(ContactsContract.CommonDataKinds.Phone.DISPLAY_NAME));
-			String phoneNumber = cursor.getString(cursor.getColumnIndex(ContactsContract.CommonDataKinds.Phone.NUMBER));
-			if (phoneNumber.replace("-", "").equals(phone.replace("-", "")) | phoneNumber.replace("-", "").contains(phone.replace("-", "")))
+			Cursor cursor = GlobalVars.context.getContentResolver().query(ContactsContract.CommonDataKinds.Phone.CONTENT_URI, null, null,null, null);
+			while (cursor.moveToNext())
 				{
-				finalName = name;
+				String name =cursor.getString(cursor.getColumnIndex(ContactsContract.CommonDataKinds.Phone.DISPLAY_NAME));
+				String phoneNumber = cursor.getString(cursor.getColumnIndex(ContactsContract.CommonDataKinds.Phone.NUMBER));
+				if (phoneNumber.replace("-", "").equals(phone.replace("-", "")) | phoneNumber.replace("-", "").contains(phone.replace("-", "")))
+					{
+					finalName = name;
+					}
 				}
+			}
+			catch(NullPointerException e)
+			{
+			}
+			catch(Exception e)
+			{
 			}
 		return finalName;
 		}
