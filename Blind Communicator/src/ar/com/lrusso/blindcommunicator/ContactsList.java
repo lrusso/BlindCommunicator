@@ -89,9 +89,20 @@ public class ContactsList extends Activity
 					//BUGFIX FOR SOME DEVICES
 					if (GlobalVars.contactDataBase.size()>0)
 						{
-						GlobalVars.talk(GlobalVars.contactsGetNameFromListValue(GlobalVars.contactDataBase.get(selectedContact)) +
-								getResources().getString(R.string.layoutContactsListWithThePhoneNumber) +
-								GlobalVars.divideNumbersWithBlanks(GlobalVars.contactsGetPhoneNumberFromListValue(GlobalVars.contactDataBase.get(selectedContact))));
+						try
+							{
+							GlobalVars.talk(GlobalVars.contactsGetNameFromListValue(GlobalVars.contactDataBase.get(selectedContact)) +
+									getResources().getString(R.string.layoutContactsListWithThePhoneNumber) +
+									GlobalVars.divideNumbersWithBlanks(GlobalVars.contactsGetPhoneNumberFromListValue(GlobalVars.contactDataBase.get(selectedContact))));
+							}
+							catch(NullPointerException e)
+							{
+							GlobalVars.talk(getResources().getString(R.string.layoutContactsListPleaseWait));
+							}
+							catch(Exception e)
+							{
+							GlobalVars.talk(getResources().getString(R.string.layoutContactsListPleaseWait));
+							}
 						}
 						else
 						{

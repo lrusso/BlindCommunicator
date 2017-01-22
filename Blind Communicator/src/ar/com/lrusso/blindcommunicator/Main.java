@@ -95,11 +95,19 @@ public class Main extends Activity implements TextToSpeech.OnInitListener
 			RingtoneManager manager = new RingtoneManager(this);
 			manager.setType(RingtoneManager.TYPE_ALARM);
 			Cursor cursorAlarms = manager.getCursor();
-			while (cursorAlarms.moveToNext())
+			if (cursorAlarms!=null)
 				{
-				GlobalVars.settingsToneAlarmTitle.add(cursorAlarms.getString(RingtoneManager.TITLE_COLUMN_INDEX));
-				GlobalVars.settingsToneAlarmUri.add(cursorAlarms.getString(RingtoneManager.URI_COLUMN_INDEX));
-				GlobalVars.settingsToneAlarmID.add(cursorAlarms.getString(RingtoneManager.ID_COLUMN_INDEX));
+				if(cursorAlarms.moveToFirst())
+		    		{
+					while(!cursorAlarms.isAfterLast())
+		        		{
+						GlobalVars.settingsToneAlarmTitle.add(cursorAlarms.getString(RingtoneManager.TITLE_COLUMN_INDEX));
+						GlobalVars.settingsToneAlarmUri.add(cursorAlarms.getString(RingtoneManager.URI_COLUMN_INDEX));
+						GlobalVars.settingsToneAlarmID.add(cursorAlarms.getString(RingtoneManager.ID_COLUMN_INDEX));
+						cursorAlarms.moveToNext();
+		        		}
+		    		}
+				//cursorAlarms.close();
 				}
 			}
 			catch(NullPointerException e)
@@ -115,11 +123,19 @@ public class Main extends Activity implements TextToSpeech.OnInitListener
 			RingtoneManager manager = new RingtoneManager(this);
 			manager.setType(RingtoneManager.TYPE_NOTIFICATION);
 			Cursor cursorNotificationTone = manager.getCursor();
-			while (cursorNotificationTone.moveToNext())
+			if (cursorNotificationTone!=null)
 				{
-				GlobalVars.settingsToneNotificationTitle.add(cursorNotificationTone.getString(RingtoneManager.TITLE_COLUMN_INDEX));
-				GlobalVars.settingsToneNotificationUri.add(cursorNotificationTone.getString(RingtoneManager.URI_COLUMN_INDEX));
-				GlobalVars.settingsToneNotificationID.add(cursorNotificationTone.getString(RingtoneManager.ID_COLUMN_INDEX));
+				if(cursorNotificationTone.moveToFirst())
+	    			{
+					while(!cursorNotificationTone.isAfterLast())
+	        			{
+						GlobalVars.settingsToneNotificationTitle.add(cursorNotificationTone.getString(RingtoneManager.TITLE_COLUMN_INDEX));
+						GlobalVars.settingsToneNotificationUri.add(cursorNotificationTone.getString(RingtoneManager.URI_COLUMN_INDEX));
+						GlobalVars.settingsToneNotificationID.add(cursorNotificationTone.getString(RingtoneManager.ID_COLUMN_INDEX));
+						cursorNotificationTone.moveToNext();
+	        			}
+	    			}
+				//cursorNotificationTone.close();
 				}
 			}
 			catch(NullPointerException e)
@@ -135,11 +151,19 @@ public class Main extends Activity implements TextToSpeech.OnInitListener
 			RingtoneManager manager = new RingtoneManager(this);
 			manager.setType(RingtoneManager.TYPE_RINGTONE);
 			Cursor cursorCallTone = manager.getCursor();
-			while (cursorCallTone.moveToNext())
+			if (cursorCallTone!=null)
 				{
-			    GlobalVars.settingsToneCallTitle.add(cursorCallTone.getString(RingtoneManager.TITLE_COLUMN_INDEX));
-			    GlobalVars.settingsToneCallUri.add(cursorCallTone.getString(RingtoneManager.URI_COLUMN_INDEX));
-			    GlobalVars.settingsToneCallID.add(cursorCallTone.getString(RingtoneManager.ID_COLUMN_INDEX));
+				if(cursorCallTone.moveToFirst())
+    				{
+					while(!cursorCallTone.isAfterLast())
+        				{
+						GlobalVars.settingsToneCallTitle.add(cursorCallTone.getString(RingtoneManager.TITLE_COLUMN_INDEX));
+						GlobalVars.settingsToneCallUri.add(cursorCallTone.getString(RingtoneManager.URI_COLUMN_INDEX));
+						GlobalVars.settingsToneCallID.add(cursorCallTone.getString(RingtoneManager.ID_COLUMN_INDEX));
+						cursorCallTone.moveToNext();
+        				}
+    				}
+				//cursorCallTone.close();
 				}
 			}
 			catch(NullPointerException e)
@@ -311,6 +335,9 @@ public class Main extends Activity implements TextToSpeech.OnInitListener
 				{
 				calls.setText(GlobalVars.context.getResources().getString(R.string.mainCalls) + " (0)");
 				}
+			}
+			catch(NullPointerException e)
+			{
 			}
 			catch(IllegalStateException e)
 			{

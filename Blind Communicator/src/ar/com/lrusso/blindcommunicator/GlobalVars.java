@@ -624,56 +624,70 @@ public class GlobalVars extends Application
 		
 	public static boolean deviceIsUsingAccesibilty()
 		{
-	    String SCREENREADER_INTENT_ACTION = "android.accessibilityservice.AccessibilityService";
-	    String SCREENREADER_INTENT_CATEGORY = "android.accessibilityservice.category.FEEDBACK_SPOKEN";
-        Intent screenReaderIntent = new Intent(SCREENREADER_INTENT_ACTION);
-        screenReaderIntent.addCategory(SCREENREADER_INTENT_CATEGORY);
+		try
+			{
+		    String SCREENREADER_INTENT_ACTION = "android.accessibilityservice.AccessibilityService";
+		    String SCREENREADER_INTENT_CATEGORY = "android.accessibilityservice.category.FEEDBACK_SPOKEN";
+	        Intent screenReaderIntent = new Intent(SCREENREADER_INTENT_ACTION);
+	        screenReaderIntent.addCategory(SCREENREADER_INTENT_CATEGORY);
 
-        List<ResolveInfo> screenReaders = context.getPackageManager().queryIntentServices(screenReaderIntent, 0);
-        ContentResolver cr = context.getContentResolver();
-        Cursor cursor = null;
-        int status = 0;
+	        List<ResolveInfo> screenReaders = context.getPackageManager().queryIntentServices(screenReaderIntent, 0);
+	        ContentResolver cr = context.getContentResolver();
+	        Cursor cursor = null;
+	        int status = 0;
 
-        List<String> runningServices = new ArrayList<String>();
+	        List<String> runningServices = new ArrayList<String>();
 
-        android.app.ActivityManager manager = (android.app.ActivityManager) context.getSystemService(Context.ACTIVITY_SERVICE);
-        for (android.app.ActivityManager.RunningServiceInfo service : manager.getRunningServices(Integer.MAX_VALUE))
-        	{
-            runningServices.add(service.service.getPackageName());
-        	}
+	        android.app.ActivityManager manager = (android.app.ActivityManager) context.getSystemService(Context.ACTIVITY_SERVICE);
+	        for (android.app.ActivityManager.RunningServiceInfo service : manager.getRunningServices(Integer.MAX_VALUE))
+	        	{
+	            runningServices.add(service.service.getPackageName());
+	        	}
 
-        for (ResolveInfo screenReader : screenReaders)
-        	{
-            cursor = cr.query(Uri.parse("content://" + screenReader.serviceInfo.packageName + ".providers.StatusProvider"), null, null, null, null);
+	        for (ResolveInfo screenReader : screenReaders)
+	        	{
+	            cursor = cr.query(Uri.parse("content://" + screenReader.serviceInfo.packageName + ".providers.StatusProvider"), null, null, null, null);
 
-            if (cursor != null && cursor.moveToFirst())
-            	{ //this part works for Android <4.1
-                status = cursor.getInt(0);
-                if (status == 1)
-                	{
-                    //screen reader active!
-                    return true;
-                	}
-                	else
-                	{
-                    //screen reader inactive
-                    return false;
-                	}
-            	}
-            	else
-            	{  //this part works for Android 4.1+
-                if (runningServices.contains(screenReader.serviceInfo.packageName))
-                	{
-                    //screen reader active!
-                    return true;
-                	}
-                	else
-                	{
-                    //screen reader inactive
-                    return false;
-                	}
-            	}
-        	}
+	            if (cursor!=null)
+	            	{
+		            if (cursor.moveToFirst())
+	            		{
+		            	//this part works for Android <4.1
+		            	status = cursor.getInt(0);
+		            	if (status == 1)
+	                		{
+		            		//screen reader active!
+		            		return true;
+	                		}
+	                		else
+	                		{
+	                		//screen reader inactive
+	                		return false;
+	                		}
+	            		}
+	            		else
+	            		{
+	            		//this part works for Android 4.1+
+	            		if (runningServices.contains(screenReader.serviceInfo.packageName))
+	                		{
+	            			//screen reader active!
+	            			return true;
+	                		}
+	                		else
+	                		{
+	                		//screen reader inactive
+	                		return false;
+	                		}
+	            		}
+	            	}
+	        	}
+			}
+			catch(NullPointerException e)
+			{
+			}
+			catch(Exception e)
+			{
+			}
         return false;
 		}
 	
@@ -888,14 +902,22 @@ public class GlobalVars extends Application
     	try
 			{
     	    cursor = context.getContentResolver().query(Uri.parse("content://call_log/calls"),projection,selection,selectionArgs,sortOrder);
-    	    while (cursor.moveToNext())
-				{ 
-    	        String callType = cursor.getString(cursor.getColumnIndex(android.provider.CallLog.Calls.TYPE));
-    	        String isCallNew = cursor.getString(cursor.getColumnIndex(android.provider.CallLog.Calls.NEW));
-    	        if(Integer.parseInt(callType) == CallLog.Calls.MISSED_TYPE && Integer.parseInt(isCallNew) > 0)
+			if (cursor!=null)
+				{
+				if(cursor.moveToFirst())
 					{
-    	        	count = count + 1;
-					}
+					while(!cursor.isAfterLast())
+		        		{
+						String callType = cursor.getString(cursor.getColumnIndex(android.provider.CallLog.Calls.TYPE));
+						String isCallNew = cursor.getString(cursor.getColumnIndex(android.provider.CallLog.Calls.NEW));
+						if(Integer.parseInt(callType) == CallLog.Calls.MISSED_TYPE && Integer.parseInt(isCallNew) > 0)
+							{
+							count = count + 1;
+							}
+						cursor.moveToNext();
+		        		}
+			        //cursor.close();
+		    		}
 				}
 			}
 			catch(Exception ex)
@@ -912,8 +934,10 @@ public class GlobalVars extends Application
     		final Uri SMS_INBOX = Uri.parse("content://sms/inbox");
     		Cursor cursor = context.getContentResolver().query(SMS_INBOX, null, "read = 0", null, null);
     		SMSNews = cursor.getCount();
-    		cursor.deactivate();
 			}
+    		catch(NullPointerException e)
+    		{
+    		}
 			catch(Exception e)
 			{
 			}
@@ -1453,14 +1477,22 @@ public class GlobalVars extends Application
 		try
 			{
 			Cursor cursor = GlobalVars.context.getContentResolver().query(ContactsContract.CommonDataKinds.Phone.CONTENT_URI, null, null,null, null);
-			while (cursor.moveToNext())
+			if (cursor!=null)
 				{
-				String name =cursor.getString(cursor.getColumnIndex(ContactsContract.CommonDataKinds.Phone.DISPLAY_NAME));
-				String phoneNumber = cursor.getString(cursor.getColumnIndex(ContactsContract.CommonDataKinds.Phone.NUMBER));
-				if (phoneNumber.replace("-", "").equals(phone.replace("-", "")) | phoneNumber.replace("-", "").contains(phone.replace("-", "")))
-					{
-					finalName = name;
-					}
+			    if(cursor.moveToFirst())
+			    	{
+			        while(!cursor.isAfterLast())
+			        	{
+						String name = cursor.getString(cursor.getColumnIndex(ContactsContract.CommonDataKinds.Phone.DISPLAY_NAME));
+						String phoneNumber = cursor.getString(cursor.getColumnIndex(ContactsContract.CommonDataKinds.Phone.NUMBER));
+						if (phoneNumber.replace("-", "").equals(phone.replace("-", "")) | phoneNumber.replace("-", "").contains(phone.replace("-", "")))
+							{
+							finalName = name;
+							}
+			            cursor.moveToNext();
+			        	}
+			        //cursor.close();
+			    	}				
 				}
 			}
 			catch(NullPointerException e)
