@@ -23,6 +23,7 @@ public class Settings extends Activity
 	private AudioManager audioManager;
 	private TextView inputmode;
 	private TextView systemsettings;
+	private TextView privacypolicy;
 	private TextView goback;
 	
     @Override protected void onCreate(Bundle savedInstanceState)
@@ -41,9 +42,10 @@ public class Settings extends Activity
 		bluetooth = (TextView) findViewById(R.id.settingsbluetooth);
     	inputmode = (TextView) findViewById(R.id.settingsinputmode);
     	systemsettings = (TextView) findViewById(R.id.systemsettings);
+    	privacypolicy = (TextView) findViewById(R.id.privacypolicy);
 		goback = (TextView) findViewById(R.id.goback);
 		GlobalVars.activityItemLocation=0;
-		GlobalVars.activityItemLimit=11;
+		GlobalVars.activityItemLimit=12;
 		
 		//SETS READING SPEED VALUE IN TEXTVIEW
 		GlobalVars.setText(readingspeed,false,getResources().getString(R.string.layoutSettingsReadingSpeed) + String.valueOf(GlobalVars.settingsTTSReadingSpeed));
@@ -140,7 +142,7 @@ public class Settings extends Activity
 		try{GlobalVars.alarmVibrator.cancel();}catch(NullPointerException e){}catch(Exception e){}
 		GlobalVars.lastActivity = Settings.class;
 		GlobalVars.activityItemLocation=0;
-		GlobalVars.activityItemLimit=11;
+		GlobalVars.activityItemLimit=12;
 		GlobalVars.selectTextView(readingspeed,false);
 		GlobalVars.selectTextView(screentimeout,false);
 		GlobalVars.selectTextView(alarmtone,false);
@@ -151,6 +153,7 @@ public class Settings extends Activity
 		GlobalVars.selectTextView(bluetooth,false);
 		GlobalVars.selectTextView(inputmode,false);
 		GlobalVars.selectTextView(systemsettings,false);
+		GlobalVars.selectTextView(privacypolicy,false);
 		GlobalVars.selectTextView(goback,false);
 		GlobalVars.talk(getResources().getString(R.string.layoutSettingsOnResume));
 		}
@@ -299,13 +302,20 @@ public class Settings extends Activity
 			case 10: //SYSTEM SETTINGS
 			GlobalVars.selectTextView(systemsettings,true);
 			GlobalVars.selectTextView(inputmode,false);
-			GlobalVars.selectTextView(goback,false);
+			GlobalVars.selectTextView(privacypolicy,false);
 			GlobalVars.talk(getResources().getString(R.string.layoutSettingsSystemSettings));
 			break;
-			
-			case 11: //GO BACK TO THE MAIN MENU
-			GlobalVars.selectTextView(goback,true);
+
+			case 11: //PRIVACY POLICY
+			GlobalVars.selectTextView(privacypolicy,true);
 			GlobalVars.selectTextView(systemsettings,false);
+			GlobalVars.selectTextView(goback,false);
+			GlobalVars.talk(getResources().getString(R.string.layoutSettingsPrivacyPolicy));
+			break;
+			
+			case 12: //GO BACK TO THE MAIN MENU
+			GlobalVars.selectTextView(goback,true);
+			GlobalVars.selectTextView(privacypolicy,false);
 			GlobalVars.selectTextView(readingspeed,false);
 			GlobalVars.talk(getResources().getString(R.string.backToMainMenu));
 			break;
@@ -572,7 +582,11 @@ public class Settings extends Activity
 				}
 			break;
 			
-			case 11: //GO BACK TO THE MAIN MENU
+			case 11: //PRIVACY POLICY
+			GlobalVars.talk(getResources().getString(R.string.layoutSettingsPrivacyPolicy2));
+			break;
+
+			case 12: //GO BACK TO THE MAIN MENU
 			this.finish();
 			break;
 			}
