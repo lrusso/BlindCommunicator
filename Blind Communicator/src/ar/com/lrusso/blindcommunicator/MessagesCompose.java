@@ -36,7 +36,8 @@ public class MessagesCompose extends Activity
 			{
 			GlobalVars.setText(addresse, false, messageToContactNameValue);
 			}
-		new ContactsListThread().execute("");
+		GlobalVars.context = this;
+		new ContactsListThread().execute(this);
     	}
 	
 	@Override public void onResume()

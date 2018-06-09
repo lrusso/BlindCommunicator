@@ -1,21 +1,31 @@
 package ar.com.lrusso.blindcommunicator;
 
+import android.content.Context;
 import android.database.*;
 import android.os.*;
 import android.provider.*;
+
+import java.io.DataOutputStream;
 import java.util.*;
 
-public class ContactsListThread extends AsyncTask<String, String, Boolean>
+public class ContactsListThread extends AsyncTask<Context, String, Boolean>
 	{
+	private Context context;
+
 	@Override protected void onPreExecute()
 		{
 		super.onPreExecute();
 		GlobalVars.contactListReady = false;
-		GlobalVars.contactDataBase.clear();
 		}
 
-	@Override protected Boolean doInBackground(String... url)
+	@Override protected Boolean doInBackground(Context... myContext)
 		{
+		context = myContext[0];
+
+		writeFile("sizeofcontacts.cfg","0");
+
+		GlobalVars.contactDataBase.clear();
+
 		try
 			{
 			Cursor cursor = GlobalVars.context.getContentResolver().query(ContactsContract.CommonDataKinds.Phone.CONTENT_URI, null, null,null, null);
@@ -48,5 +58,20 @@ public class ContactsListThread extends AsyncTask<String, String, Boolean>
 	@Override protected void onPostExecute(Boolean pageloaded)
 		{
 		GlobalVars.contactListReady = true;
+
+		writeFile("sizeofcontacts.cfg",String.valueOf(GlobalVars.contactDataBase.size()));
+		}
+
+	private void writeFile(String file, String text)
+		{
+        try
+			{
+            DataOutputStream out = new DataOutputStream(context.openFileOutput(file, Context.MODE_PRIVATE));
+            out.writeUTF(text);
+            out.close();
+			}
+			catch(Exception e)
+			{
+			}
 		}
 	}

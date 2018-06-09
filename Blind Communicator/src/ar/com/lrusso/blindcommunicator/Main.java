@@ -11,6 +11,8 @@ import android.speech.tts.TextToSpeech.OnUtteranceCompletedListener;
 import android.telephony.*;
 import android.view.*;
 import android.widget.*;
+
+import java.io.DataInputStream;
 import java.util.*;
 
 public class Main extends Activity implements TextToSpeech.OnInitListener
@@ -66,7 +68,7 @@ public class Main extends Activity implements TextToSpeech.OnInitListener
 		GlobalVars.setText(alarms,false, getResources().getString(R.string.mainAlarms) + " (" + GlobalVars.getPendingAlarmsForTodayCount() + ")");
 		
 		//LIST EVERY MUSIC FILE WITH THE MEDIA INFORMATION TO USE IT WITH THE MUSIC PLAYER
-		new MusicPlayerThreadRefreshDatabase().execute("");
+		new MusicPlayerThreadRefreshDatabase().execute(this);
 		
 		//READ WEB BOOKMARKS DATABASE
 		GlobalVars.readBookmarksDatabase();
@@ -573,7 +575,29 @@ public class Main extends Activity implements TextToSpeech.OnInitListener
 			case 4: //MUSIC
 			if (GlobalVars.musicPlayerDatabaseReady==true)
 				{
-				GlobalVars.startActivity(MusicPlayer.class);
+				if (GlobalVars.musicPlayerDatabaseFull.size()==0) // PREVENTS AN EMPTY LOADING AFTER SOME MEMORY WIPING IN SOME DEVICES
+					{
+					int sizeOfSongs = 0;
+					String valueSongs = readFile("sizeofsongs.cfg");
+					if (valueSongs!="")
+						{
+						sizeOfSongs = Integer.valueOf(valueSongs);
+						}
+					if (GlobalVars.musicPlayerDatabaseFull.size()!=sizeOfSongs)
+						{
+						GlobalVars.context = this;
+						new MusicPlayerThreadRefreshDatabase().execute(this);
+						GlobalVars.talk(getResources().getString(R.string.mainMusicPlayerPleaseTryAgain));
+						}
+						else
+						{
+						GlobalVars.startActivity(MusicPlayer.class);
+						}
+					}
+					else
+					{
+					GlobalVars.startActivity(MusicPlayer.class);
+					}
 				}
 				else
 				{
@@ -777,5 +801,30 @@ public class Main extends Activity implements TextToSpeech.OnInitListener
 			{
 			return getResources().getString(R.string.mainCarrierNotAvailable);
 			}
+		}
+
+	private String readFile(String file)
+		{
+		String result = "";
+		DataInputStream in = null;
+		try
+			{
+			in = new DataInputStream(openFileInput(file));
+			for (;;)
+				{
+				result = result + in.readUTF();
+				}
+			}
+			catch (Exception e)
+			{
+			}
+		try
+			{
+			in.close();
+			}
+			catch(Exception e)
+			{
+			}
+		return result;
 		}
 	}

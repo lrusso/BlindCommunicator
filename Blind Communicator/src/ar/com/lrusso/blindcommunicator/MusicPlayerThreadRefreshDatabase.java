@@ -5,18 +5,26 @@ import android.database.*;
 import android.net.*;
 import android.os.*;
 import android.provider.*;
+
+import java.io.DataOutputStream;
 import java.util.*;
 
-public class MusicPlayerThreadRefreshDatabase extends AsyncTask <String, String, Boolean>
+public class MusicPlayerThreadRefreshDatabase extends AsyncTask <Context, String, Boolean>
 	{
+	private Context context;
+	
 	@Override protected void onPreExecute()
 		{
 		super.onPreExecute();
 		GlobalVars.musicPlayerDatabaseReady=false;
 		}
 		
-	@Override protected Boolean doInBackground(String... nothing)
+	@Override protected Boolean doInBackground(Context... myContext)
 		{
+		context = myContext[0];
+
+		writeFile("sizeofsongs.cfg","0");
+
 		GlobalVars.musicPlayerDatabaseFull.clear();
 		GlobalVars.musicPlayerDatabaseArtists.clear();
 		GlobalVars.musicPlayerDatabaseAlbums.clear();
@@ -131,5 +139,20 @@ public class MusicPlayerThreadRefreshDatabase extends AsyncTask <String, String,
 	@Override protected void onPostExecute(Boolean pageloaded)
 		{
 		GlobalVars.musicPlayerDatabaseReady=true;
+
+		writeFile("sizeofsongs.cfg",String.valueOf(GlobalVars.musicPlayerDatabaseFull.size()));
+		}
+	
+    private void writeFile(String file, String text)
+		{
+        try
+			{
+            DataOutputStream out = new DataOutputStream(context.openFileOutput(file, Context.MODE_PRIVATE));
+            out.writeUTF(text);
+            out.close();
+			}
+			catch(Exception e)
+			{
+			}
 		}
 	}

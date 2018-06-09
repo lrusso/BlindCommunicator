@@ -1,5 +1,7 @@
 package ar.com.lrusso.blindcommunicator;
 
+import java.io.DataInputStream;
+
 import android.app.*;
 import android.os.*;
 import android.view.*;
@@ -27,7 +29,8 @@ public class ContactsList extends Activity
 		GlobalVars.activityItemLocation=0;
 		GlobalVars.activityItemLimit=5;
 		selectedContact = -1;
-		new ContactsListThread().execute("");
+		GlobalVars.context = this;
+		new ContactsListThread().execute(this);
     	}
 		
     @Override protected void onResume()
@@ -50,7 +53,8 @@ public class ContactsList extends Activity
 			GlobalVars.setText(contacts, false, getResources().getString(R.string.layoutContactsListContactsList));
 			GlobalVars.talk(getResources().getString(R.string.layoutContactsListOnResumeContactDeleted));
 			selectedContact = -1;
-			new ContactsListThread().execute("");
+			GlobalVars.context = this;
+			new ContactsListThread().execute(this);
     		}
 			else
 			{
@@ -86,27 +90,70 @@ public class ContactsList extends Activity
 					}
 					else
 					{
-					//BUGFIX FOR SOME DEVICES
-					if (GlobalVars.contactDataBase.size()>0)
+					if (GlobalVars.contactDataBase.size()==0) // PREVENTS AN EMPTY LOADING AFTER SOME MEMORY WIPING IN SOME DEVICES
 						{
-						try
+						int sizeOfContacts = 0;
+						String valueContacts = readFile("sizeofcontacts.cfg");
+						if (valueContacts!="")
 							{
-							GlobalVars.talk(GlobalVars.contactsGetNameFromListValue(GlobalVars.contactDataBase.get(selectedContact)) +
-									getResources().getString(R.string.layoutContactsListWithThePhoneNumber) +
-									GlobalVars.divideNumbersWithBlanks(GlobalVars.contactsGetPhoneNumberFromListValue(GlobalVars.contactDataBase.get(selectedContact))));
+							sizeOfContacts = Integer.valueOf(valueContacts);
 							}
-							catch(NullPointerException e)
+						if (GlobalVars.contactDataBase.size()!=sizeOfContacts)
 							{
+							GlobalVars.context = this;
+							new ContactsListThread().execute(this);
 							GlobalVars.talk(getResources().getString(R.string.layoutContactsListPleaseWait));
 							}
-							catch(Exception e)
+							else
 							{
-							GlobalVars.talk(getResources().getString(R.string.layoutContactsListPleaseWait));
+							//BUGFIX FOR SOME DEVICES
+							if (GlobalVars.contactDataBase.size()>0)
+								{
+								try
+									{
+									GlobalVars.talk(GlobalVars.contactsGetNameFromListValue(GlobalVars.contactDataBase.get(selectedContact)) +
+											getResources().getString(R.string.layoutContactsListWithThePhoneNumber) +
+											GlobalVars.divideNumbersWithBlanks(GlobalVars.contactsGetPhoneNumberFromListValue(GlobalVars.contactDataBase.get(selectedContact))));
+									}
+									catch(NullPointerException e)
+									{
+									GlobalVars.talk(getResources().getString(R.string.layoutContactsListPleaseWait));
+									}
+									catch(Exception e)
+									{
+									GlobalVars.talk(getResources().getString(R.string.layoutContactsListPleaseWait));
+									}
+								}
+								else
+								{
+								GlobalVars.talk(getResources().getString(R.string.layoutContactsListPleaseWait));
+								}									
 							}
 						}
 						else
 						{
-						GlobalVars.talk(getResources().getString(R.string.layoutContactsListPleaseWait));
+						//BUGFIX FOR SOME DEVICES
+						if (GlobalVars.contactDataBase.size()>0)
+							{
+							try
+								{
+								GlobalVars.talk(GlobalVars.contactsGetNameFromListValue(GlobalVars.contactDataBase.get(selectedContact)) +
+										getResources().getString(R.string.layoutContactsListWithThePhoneNumber) +
+										GlobalVars.divideNumbersWithBlanks(GlobalVars.contactsGetPhoneNumberFromListValue(GlobalVars.contactDataBase.get(selectedContact))));
+								}
+								catch(NullPointerException e)
+								{
+								GlobalVars.talk(getResources().getString(R.string.layoutContactsListPleaseWait));
+								}
+								catch(Exception e)
+								{
+								GlobalVars.talk(getResources().getString(R.string.layoutContactsListPleaseWait));
+								}
+							}
+							else
+							{
+							GlobalVars.talk(getResources().getString(R.string.layoutContactsListPleaseWait));
+							}									
 						}
 					}
 				}
@@ -334,5 +381,30 @@ public class ContactsList extends Activity
 	public boolean onKeyDown(int keyCode, KeyEvent event)
 		{
 		return GlobalVars.detectKeyDown(keyCode);
+		}
+
+	private String readFile(String file)
+		{
+		String result = "";
+		DataInputStream in = null;
+		try
+			{
+			in = new DataInputStream(openFileInput(file));
+			for (;;)
+				{
+				result = result + in.readUTF();
+				}
+			}
+			catch (Exception e)
+			{
+			}
+		try
+			{
+			in.close();
+			}
+			catch(Exception e)
+			{
+			}
+		return result;
 		}
 	}
