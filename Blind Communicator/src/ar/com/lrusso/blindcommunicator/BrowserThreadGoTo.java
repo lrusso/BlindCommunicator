@@ -1,6 +1,7 @@
 package ar.com.lrusso.blindcommunicator;
 
 import android.os.*;
+
 import org.jsoup.*;
 import org.jsoup.nodes.*;
 import org.jsoup.select.*;
@@ -17,7 +18,7 @@ public class BrowserThreadGoTo extends AsyncTask<String, String, Boolean>
 		{
 		try
 			{
-			if (!url[0].toLowerCase().startsWith("http://"))
+			if (!url[0].toLowerCase().startsWith("http://") && !url[0].toLowerCase().startsWith("https://"))
 				{
 				url[0] = "http://" + url[0];
 				}
