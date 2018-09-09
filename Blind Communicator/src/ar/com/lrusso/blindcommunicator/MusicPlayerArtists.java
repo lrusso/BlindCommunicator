@@ -28,6 +28,9 @@ public class MusicPlayerArtists extends Activity
 		GlobalVars.activityItemLimit=4;
 		selectedArtist = -1;
 		selectedAlbum = -1;
+
+		//HIDES THE NAVIGATION BAR
+		if (android.os.Build.VERSION.SDK_INT>11){try{GlobalVars.hideNavigationBar(this);}catch(Exception e){}}
     	}
     
 	@Override public void onResume()
@@ -42,6 +45,9 @@ public class MusicPlayerArtists extends Activity
 		GlobalVars.selectTextView(play,false);
 		GlobalVars.selectTextView(goback,false);
 		GlobalVars.talk(getResources().getString(R.string.layoutMusicPlayerArtistsOnResume));
+
+		//HIDES THE NAVIGATION BAR
+		if (android.os.Build.VERSION.SDK_INT>11){try{GlobalVars.hideNavigationBar(this);}catch(Exception e){}}
 		}
 		
 	public void select()

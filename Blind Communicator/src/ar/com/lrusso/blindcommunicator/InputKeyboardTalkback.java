@@ -67,6 +67,9 @@ public class InputKeyboardTalkback extends Activity
 				}
 			};
 		textResult.addTextChangedListener(fieldValidatorTextWatcher);
+
+		//HIDES THE NAVIGATION BAR
+		if (android.os.Build.VERSION.SDK_INT>11){try{GlobalVars.hideNavigationBar(this);}catch(Exception e){}}
 		}
 	
 	@Override public void onResume()
@@ -75,6 +78,9 @@ public class InputKeyboardTalkback extends Activity
 		try{GlobalVars.alarmVibrator.cancel();}catch(NullPointerException e){}catch(Exception e){}
 		GlobalVars.lastActivity = InputKeyboardTalkback.class;
 		GlobalVars.talk(getResources().getString(R.string.layoutInputKeyboardTalkbackOnResume));
+
+		//HIDES THE NAVIGATION BAR
+		if (android.os.Build.VERSION.SDK_INT>11){try{GlobalVars.hideNavigationBar(this);}catch(Exception e){}}
 		}
 	    
 	public boolean onKeyUp(int keyCode, KeyEvent event)

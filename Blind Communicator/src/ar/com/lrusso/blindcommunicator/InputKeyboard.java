@@ -34,6 +34,9 @@ public class InputKeyboard extends Activity
 		keyList = new ArrayList<String>(Arrays.asList(original));
 		limit = keyList.size() -1;
 		location = limit;
+
+		//HIDES THE NAVIGATION BAR
+		if (android.os.Build.VERSION.SDK_INT>11){try{GlobalVars.hideNavigationBar(this);}catch(Exception e){}}
 		}
 		
 	@Override public void onResume()
@@ -42,6 +45,9 @@ public class InputKeyboard extends Activity
 		try{GlobalVars.alarmVibrator.cancel();}catch(NullPointerException e){}catch(Exception e){}
 		GlobalVars.lastActivity = InputKeyboard.class;
 		GlobalVars.talk(getResources().getString(R.string.layoutInputKeysOnResume));
+
+		//HIDES THE NAVIGATION BAR
+		if (android.os.Build.VERSION.SDK_INT>11){try{GlobalVars.hideNavigationBar(this);}catch(Exception e){}}
 		}
 		
 	@Override public boolean onTouchEvent(MotionEvent event)

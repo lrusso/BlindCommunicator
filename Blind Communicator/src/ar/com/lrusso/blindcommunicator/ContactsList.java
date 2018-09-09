@@ -31,6 +31,9 @@ public class ContactsList extends Activity
 		selectedContact = -1;
 		GlobalVars.context = this;
 		new ContactsListThread().execute(this);
+
+		//HIDES THE NAVIGATION BAR
+		if (android.os.Build.VERSION.SDK_INT>11){try{GlobalVars.hideNavigationBar(this);}catch(Exception e){}}
     	}
 		
     @Override protected void onResume()
@@ -68,6 +71,9 @@ public class ContactsList extends Activity
 				GlobalVars.talk(getResources().getString(R.string.layoutContactsListOnResume));
 				}
 			}
+
+    	//HIDES THE NAVIGATION BAR
+		if (android.os.Build.VERSION.SDK_INT>11){try{GlobalVars.hideNavigationBar(this);}catch(Exception e){}}
     	}    
 		
 	public void select()

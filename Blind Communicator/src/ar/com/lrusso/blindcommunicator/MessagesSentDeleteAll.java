@@ -23,6 +23,9 @@ public class MessagesSentDeleteAll extends Activity
 		GlobalVars.messagesSentWereDeleted = false;
 		GlobalVars.activityItemLocation=0;
 		GlobalVars.activityItemLimit=2;
+
+		//HIDES THE NAVIGATION BAR
+		if (android.os.Build.VERSION.SDK_INT>11){try{GlobalVars.hideNavigationBar(this);}catch(Exception e){}}
     	}
 		
 	@Override public void onResume()
@@ -35,6 +38,9 @@ public class MessagesSentDeleteAll extends Activity
 		GlobalVars.selectTextView(delete,false);
 		GlobalVars.selectTextView(goback,false);
 		GlobalVars.talk(getResources().getString(R.string.layoutMessagesSentDeleteAllOnResume));
+
+		//HIDES THE NAVIGATION BAR
+		if (android.os.Build.VERSION.SDK_INT>11){try{GlobalVars.hideNavigationBar(this);}catch(Exception e){}}
 		}
 		
 	public void select()

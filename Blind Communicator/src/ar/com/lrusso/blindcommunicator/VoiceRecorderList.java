@@ -29,6 +29,9 @@ public class VoiceRecorderList extends Activity
 		GlobalVars.activityItemLimit=4;
 		selectedVoiceRecord = -1;
 		new VoiceRecorderListThread().execute("");
+
+		//HIDES THE NAVIGATION BAR
+		if (android.os.Build.VERSION.SDK_INT>11){try{GlobalVars.hideNavigationBar(this);}catch(Exception e){}}
 		}
 
 	@Override public void onResume()
@@ -55,6 +58,9 @@ public class VoiceRecorderList extends Activity
 			{
 			GlobalVars.talk(getResources().getString(R.string.layoutVoiceRecorderListOnResume));
 			}
+
+		//HIDES THE NAVIGATION BAR
+		if (android.os.Build.VERSION.SDK_INT>11){try{GlobalVars.hideNavigationBar(this);}catch(Exception e){}}
 		}
 
 	public void select()

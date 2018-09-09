@@ -27,6 +27,9 @@ public class MessagesSent extends Activity
 		GlobalVars.activityItemLimit=4;
 		selectedMessage = -1;
 		new MessagesCheckThread(GlobalVars.TYPE_SENT).execute();
+
+		//HIDES THE NAVIGATION BAR
+		if (android.os.Build.VERSION.SDK_INT>11){try{GlobalVars.hideNavigationBar(this);}catch(Exception e){}}
     	}
     
 	@Override public void onResume()
@@ -86,6 +89,9 @@ public class MessagesSent extends Activity
 			{
 			GlobalVars.talk(getResources().getString(R.string.layoutMessagesSentOnResume));
 			}
+
+		//HIDES THE NAVIGATION BAR
+		if (android.os.Build.VERSION.SDK_INT>11){try{GlobalVars.hideNavigationBar(this);}catch(Exception e){}}
 		}
 		
 	public void select()

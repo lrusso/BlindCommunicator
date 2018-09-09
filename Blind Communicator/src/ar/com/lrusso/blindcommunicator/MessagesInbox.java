@@ -35,6 +35,9 @@ public class MessagesInbox extends Activity
 		GlobalVars.activityItemLimit=7;
 		selectedMessage = -1;
 		new MessagesCheckThread(GlobalVars.TYPE_INBOX).execute();
+
+		//HIDES THE NAVIGATION BAR
+		if (android.os.Build.VERSION.SDK_INT>11){try{GlobalVars.hideNavigationBar(this);}catch(Exception e){}}
     	}
     
 	@Override public void onResume()
@@ -105,6 +108,9 @@ public class MessagesInbox extends Activity
 				GlobalVars.talk(getResources().getString(R.string.layoutMessagesInboxOnResume));
 				}
 			}
+
+		//HIDES THE NAVIGATION BAR
+		if (android.os.Build.VERSION.SDK_INT>11){try{GlobalVars.hideNavigationBar(this);}catch(Exception e){}}
 		}
 		
 	public void select()

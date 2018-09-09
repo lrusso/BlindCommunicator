@@ -134,6 +134,9 @@ public class Settings extends Activity
 			{
 			GlobalVars.setText(inputmode,false,getResources().getString(R.string.layoutSettingsInputMode) + getResources().getString(R.string.layoutSettingsInputModeKeyboardTalkback));
 			}
+
+		//HIDES THE NAVIGATION BAR
+		if (android.os.Build.VERSION.SDK_INT>11){try{GlobalVars.hideNavigationBar(this);}catch(Exception e){}}
 		}
 		
 	@Override public void onResume()
@@ -156,6 +159,9 @@ public class Settings extends Activity
 		GlobalVars.selectTextView(privacypolicy,false);
 		GlobalVars.selectTextView(goback,false);
 		GlobalVars.talk(getResources().getString(R.string.layoutSettingsOnResume));
+
+		//HIDES THE NAVIGATION BAR
+		if (android.os.Build.VERSION.SDK_INT>11){try{GlobalVars.hideNavigationBar(this);}catch(Exception e){}}
 		}
 		
 	public void select()

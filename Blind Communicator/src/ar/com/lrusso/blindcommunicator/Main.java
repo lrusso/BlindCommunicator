@@ -58,7 +58,7 @@ public class Main extends Activity implements TextToSpeech.OnInitListener
 		
 		//SETS THE ALARM VIBRATOR VARIABLE
 		GlobalVars.alarmVibrator = (Vibrator) getSystemService(VIBRATOR_SERVICE);
-		
+
 		//SETS PROFILE TO NORMAL
 		AudioManager audioManager = (AudioManager)getSystemService(AUDIO_SERVICE);
 		audioManager.setRingerMode(AudioManager.RINGER_MODE_NORMAL);
@@ -66,7 +66,10 @@ public class Main extends Activity implements TextToSpeech.OnInitListener
 		GlobalVars.alarmAlarmManager = (AlarmManager) getSystemService(ALARM_SERVICE);
 		GlobalVars.openAndLoadAlarmFile();
 		GlobalVars.setText(alarms,false, getResources().getString(R.string.mainAlarms) + " (" + GlobalVars.getPendingAlarmsForTodayCount() + ")");
-		
+
+		//HIDES THE NAVIGATION BAR
+		if (android.os.Build.VERSION.SDK_INT>11){try{GlobalVars.hideNavigationBar(this);}catch(Exception e){}}
+
 		//LIST EVERY MUSIC FILE WITH THE MEDIA INFORMATION TO USE IT WITH THE MUSIC PLAYER
 		new MusicPlayerThreadRefreshDatabase().execute(this);
 		
@@ -347,6 +350,9 @@ public class Main extends Activity implements TextToSpeech.OnInitListener
 			catch(Exception e)
 			{
 			}
+		
+		//HIDES THE NAVIGATION BAR
+		if (android.os.Build.VERSION.SDK_INT>11){try{GlobalVars.hideNavigationBar(this);}catch(Exception e){}}
 		}
     
     public void onInit(int status)

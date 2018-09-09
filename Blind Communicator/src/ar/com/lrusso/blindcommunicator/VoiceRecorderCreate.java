@@ -30,6 +30,9 @@ public class VoiceRecorderCreate extends Activity
 		GlobalVars.activityItemLocation=0;
 		GlobalVars.activityItemLimit=2;
 		GlobalVars.voiceRecorderAudioWasSaved = false;
+
+		//HIDES THE NAVIGATION BAR
+		if (android.os.Build.VERSION.SDK_INT>11){try{GlobalVars.hideNavigationBar(this);}catch(Exception e){}}
     	}
 
 	@Override public void onResume()
@@ -42,6 +45,9 @@ public class VoiceRecorderCreate extends Activity
 		GlobalVars.selectTextView(create,false);
 		GlobalVars.selectTextView(goback,false);
 		GlobalVars.talk(getResources().getString(R.string.layoutVoiceRecorderCreateOnResume));
+
+		//HIDES THE NAVIGATION BAR
+		if (android.os.Build.VERSION.SDK_INT>11){try{GlobalVars.hideNavigationBar(this);}catch(Exception e){}}
 		}
 
 	public void select()

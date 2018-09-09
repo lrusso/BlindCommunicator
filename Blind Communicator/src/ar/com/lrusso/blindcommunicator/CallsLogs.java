@@ -35,6 +35,9 @@ public class CallsLogs extends Activity
 		GlobalVars.callLogsReady = false;
 		GlobalVars.callLogsDataBase.clear();
 		new CallsLogsThread().execute();
+
+		//HIDES THE NAVIGATION BAR
+		if (android.os.Build.VERSION.SDK_INT>11){try{GlobalVars.hideNavigationBar(this);}catch(Exception e){}}
 		}
     
 	@Override public void onResume()
@@ -58,6 +61,9 @@ public class CallsLogs extends Activity
 			{
 			GlobalVars.talk(getResources().getString(R.string.layoutCallsLogsOnResume));
 			}
+
+		//HIDES THE NAVIGATION BAR
+		if (android.os.Build.VERSION.SDK_INT>11){try{GlobalVars.hideNavigationBar(this);}catch(Exception e){}}
 		}
 		
 	public void select()

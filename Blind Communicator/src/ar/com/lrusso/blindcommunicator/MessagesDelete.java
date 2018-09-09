@@ -29,6 +29,9 @@ public class MessagesDelete extends Activity
 		GlobalVars.activityItemLimit=3;
 		GlobalVars.messagesWasDeleted = false;
 		GlobalVars.setText(todelete, false, messageFrom);
+
+		//HIDES THE NAVIGATION BAR
+		if (android.os.Build.VERSION.SDK_INT>11){try{GlobalVars.hideNavigationBar(this);}catch(Exception e){}}
     	}
 		
 	@Override public void onResume()
@@ -42,6 +45,9 @@ public class MessagesDelete extends Activity
 		GlobalVars.selectTextView(delete,false);
 		GlobalVars.selectTextView(goback,false);
 		GlobalVars.talk(getResources().getString(R.string.layoutMessagesDeleteOnResume));
+
+		//HIDES THE NAVIGATION BAR
+		if (android.os.Build.VERSION.SDK_INT>11){try{GlobalVars.hideNavigationBar(this);}catch(Exception e){}}
 		}
 		
 	public void select()

@@ -78,6 +78,9 @@ public class AlarmsNotifier extends Activity implements TextToSpeech.OnInitListe
 		GlobalVars.startTTS(tts);
 		tts = new TextToSpeech(this,this);
 		tts.setPitch((float) 1.0);
+
+		//HIDES THE NAVIGATION BAR
+		if (android.os.Build.VERSION.SDK_INT>11){try{GlobalVars.hideNavigationBar(this);}catch(Exception e){}}
 		}
 	
 	@Override public void onPause()

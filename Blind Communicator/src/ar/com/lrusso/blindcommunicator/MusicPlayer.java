@@ -43,6 +43,9 @@ public class MusicPlayer extends Activity
 			MusicPlayer.playstopicon.setImageResource(R.drawable.playerstop);
 			GlobalVars.setText(MusicPlayer.playstop,false,GlobalVars.context.getResources().getString(R.string.layoutMusicPlayerStop));
 			}
+
+		//HIDES THE NAVIGATION BAR
+		if (android.os.Build.VERSION.SDK_INT>11){try{GlobalVars.hideNavigationBar(this);}catch(Exception e){}}
     	}
     
 	@Override public void onResume()
@@ -61,6 +64,9 @@ public class MusicPlayer extends Activity
 		GlobalVars.selectTextView(artists,false);
 		GlobalVars.selectTextView(goback,false);
 		GlobalVars.talk(getResources().getString(R.string.layoutMusicPlayerOnResume));
+
+		//HIDES THE NAVIGATION BAR
+		if (android.os.Build.VERSION.SDK_INT>11){try{GlobalVars.hideNavigationBar(this);}catch(Exception e){}}
 		}
 		
 	public void select()

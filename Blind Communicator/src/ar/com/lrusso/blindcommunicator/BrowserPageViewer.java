@@ -28,6 +28,9 @@ public class BrowserPageViewer extends Activity
 		goback = (TextView) findViewById(R.id.goback);
 		GlobalVars.activityItemLocation=0;
 		GlobalVars.activityItemLimit=6;
+
+		//HIDES THE NAVIGATION BAR
+		if (android.os.Build.VERSION.SDK_INT>11){try{GlobalVars.hideNavigationBar(this);}catch(Exception e){}}
     	}
     
 	@Override public void onResume()
@@ -44,6 +47,9 @@ public class BrowserPageViewer extends Activity
 		GlobalVars.selectTextView(addtobookmarks,false);
 		GlobalVars.selectTextView(goback,false);
 		GlobalVars.talk(getResources().getString(R.string.layoutBrowserPageViewerOnResume));
+
+		//HIDES THE NAVIGATION BAR
+		if (android.os.Build.VERSION.SDK_INT>11){try{GlobalVars.hideNavigationBar(this);}catch(Exception e){}}
 		}
 		
 	public void select()

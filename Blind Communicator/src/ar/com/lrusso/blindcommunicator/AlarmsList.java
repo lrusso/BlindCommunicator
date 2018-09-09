@@ -28,6 +28,9 @@ public class AlarmsList extends Activity
 		selectedAlarm = -1;
 		
 		GlobalVars.setText(alarmlist, false, getResources().getString(R.string.layoutAlarmsListList) + " (" + GlobalVars.alarmList.size() + ")");
+
+		//HIDES THE NAVIGATION BAR
+		if (android.os.Build.VERSION.SDK_INT>11){try{GlobalVars.hideNavigationBar(this);}catch(Exception e){}}
     	}
 		
 	@Override public void onResume()
@@ -59,6 +62,9 @@ public class AlarmsList extends Activity
 			{
 			GlobalVars.talk(getResources().getString(R.string.layoutAlarmsListOnResume));
 			}
+		
+		//HIDES THE NAVIGATION BAR
+		if (android.os.Build.VERSION.SDK_INT>11){try{GlobalVars.hideNavigationBar(this);}catch(Exception e){}}
 		}
 		
 	public void select()
