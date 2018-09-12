@@ -9,20 +9,16 @@ import android.provider.*;
 import java.io.DataOutputStream;
 import java.util.*;
 
-public class MusicPlayerThreadRefreshDatabase extends AsyncTask <Context, String, Boolean>
+public class MusicPlayerThreadRefreshDatabase extends AsyncTask <String, String, Boolean>
 	{
-	private Context context;
-	
 	@Override protected void onPreExecute()
 		{
 		super.onPreExecute();
 		GlobalVars.musicPlayerDatabaseReady=false;
 		}
 		
-	@Override protected Boolean doInBackground(Context... myContext)
+	@Override protected Boolean doInBackground(String... nothing)
 		{
-		context = myContext[0];
-
 		writeFile("sizeofsongs.cfg","0");
 
 		GlobalVars.musicPlayerDatabaseFull.clear();
@@ -147,7 +143,7 @@ public class MusicPlayerThreadRefreshDatabase extends AsyncTask <Context, String
 		{
         try
 			{
-            DataOutputStream out = new DataOutputStream(context.openFileOutput(file, Context.MODE_PRIVATE));
+            DataOutputStream out = new DataOutputStream(GlobalVars.context.openFileOutput(file, Context.MODE_PRIVATE));
             out.writeUTF(text);
             out.close();
 			}

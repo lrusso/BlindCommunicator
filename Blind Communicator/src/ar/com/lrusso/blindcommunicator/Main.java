@@ -71,7 +71,7 @@ public class Main extends Activity implements TextToSpeech.OnInitListener
 		if (android.os.Build.VERSION.SDK_INT>11){try{GlobalVars.hideNavigationBar(this);}catch(Exception e){}}
 
 		//LIST EVERY MUSIC FILE WITH THE MEDIA INFORMATION TO USE IT WITH THE MUSIC PLAYER
-		new MusicPlayerThreadRefreshDatabase().execute(this);
+		new MusicPlayerThreadRefreshDatabase().execute("");
 		
 		//READ WEB BOOKMARKS DATABASE
 		GlobalVars.readBookmarksDatabase();
@@ -592,7 +592,7 @@ public class Main extends Activity implements TextToSpeech.OnInitListener
 					if (GlobalVars.musicPlayerDatabaseFull.size()!=sizeOfSongs)
 						{
 						GlobalVars.context = this;
-						new MusicPlayerThreadRefreshDatabase().execute(this);
+						new MusicPlayerThreadRefreshDatabase().execute("");
 						GlobalVars.talk(getResources().getString(R.string.mainMusicPlayerPleaseTryAgain));
 						}
 						else

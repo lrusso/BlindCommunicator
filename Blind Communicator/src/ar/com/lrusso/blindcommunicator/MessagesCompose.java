@@ -37,7 +37,7 @@ public class MessagesCompose extends Activity
 			GlobalVars.setText(addresse, false, messageToContactNameValue);
 			}
 		GlobalVars.context = this;
-		new ContactsListThread().execute(this);
+		new ContactsListThread().execute("");
 
 		//HIDES THE NAVIGATION BAR
 		if (android.os.Build.VERSION.SDK_INT>11){try{GlobalVars.hideNavigationBar(this);}catch(Exception e){}}
