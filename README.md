@@ -31,7 +31,7 @@ NOTE 1: In Android 5.0 (Lollipop) or higher, you have to set the way you want to
 
 NOTE 2: If you have a device with Android 4.4 (KitKat) or higher, you must set Blind Communicator as your App for messages. To do so, you must go to Settings/Default applications/Messages and then select Blind Communicator from the list. Also, you will need a TTS software installed in your device in order to this App to work. You can install, for example, Google TTS for free at https://play.google.com/store/apps/details?id=com.google.android.tts.
 
-Translator (italian): Sofia Spoltore <sofia.spoltore@gmail.com> https://www.facebook.com/TraduccionesItaliano
+Translator (italian): Sofia Spoltore
 
 Translator (portuguese): Gilberto Ferreira
 
@@ -39,4 +39,6 @@ Translator (french): Gustavo Ferreyra
 
 Translator (russian): Xenia Sergejew
 
-Translator (german): Liliana Anzaudo <liliana.anzaudo@yahoo.com.ar> http://www.latraducciones.com
+Translator (german): Liliana Anzaudo
+
+Translator (vietnamese): Dang Manh Cuong
