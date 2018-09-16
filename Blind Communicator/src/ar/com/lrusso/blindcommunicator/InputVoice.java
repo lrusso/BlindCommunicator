@@ -13,7 +13,7 @@ import android.view.*;
 import android.widget.*;
 import java.util.*;
 
-public class InputVoice extends Activity
+public class InputVoice extends Activity 
 	{
     private SpeechRecognizer sr;
 	private TextView start;
@@ -221,11 +221,25 @@ public class InputVoice extends Activity
 				{
 				stringResults.clear();
 				selectedValue = -1;
+				
+				// STOPS THE TTS
+				try
+					{
+					GlobalVars.tts.stop();
+					}
+					catch(NullPointerException e)
+					{
+					}
+					catch(Exception e)
+					{
+					}
+
 				sr = SpeechRecognizer.createSpeechRecognizer(this);
 				sr.setRecognitionListener(new listener());
 				Intent intent = new Intent(RecognizerIntent.ACTION_RECOGNIZE_SPEECH);
 				intent.putExtra(RecognizerIntent.EXTRA_LANGUAGE_MODEL,RecognizerIntent.LANGUAGE_MODEL_FREE_FORM);
 				intent.putExtra(RecognizerIntent.EXTRA_PROMPT,"Voice Recognition...");
+			    intent.putExtra(RecognizerIntent.EXTRA_CALLING_PACKAGE, this.getPackageName());
 				intent.putExtra(RecognizerIntent.EXTRA_SPEECH_INPUT_POSSIBLY_COMPLETE_SILENCE_LENGTH_MILLIS,5000000);
 				sr.startListening(intent);
 				}
