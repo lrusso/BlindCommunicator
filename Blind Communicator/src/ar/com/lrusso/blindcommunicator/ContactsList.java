@@ -27,7 +27,11 @@ public class ContactsList extends Activity
 		GlobalVars.activityItemLocation=0;
 		GlobalVars.activityItemLimit=5;
 		selectedContact = -1;
+		GlobalVars.context = this;
 		new ContactsListThread().execute("");
+
+		//HIDES THE NAVIGATION BAR
+		if (android.os.Build.VERSION.SDK_INT>11){try{GlobalVars.hideNavigationBar(this);}catch(Exception e){}}
     	}
 		
     @Override protected void onResume()
@@ -50,6 +54,7 @@ public class ContactsList extends Activity
 			GlobalVars.setText(contacts, false, getResources().getString(R.string.layoutContactsListContactsList));
 			GlobalVars.talk(getResources().getString(R.string.layoutContactsListOnResumeContactDeleted));
 			selectedContact = -1;
+			GlobalVars.context = this;
 			new ContactsListThread().execute("");
     		}
 			else
@@ -64,6 +69,9 @@ public class ContactsList extends Activity
 				GlobalVars.talk(getResources().getString(R.string.layoutContactsListOnResume));
 				}
 			}
+
+    	//HIDES THE NAVIGATION BAR
+		if (android.os.Build.VERSION.SDK_INT>11){try{GlobalVars.hideNavigationBar(this);}catch(Exception e){}}
     	}    
 		
 	public void select()
