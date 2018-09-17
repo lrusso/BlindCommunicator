@@ -1,11 +1,9 @@
 package ar.com.lrusso.blindcommunicator;
 
-import android.content.Context;
 import android.database.*;
 import android.os.*;
 import android.provider.*;
 
-import java.io.DataOutputStream;
 import java.util.*;
 
 public class ContactsListThread extends AsyncTask<String, String, Boolean>
@@ -18,8 +16,6 @@ public class ContactsListThread extends AsyncTask<String, String, Boolean>
 
 	@Override protected Boolean doInBackground(String... nothing)
 		{
-		writeFile("sizeofcontacts.cfg","0");
-
 		GlobalVars.contactDataBase.clear();
 
 		try
@@ -103,20 +99,5 @@ public class ContactsListThread extends AsyncTask<String, String, Boolean>
 	@Override protected void onPostExecute(Boolean pageloaded)
 		{
 		GlobalVars.contactListReady = true;
-
-		writeFile("sizeofcontacts.cfg",String.valueOf(GlobalVars.contactDataBase.size()));
-		}
-
-	private void writeFile(String file, String text)
-		{
-        try
-			{
-            DataOutputStream out = new DataOutputStream(GlobalVars.context.openFileOutput(file, Context.MODE_PRIVATE));
-            out.writeUTF(text);
-            out.close();
-			}
-			catch(Exception e)
-			{
-			}
 		}
 	}

@@ -96,33 +96,9 @@ public class ContactsList extends Activity
 					}
 					else
 					{
-					// PROCESS:
-
-					// 1) CHECKS THE ORIGINAL AMOUNT OF CONTACTS SAVED AS A STRING IN SIZEOFCONTACTS.CFG
-					// 2) CHECKS IF THE AMOUNT OF CONTACTS SAVED IS THE SAME AS THE BLIND COMMUNICATOR INTERNAL LIST
-					// 3) IF THEY ARE NOT THE SAME, THE THREAD TO GET ALL THE CONTACTS IS LAUNCHED
-
-					// THIS IS SOMETHING THAT NEEDS TO BE CHECKED BECAUSE IN SOME DEVICES, AFTER A WHILE, THE VALUES IN GLOBALVARS ARE DELETED/CLEANED BY THE SYSTEM FOR PERFORMANCE
-
-					int sizeOfContacts = 0;
-					String valueContacts = readFile("sizeofcontacts.cfg");
-					if (valueContacts!="")
-						{
-						sizeOfContacts = Integer.valueOf(valueContacts);
-						}
-					
 					if (GlobalVars.contactDataBase.size()==0) // PREVENTS AN EMPTY LOADING AFTER SOME MEMORY WIPING IN SOME DEVICES
 						{
-						if (GlobalVars.contactDataBase.size()!=sizeOfContacts)
-							{
-							GlobalVars.context = this;
-							new ContactsListThread().execute("");
-							GlobalVars.talk(getResources().getString(R.string.layoutContactsListPleaseWait));
-							}
-							else
-							{
-							GlobalVars.talk(getResources().getString(R.string.layoutContactsListNoContacts));
-							}
+						GlobalVars.talk(getResources().getString(R.string.layoutContactsListNoContacts));
 						}
 						else
 						{
