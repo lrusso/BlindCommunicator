@@ -58,8 +58,6 @@ public class GlobalVars extends Application
 	public static Activity                  inputModeKeyboardTalkbackActivity = null;
 	
 	//VARIABLES FOR CONTACTS
-	public static boolean 					contactListReady = false;
-	public static List<String>				contactDataBase = new ArrayList<String>();
 	public static String 					contactToDeleteName;
 	public static String 					contactToDeletePhone;
 	public static boolean 					contactWasDeleted = false;

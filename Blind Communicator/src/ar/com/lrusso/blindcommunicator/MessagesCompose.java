@@ -1,5 +1,8 @@
 package ar.com.lrusso.blindcommunicator;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import android.app.*;
 import android.content.*;
 import android.net.*;
@@ -19,6 +22,9 @@ public class MessagesCompose extends Activity
 	public static String messageBody = "";
 	private int selectedContact = -1;
 	private boolean sending = false;
+
+	public static boolean contactListReady = false;
+	public static List<String> contactDataBase = new ArrayList<String>();
 	
     @Override protected void onCreate(Bundle savedInstanceState)
     	{
@@ -37,7 +43,7 @@ public class MessagesCompose extends Activity
 			GlobalVars.setText(addresse, false, messageToContactNameValue);
 			}
 		GlobalVars.context = this;
-		new ContactsListThread().execute("");
+		new MessagesComposeThread().execute("");
 
 		//HIDES THE NAVIGATION BAR
 		if (android.os.Build.VERSION.SDK_INT>11){try{GlobalVars.hideNavigationBar(this);}catch(Exception e){}}
@@ -86,15 +92,15 @@ public class MessagesCompose extends Activity
 					}
 				else if (selectedContact>-1)
 					{
-					if (GlobalVars.contactListReady==false)
+					if (contactListReady==false)
 						{
 						GlobalVars.talk(getResources().getString(R.string.layoutContactsListPleaseWait));
 						}
 						else
 						{
-						GlobalVars.talk(GlobalVars.contactsGetNameFromListValue(GlobalVars.contactDataBase.get(selectedContact)) +
+						GlobalVars.talk(GlobalVars.contactsGetNameFromListValue(contactDataBase.get(selectedContact)) +
 									    getResources().getString(R.string.layoutContactsListWithThePhoneNumber) +
-									    GlobalVars.divideNumbersWithBlanks(GlobalVars.contactsGetPhoneNumberFromListValue(GlobalVars.contactDataBase.get(selectedContact))));
+									    GlobalVars.divideNumbersWithBlanks(GlobalVars.contactsGetPhoneNumberFromListValue(contactDataBase.get(selectedContact))));
 						}
 					}
 				}
@@ -135,26 +141,26 @@ public class MessagesCompose extends Activity
 		switch (GlobalVars.activityItemLocation)
 			{
 			case 1: //ADDRESSE
-			if (GlobalVars.contactListReady==false)
+			if (contactListReady==false)
 				{
 				GlobalVars.talk(getResources().getString(R.string.layoutContactsListPleaseWait));
 				}
 				else
 				{
-				if (GlobalVars.contactDataBase.size()>0)
+				if (contactDataBase.size()>0)
 					{
-					if (selectedContact+1==GlobalVars.contactDataBase.size())
+					if (selectedContact+1==contactDataBase.size())
 						{
 						selectedContact=-1;
 						}
 					selectedContact=selectedContact+1;
-					GlobalVars.setText(addresse, true, GlobalVars.contactsGetNameFromListValue(GlobalVars.contactDataBase.get(selectedContact)) + "\n" +
-											   		   GlobalVars.contactsGetPhoneNumberFromListValue(GlobalVars.contactDataBase.get(selectedContact)));
-					GlobalVars.talk(GlobalVars.contactsGetNameFromListValue(GlobalVars.contactDataBase.get(selectedContact)) +
+					GlobalVars.setText(addresse, true, GlobalVars.contactsGetNameFromListValue(contactDataBase.get(selectedContact)) + "\n" +
+											   		   GlobalVars.contactsGetPhoneNumberFromListValue(contactDataBase.get(selectedContact)));
+					GlobalVars.talk(GlobalVars.contactsGetNameFromListValue(contactDataBase.get(selectedContact)) +
 									getResources().getString(R.string.layoutContactsListWithThePhoneNumber) +
-									GlobalVars.divideNumbersWithBlanks(GlobalVars.contactsGetPhoneNumberFromListValue(GlobalVars.contactDataBase.get(selectedContact))));
-					messageToPhoneNumberValue = GlobalVars.contactDataBase.get(selectedContact).substring(GlobalVars.contactDataBase.get(selectedContact).lastIndexOf("|") + 1,GlobalVars.contactDataBase.get(selectedContact).length());
-					messageToContactNameValue = GlobalVars.contactsGetNameFromListValue(GlobalVars.contactDataBase.get(selectedContact));
+									GlobalVars.divideNumbersWithBlanks(GlobalVars.contactsGetPhoneNumberFromListValue(contactDataBase.get(selectedContact))));
+					messageToPhoneNumberValue = contactDataBase.get(selectedContact).substring(contactDataBase.get(selectedContact).lastIndexOf("|") + 1,contactDataBase.get(selectedContact).length());
+					messageToContactNameValue = GlobalVars.contactsGetNameFromListValue(contactDataBase.get(selectedContact));
 					}
 					else
 					{
@@ -201,26 +207,26 @@ public class MessagesCompose extends Activity
 		switch (GlobalVars.activityItemLocation)
 			{
 			case 1: //ADDRESSE
-			if (GlobalVars.contactListReady==false)
+			if (contactListReady==false)
 				{
 				GlobalVars.talk(getResources().getString(R.string.layoutContactsListPleaseWait));
 				}
 				else
 				{
-				if (GlobalVars.contactDataBase.size()>0)
+				if (contactDataBase.size()>0)
 					{
 					if (selectedContact-1<0)
 						{
-						selectedContact = GlobalVars.contactDataBase.size();
+						selectedContact = contactDataBase.size();
 						}
 					selectedContact = selectedContact - 1;
-					GlobalVars.setText(addresse, true, GlobalVars.contactsGetNameFromListValue(GlobalVars.contactDataBase.get(selectedContact)) + "\n" +
-													   GlobalVars.contactsGetPhoneNumberFromListValue(GlobalVars.contactDataBase.get(selectedContact)));
-					GlobalVars.talk(GlobalVars.contactsGetNameFromListValue(GlobalVars.contactDataBase.get(selectedContact)) +
+					GlobalVars.setText(addresse, true, GlobalVars.contactsGetNameFromListValue(contactDataBase.get(selectedContact)) + "\n" +
+													   GlobalVars.contactsGetPhoneNumberFromListValue(contactDataBase.get(selectedContact)));
+					GlobalVars.talk(GlobalVars.contactsGetNameFromListValue(contactDataBase.get(selectedContact)) +
 									getResources().getString(R.string.layoutContactsListWithThePhoneNumber) +
-									GlobalVars.divideNumbersWithBlanks(GlobalVars.contactsGetPhoneNumberFromListValue(GlobalVars.contactDataBase.get(selectedContact))));
-					messageToPhoneNumberValue = GlobalVars.contactDataBase.get(selectedContact).substring(GlobalVars.contactDataBase.get(selectedContact).lastIndexOf("|") + 1,GlobalVars.contactDataBase.get(selectedContact).length());
-					messageToContactNameValue = GlobalVars.contactsGetNameFromListValue(GlobalVars.contactDataBase.get(selectedContact));
+									GlobalVars.divideNumbersWithBlanks(GlobalVars.contactsGetPhoneNumberFromListValue(contactDataBase.get(selectedContact))));
+					messageToPhoneNumberValue = contactDataBase.get(selectedContact).substring(contactDataBase.get(selectedContact).lastIndexOf("|") + 1,contactDataBase.get(selectedContact).length());
+					messageToContactNameValue = GlobalVars.contactsGetNameFromListValue(contactDataBase.get(selectedContact));
 					}
 					else
 					{

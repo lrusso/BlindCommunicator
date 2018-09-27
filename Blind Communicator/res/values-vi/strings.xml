@@ -18,10 +18,10 @@
     <string name="mainCallsNoMissed">Cuộc gọi. Không có cuộc gọi nhỡ.</string>
     <string name="mainCallsOneMissed">Cuộc gọi. Một cuộc gọi nhỡ.</string>
     <string name="mainCallsNotAvailable">Cuộc gọi. Không hoạt động trên thiết bị này.</string>
-    <string name="mainNotAvailable">Tùy chọn không hoạt động được trên thiết bị này.</string>
+    <string name="mainNotAvailable">Tùy chọn không hoạt động trên thiết bị này.</string>
 	<string name="mainContacts">Danh bạ</string>
     <string name="mainMusicPlayer">Nhạc</string>
-    <string name="mainBrowser">Internet</string>
+    <string name="mainBrowser">Duyệt web</string>
     <string name="mainAlarms">Báo thức</string>
     <string name="mainAlarmsNoAlarms">Báo thức. Không có báo thức hôm nay.</string>
     <string name="mainAlarmsOneAlarm">Báo thức. Một báo thức hôm nay.</string>
@@ -35,16 +35,16 @@
 	<string name="mainProfileIsSilent">, cấu hình là im lặng&#160;</string>
 	<string name="mainProfileIsVibrate">, cấu hình là rung&#160;</string>
 	<string name="mainNoSignal">, không có tín hiệu điện thoại&#160;</string>
-	<string name="mainBatteryChargedAt">Pin đã sạc ở mức&#160;</string>
+	<string name="mainBatteryChargedAt">Pin được sạc ở mức&#160;</string>
     <string name="mainPercentAndTime">&#160;phần trăm, thời gian là&#160;</string>
     <string name="mainHours">&#160;giờ&#160;</string>
-	<string name="mainMinutesAndDate">&#160;phút và hôm nay là này&#160;</string>
+	<string name="mainMinutesAndDate">&#160;phút và hôm nay là ngày&#160;</string>
 	<string name="mainOf">&#160;của&#160;</string>
 	<string name="mainCarrierNotAvailable">Không xác định</string>
 	<string name="mainWifiOnWithNetwork">wifi đang bật và kết nối vào sóng wifi tên&#160;</string>
 	<string name="mainWifiOnWithoutNetwork">wifi đang bật và không kết nối với sóng wifi nào.</string>
 	<string name="mainWifiOff">và wifi đang tắt.</string>
-	<string name="mainMusicPlayerPleaseTryAgain">Vui lòng thử lại sau giây lát khi trình nghe nhạc đã xử lý tất cả tập tin âm thanh của bạn.</string>
+	<string name="mainMusicPlayerPleaseTryAgain">Vui lòng thử lại sau giây lát khi trình phát nhạc đang xử lý tất cả tập tin âm thanh của bạn.</string>
 	<string name="mainNoTTSInstalledTitle">Lỗi</string>
 	<string name="mainNoTTSInstalledMessage">Không tìm thấy công cụ TTS.\nVui lòng tải ứng dụng Google TTS (miễn phí) để dùng với ứng dụng này.</string>
 	<string name="mainNoTTSInstalledButton">Tải Google TTS</string>
@@ -74,11 +74,11 @@
 	<string name="volumeMaximum">Âm lượng tối đa</string>
 	<string name="volumeHigher">Tăng âm lượng</string>
 	<string name="volumeLower">Giảm âm lượng</string>
-	<string name="deviceCharged">Thiết bị giờ đây đã được sạc đầy</string>
+	<string name="deviceCharged">Thiết bị giờ đã được sạc đầy</string>
 	<string name="deviceChargedStatus">, thiết bị đã được sạc đầy,&#160;</string>
-	<string name="deviceCharging">Thiết bị giờ đây đang được sạc</string>
-	<string name="deviceChargingStatus">, thiết bị đang được sạc,&#160;</string>
-	<string name="deviceUnplugged">Thiết bị giờ đây đã được rút bộ sạc</string>
+	<string name="deviceCharging">Thiết bị đang sạc</string>
+	<string name="deviceChargingStatus">, thiết bị đang sạc&#160;</string>
+	<string name="deviceUnplugged">Thiết bị đã được rút bộ sạc</string>
 	<string name="screenOn">Màn hình đã bật</string>
 	<string name="screenOff">Màn hình đã tắt</string>
 	<string name="screenPortrait">Hướng màn hình hiện ở chế độ dọc</string>
@@ -90,7 +90,7 @@
 	<string name="layoutMainCalls">Cuộc gọi</string>
 	<string name="layoutMainContacts">Danh bạ</string>
 	<string name="layoutMainMusic">Nhạc</string>
-	<string name="layoutMainBrowser">Internet</string>
+	<string name="layoutMainBrowser">Duyệt web</string>
 	<string name="layoutMainAlarms">Báo thức</string>
 	<string name="layoutMainSettings">Cài đặt</string>
 	<string name="layoutMainStatus">Trạng thái</string>
@@ -100,13 +100,13 @@
 	
 	<string name="layoutAlarmsList">Danh sách báo thức</string>
 	<string name="layoutAlarmsCreate">Đặt báo thức</string>
-	<string name="layoutAlarmsAlarmCreated">Đã tạo báo thức và giờ bạn đang ở tại trình đơn báo thức</string>
-	<string name="layoutAlarmsOnResume">Giờ bạn đang ở tại trình đơn báo thức</string>
+	<string name="layoutAlarmsAlarmCreated">Đã đặt báo thức và giờ bạn đang ở tại trình đơn báo thức</string>
+	<string name="layoutAlarmsOnResume">Giờ bạn đang ở trình đơn báo thức</string>
 	
 	<string name="layoutAlarmsCreateMessage">- nhập tin nhắn -</string>
-	<string name="layoutAlarmsCreateMessage2">Tin nhắn báo thức. Vuốt qua phải để nhập.</string>
-	<string name="layoutAlarmsCreateMessage3">Tin nhắn báo thức. Vuốt qua phải để nhập.:\n</string>
-	<string name="layoutAlarmsCreateMessage4">Tin nhắn báo thức.&#160;</string>
+	<string name="layoutAlarmsCreateMessage2">Thông điệp báo thức. Vuốt qua phải để nhập.</string>
+	<string name="layoutAlarmsCreateMessage3">Thông điệp báo thức:\n</string>
+	<string name="layoutAlarmsCreateMessage4">Thông điệp báo thức.&#160;</string>
 	<string name="layoutAlarmsCreateCreate">Đặt báo thức</string>
 	<string name="layoutAlarmsCreateDay">Ngày báo thức:&#160;</string>
 	<string name="layoutAlarmsCreateDay2">Ngày báo thức.&#160;</string>
@@ -114,17 +114,17 @@
 	<string name="layoutAlarmsCreateTimeHour2">Giờ báo thức.&#160;</string>
 	<string name="layoutAlarmsCreateTimeMinute">Phút báo thức:&#160;</string>
 	<string name="layoutAlarmsCreateTimeMinute2">Phút báo thức.&#160;</string>
-	<string name="layoutAlarmsCreateHours">&#160;giờ</string>
+	<string name="layoutAlarmsCreateHours">&#160;Giờ</string>
 	<string name="layoutAlarmsCreateMinutes">&#160;phút</string>
-	<string name="layoutAlarmsCreateErrorNoMessage">Lỗi. Bạn phải nhập một tin nhắn.</string>
+	<string name="layoutAlarmsCreateErrorNoMessage">Lỗi. Bạn phải nhập một thông điệp.</string>
 	<string name="layoutAlarmsCreateErrorAlarmConflict">Lỗi. Đã có một báo thức khác được đặt vào ngày giờ đó.</string>
 	<string name="layoutAlarmsCreateOnResume">Giờ bạn đang ở trình đơn đặt báo thức</string>
 	
 	<string name="layoutAlarmsListNoAlarms">Không có báo thức</string>
 	<string name="layoutAlarmsListList">Báo thức</string>
-	<string name="layoutAlarmsListAlarmAlarmsCount">&#160;Báo thức đã được đặt</string>
-	<string name="layoutAlarmsListAt">&#160;vào lúc&#160;</string>
-	<string name="layoutAlarmsListForToday">&#160;cho hôm nay. Vuốt sang trái hoặc phải để nghe từng mục.</string>
+	<string name="layoutAlarmsListAlarmAlarmsCount">&#160;đã đặt báo thức</string>
+	<string name="layoutAlarmsListAt">&#160;lúc&#160;</string>
+	<string name="layoutAlarmsListForToday">&#160;hôm nay. Vuốt sang trái hoặc phải để nghe từng mục.</string>
 	<string name="layoutAlarmsListDelete">Xóa báo thức đã chọn</string>
 	<string name="layoutAlarmsListDeleted">Đã xóa báo thức và giờ bạn đang ở trình đơn danh sách báo thức</string>
 	<string name="layoutAlarmsListDeleteSelectError">Trước tiên bạn phải chọn một báo thức</string>
@@ -154,9 +154,9 @@
 	<string name="layoutVoiceRecorderListPlay">Phát tập tin ghi âm</string>
 	<string name="layoutVoiceRecorderListPlay2">Phát tập tin ghi âm đã chọn. Vuốt sang phải để phát và sang trái để dừng.</string>
 	<string name="layoutVoiceRecorderListDelete">Xóa tập tin ghi âm</string>
-	<string name="layoutVoiceRecorderListDelete2">Xóa tập tin ghi âm đã chọn</string>
+	<string name="layoutVoiceRecorderListDelete2">Xóa tập tin ghi âm đã chọn </string>
 	<string name="layoutVoiceRecorderListItem">Tập tin ghi âm&#160;</string>
-	<string name="layoutVoiceRecorderListItemOf">&#160;của&#160;</string>
+	<string name="layoutVoiceRecorderListItemOf">&#160;Của&#160;</string>
 	<string name="layoutVoiceRecorderListNoVoiceRecords">Không có tập tin ghi âm</string>
 	<string name="layoutVoiceRecorderListPleaseWait">Vui lòng thử lại sau giây lát trong khi các tập tin ghi âm đang được xử lý.</string>
 	<string name="layoutVoiceRecorderListError">Trước tiên bạn phải chọn một tập tin ghi âm</string>
@@ -201,7 +201,7 @@
 	<string name="layoutSettingsWifiOn">Wifi: Bật</string>
 	<string name="layoutSettingsWifiOn2">Wifi đang bật</string>
 	<string name="layoutSettingsWifiOn2WithoutNetwork">Wifi. Wifi đang bật và không kết nối vào sóng wifi nào</string>
-	<string name="layoutSettingsWifiOn2WithNetwork">Wifi. Wifi đang bật và đã kết nối vào sóng wifi tên&#160;</string>
+	<string name="layoutSettingsWifiOn2WithNetwork">Wifi. Wifi đang bật và đã kết nối vào sóng wifi tên &#160;</string>
 	<string name="layoutSettingsWifiOff">Wifi: Tắt</string>
 	<string name="layoutSettingsWifiOff2">Wifi. Wifi đang tắt</string>
 	<string name="layoutSettingsWifiOff3">Wifi đang tắt</string>
@@ -210,7 +210,7 @@
 	<string name="layoutSettingsBluetoothOff">Bluetooth: Tắt</string>
 	<string name="layoutSettingsBluetoothOff2">Bluetooth đang tắt</string>
 	<string name="layoutSettingsInputMode">Chế độ nhập:&#160;</string>
-	<string name="layoutSettingsInputMode2">Nhập văn bản từ &#160;</string>
+	<string name="layoutSettingsInputMode2">Nhập văn bản từ&#160;</string>
 	<string name="layoutSettingsInputModeKeyboard">Bàn phím</string>
 	<string name="layoutSettingsInputModeKeyboard2">bàn phím vật lí và màn hình cảm ứng</string>
 	<string name="layoutSettingsInputModeVoice">Giọng nói</string>
@@ -265,9 +265,9 @@
 	
 	<string name="layoutMusicPlayerNowPlaying">Đang phát</string>
 	<string name="layoutMusicPlayerNowPlaying2">Đang phát</string>
-	<string name="layoutMusicPlayerNowPlaying3">&#160;bài hát&#160;</string>
-	<string name="layoutMusicPlayerNowPlaying4">&#160;của&#160;</string>
-	<string name="layoutMusicPlayerNowPlaying5">&#160;bởi&#160;</string>
+	<string name="layoutMusicPlayerNowPlaying3">&#160;Bài hát&#160;</string>
+	<string name="layoutMusicPlayerNowPlaying4">&#160;Của&#160;</string>
+	<string name="layoutMusicPlayerNowPlaying5">&#160;Bởi&#160;</string>
 	<string name="layoutMusicPlayerNowPlayingError1">Trước tiên bạn phải chọn một ca sĩ với một album</string>
 	<string name="layoutMusicPlayerNowPlayingError2">Không có nhạc đang phát</string>
 	<string name="layoutMusicPlayerPlay">Phát</string>
@@ -276,7 +276,7 @@
 	<string name="layoutMusicPlayerPreviousTrack2">Track trước</string>
 	<string name="layoutMusicPlayerNextTrack">T. kế</string>
 	<string name="layoutMusicPlayerNextTrack2">Track kế</string>
-	<string name="layoutMusicPlayerLowerVolume">Giảm âm.</string>
+	<string name="layoutMusicPlayerLowerVolume">Giảm âm</string>
 	<string name="layoutMusicPlayerLowerVolume2">Giảm âm lượng</string>
 	<string name="layoutMusicPlayerHigherVolume">Tăng âm.</string>
 	<string name="layoutMusicPlayerHigherVolume2">Tăng âm lượng</string>
@@ -312,7 +312,7 @@
 	<string name="layoutBrowserPageViewerPageLinks">Các liên kết của trang web</string>
 	<string name="layoutBrowserPageViewerPageLinks2">Các liên kết của trang web. Vuốt sang phải hoặc trái để nghe từng mục.</string>
 	<string name="layoutBrowserPageViewerPageLinks3">Liên kết&#160;</string>
-	<string name="layoutBrowserPageViewerPageLinks3Of">&#160;cua&#160;</string>
+	<string name="layoutBrowserPageViewerPageLinks3Of">&#160;của&#160;</string>
 	<string name="layoutBrowserPageViewerPageLinks4">Trang web hiện tại không có liên kết nào.</string>
 	<string name="layoutBrowserPageViewerPageLinkSelectError">Trước tiên bạn phải chọn một liên kết.</string>
 	<string name="layoutBrowserPageViewerGoToLink">Đến liên kết đã chọn</string>
@@ -461,7 +461,7 @@
 	<string name="layoutInputKeysKeyReadNumber">ĐỌC SỐ</string>
 	<string name="layoutInputKeysKeySpace">KHOẢNG TRẮNG</string>
 	<string name="layoutInputKeysNothingToRead">Không có gì để đọc</string>
-	<string name="layoutInputKeysEmptyField">Trường văn bản rỗng </string>
+	<string name="layoutInputKeysEmptyField">Trường văn bản rỗng</string>
 	<string name="layoutInputKeysEntered">&#160;đã nhạp</string>
 		
 	<string name="layoutInputVoiceOnResume">Giờ bạn đang ở trình đơn chế độ nhập văn bản bằng giọng nói</string>
