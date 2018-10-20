@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="ar.com.lrusso.blindcommunicator"
-    android:versionCode="57"
-    android:versionName="1.9.8.7.9" >
+    android:versionCode="58"
+    android:versionName="1.9.8.8" >
 
-    <uses-sdk android:minSdkVersion="10" android:targetSdkVersion="19" />
+    <uses-sdk android:minSdkVersion="11" android:targetSdkVersion="19" />
 
     <uses-permission android:name="android.permission.READ_SMS" />
     <uses-permission android:name="android.permission.WRITE_SMS" />
@@ -47,6 +47,7 @@
     
     <application
         android:allowBackup="true"
+        android:largeHeap="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppTheme">
