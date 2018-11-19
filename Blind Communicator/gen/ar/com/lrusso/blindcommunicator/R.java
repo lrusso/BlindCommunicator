@@ -238,6 +238,10 @@ public final class R {
         public static final int deviceUnplugged=0x7f040049;
         public static final int february=0x7f040037;
         public static final int friday=0x7f040033;
+        public static final int googleRequest1=0x7f0401bc;
+        public static final int googleRequest2=0x7f0401bd;
+        public static final int googleRequestOk=0x7f0401be;
+        public static final int googleRequestTitle=0x7f0401bb;
         public static final int january=0x7f040036;
         public static final int july=0x7f04003c;
         public static final int june=0x7f04003b;

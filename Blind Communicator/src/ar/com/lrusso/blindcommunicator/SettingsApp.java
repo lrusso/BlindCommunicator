@@ -9,7 +9,7 @@ import android.os.*;
 import android.view.*;
 import android.widget.*;
 
-public class Settings extends Activity
+public class SettingsApp extends Activity
 	{
 	private TextView readingspeed;
 	private TextView screentimeout;
@@ -30,7 +30,7 @@ public class Settings extends Activity
     	{
     	super.onCreate(savedInstanceState);
     	setContentView(R.layout.settings);
-		GlobalVars.lastActivity = Settings.class;
+		GlobalVars.lastActivity = SettingsApp.class;
     	readingspeed = (TextView) findViewById(R.id.readingspeed);
     	screentimeout = (TextView) findViewById(R.id.screentimeout);
     	alarmtone = (TextView) findViewById(R.id.alarmtone);
@@ -143,7 +143,7 @@ public class Settings extends Activity
 		{
 		super.onResume();
 		try{GlobalVars.alarmVibrator.cancel();}catch(NullPointerException e){}catch(Exception e){}
-		GlobalVars.lastActivity = Settings.class;
+		GlobalVars.lastActivity = SettingsApp.class;
 		GlobalVars.activityItemLocation=0;
 		GlobalVars.activityItemLimit=12;
 		GlobalVars.selectTextView(readingspeed,false);

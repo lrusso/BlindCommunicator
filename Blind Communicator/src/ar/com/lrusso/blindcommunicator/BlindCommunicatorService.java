@@ -1,5 +1,7 @@
 package ar.com.lrusso.blindcommunicator;
 
+import android.Manifest;
+import android.annotation.TargetApi;
 import android.app.*;
 import android.bluetooth.BluetoothAdapter;
 import android.content.*;
@@ -7,12 +9,14 @@ import android.content.pm.*;
 import android.content.res.*;
 import android.graphics.*;
 import android.media.*;
+import android.media.session.MediaSessionManager;
 import android.net.*;
 import android.net.NetworkInfo.*;
 import android.net.wifi.*;
 import android.os.*;
 import android.speech.tts.*;
 import android.speech.tts.TextToSpeech.*;
+import android.telecom.TelecomManager;
 import android.telephony.*;
 import android.view.*;
 import android.view.View.*;
@@ -35,10 +39,12 @@ public class BlindCommunicatorService extends Service implements TextToSpeech.On
 	private static WindowManager wm;
 	private static LayoutInflater inflater;
 	private static View myView;
+	private static int LAYOUT_FLAG;
 	
 	private static String who = "";
 	private static boolean repeatWho = false;
 	private static TextToSpeech tts;
+	public static Context context;
 
 	@Override public IBinder onBind(Intent intent)
 		{
@@ -47,6 +53,7 @@ public class BlindCommunicatorService extends Service implements TextToSpeech.On
 	
 	@Override public void onCreate()
 		{
+		context = this;
 		started=false;
 		GlobalVars.startTTS(tts);
 		tts = new TextToSpeech(this,this);
@@ -98,42 +105,7 @@ public class BlindCommunicatorService extends Service implements TextToSpeech.On
 				}
 			}, 1000);
 		
-		try
-			{
-			params = new WindowManager.LayoutParams(WindowManager.LayoutParams.TYPE_SYSTEM_ALERT,WindowManager.LayoutParams.FLAG_NOT_FOCUSABLE|WindowManager.LayoutParams.FLAG_NOT_TOUCH_MODAL|WindowManager.LayoutParams.FLAG_WATCH_OUTSIDE_TOUCH,PixelFormat.TRANSLUCENT);
-			wm = (WindowManager) getSystemService(WINDOW_SERVICE);
-			inflater = (LayoutInflater) getSystemService(LAYOUT_INFLATER_SERVICE);
-			myView = inflater.inflate(R.layout.callsanswerreject, null);
-			myView.setOnTouchListener(new OnTouchListener()
-				{
-				@Override public boolean onTouch(View v, MotionEvent event)
-					{
-					int result = detectCallMovement(event);
-					switch (result)
-						{
-						case ACTION_ANSWER:
-						acceptCall();
-						break;
-
-						case ACTION_REJECT:
-						rejectCall();
-						break;
-						}
-					return true;
-					}
-				});		
-			wm.addView(myView, params);
-			myView.setVisibility(View.GONE);
-			}
-			catch(NullPointerException e)
-			{
-			}
-			catch(OutOfMemoryError e)
-			{
-			}
-			catch(Exception e)
-			{
-			}
+		addFloatingView();
 		}
 		
 	@Override public void onDestroy()
@@ -301,14 +273,14 @@ public class BlindCommunicatorService extends Service implements TextToSpeech.On
 							{
 							try
 								{
-								Settings.wifiicon.setImageResource(R.drawable.settingswifion);
+								SettingsApp.wifiicon.setImageResource(R.drawable.settingswifion);
 								if (GlobalVars.activityItemLocation==7)
 									{
-									GlobalVars.setText(Settings.wifi,true,getResources().getString(R.string.layoutSettingsWifiOn));
+									GlobalVars.setText(SettingsApp.wifi,true,getResources().getString(R.string.layoutSettingsWifiOn));
 									}
 									else
 									{
-									GlobalVars.setText(Settings.wifi,false,getResources().getString(R.string.layoutSettingsWifiOn));
+									GlobalVars.setText(SettingsApp.wifi,false,getResources().getString(R.string.layoutSettingsWifiOn));
 									}
 								}
 								catch(NullPointerException e)
@@ -323,14 +295,14 @@ public class BlindCommunicatorService extends Service implements TextToSpeech.On
 							{
 							try
 								{
-								Settings.wifiicon.setImageResource(R.drawable.settingswifioff);
+								SettingsApp.wifiicon.setImageResource(R.drawable.settingswifioff);
 								if (GlobalVars.activityItemLocation==7)
 									{
-									GlobalVars.setText(Settings.wifi,true,getResources().getString(R.string.layoutSettingsWifiOff));
+									GlobalVars.setText(SettingsApp.wifi,true,getResources().getString(R.string.layoutSettingsWifiOff));
 									}
 									else
 									{
-									GlobalVars.setText(Settings.wifi,false,getResources().getString(R.string.layoutSettingsWifiOff));
+									GlobalVars.setText(SettingsApp.wifi,false,getResources().getString(R.string.layoutSettingsWifiOff));
 									}
 								}
 								catch(NullPointerException e)
@@ -472,15 +444,15 @@ public class BlindCommunicatorService extends Service implements TextToSpeech.On
 								switch(audioManager.getRingerMode())
 									{
 									case AudioManager.RINGER_MODE_NORMAL:
-									GlobalVars.setText(Settings.profile,true,getResources().getString(R.string.layoutSettingsProfileNormal));
+									GlobalVars.setText(SettingsApp.profile,true,getResources().getString(R.string.layoutSettingsProfileNormal));
 									break;
 
 									case AudioManager.RINGER_MODE_SILENT:
-									GlobalVars.setText(Settings.profile,true,getResources().getString(R.string.layoutSettingsProfileSilent));
+									GlobalVars.setText(SettingsApp.profile,true,getResources().getString(R.string.layoutSettingsProfileSilent));
 									break;
 
 									case AudioManager.RINGER_MODE_VIBRATE:
-									GlobalVars.setText(Settings.profile,true,getResources().getString(R.string.layoutSettingsProfileVibrate));
+									GlobalVars.setText(SettingsApp.profile,true,getResources().getString(R.string.layoutSettingsProfileVibrate));
 									break;
 									}
 								}
@@ -490,15 +462,15 @@ public class BlindCommunicatorService extends Service implements TextToSpeech.On
 								switch(audioManager.getRingerMode())
 									{
 									case AudioManager.RINGER_MODE_NORMAL:
-									GlobalVars.setText(Settings.profile,false,getResources().getString(R.string.layoutSettingsProfileNormal));
+									GlobalVars.setText(SettingsApp.profile,false,getResources().getString(R.string.layoutSettingsProfileNormal));
 									break;
 
 									case AudioManager.RINGER_MODE_SILENT:
-									GlobalVars.setText(Settings.profile,false,getResources().getString(R.string.layoutSettingsProfileSilent));
+									GlobalVars.setText(SettingsApp.profile,false,getResources().getString(R.string.layoutSettingsProfileSilent));
 									break;
 
 									case AudioManager.RINGER_MODE_VIBRATE:
-									GlobalVars.setText(Settings.profile,false,getResources().getString(R.string.layoutSettingsProfileVibrate));
+									GlobalVars.setText(SettingsApp.profile,false,getResources().getString(R.string.layoutSettingsProfileVibrate));
 									break;
 									}
 								}
@@ -592,12 +564,12 @@ public class BlindCommunicatorService extends Service implements TextToSpeech.On
 									{
 									if (GlobalVars.activityItemLocation==8)
 										{
-										GlobalVars.setText(Settings.bluetooth,true,GlobalVars.context.getResources().getString(R.string.layoutSettingsBluetoothOn));
+										GlobalVars.setText(SettingsApp.bluetooth,true,GlobalVars.context.getResources().getString(R.string.layoutSettingsBluetoothOn));
 										GlobalVars.talk(GlobalVars.context.getResources().getString(R.string.layoutSettingsBluetoothOn2));
 										}
 										else
 										{
-										GlobalVars.setText(Settings.bluetooth,false,GlobalVars.context.getResources().getString(R.string.layoutSettingsBluetoothOn));
+										GlobalVars.setText(SettingsApp.bluetooth,false,GlobalVars.context.getResources().getString(R.string.layoutSettingsBluetoothOn));
 										GlobalVars.talk(GlobalVars.context.getResources().getString(R.string.layoutSettingsBluetoothOn2));
 										}
 									}
@@ -605,12 +577,12 @@ public class BlindCommunicatorService extends Service implements TextToSpeech.On
 									{
 									if (GlobalVars.activityItemLocation==8)
 										{
-										GlobalVars.setText(Settings.bluetooth,true,GlobalVars.context.getResources().getString(R.string.layoutSettingsBluetoothOff));
+										GlobalVars.setText(SettingsApp.bluetooth,true,GlobalVars.context.getResources().getString(R.string.layoutSettingsBluetoothOff));
 										GlobalVars.talk(GlobalVars.context.getResources().getString(R.string.layoutSettingsBluetoothOff2));
 										}
 										else
 										{
-										GlobalVars.setText(Settings.bluetooth,false,GlobalVars.context.getResources().getString(R.string.layoutSettingsBluetoothOff));
+										GlobalVars.setText(SettingsApp.bluetooth,false,GlobalVars.context.getResources().getString(R.string.layoutSettingsBluetoothOff));
 										GlobalVars.talk(GlobalVars.context.getResources().getString(R.string.layoutSettingsBluetoothOff2));
 										}
 									}
@@ -637,32 +609,58 @@ public class BlindCommunicatorService extends Service implements TextToSpeech.On
 			}
 		};
 		
-	private void acceptCall()
+	public static void acceptCall()
 		{
-    	Intent buttonUp = new Intent(Intent.ACTION_MEDIA_BUTTON);
-    	buttonUp.putExtra(Intent.EXTRA_KEY_EVENT, new KeyEvent(KeyEvent.ACTION_UP, KeyEvent.KEYCODE_HEADSETHOOK));
-    	try
+        if(Build.VERSION.SDK_INT >= 26)
+        	{
+        	acceptCallOreo();
+        	}
+        	else
+        	{
+        	Intent buttonUp = new Intent(Intent.ACTION_MEDIA_BUTTON);
+        	buttonUp.putExtra(Intent.EXTRA_KEY_EVENT, new KeyEvent(KeyEvent.ACTION_UP, KeyEvent.KEYCODE_HEADSETHOOK));
+        	try
+    			{
+            	GlobalVars.context.sendOrderedBroadcast(buttonUp, "android.permission.CALL_PRIVILEGED");
+    			}
+    			catch(Exception e)
+    			{
+    			}
+
+            Intent headSetUnPluggedintent = new Intent(Intent.ACTION_HEADSET_PLUG);
+            headSetUnPluggedintent.addFlags(Intent.FLAG_RECEIVER_REGISTERED_ONLY);
+            headSetUnPluggedintent.putExtra("state", 0);
+            headSetUnPluggedintent.putExtra("name", "Headset");
+            try
+    			{
+                GlobalVars.context.sendOrderedBroadcast(headSetUnPluggedintent, null);
+    			}
+    			catch (Exception e)
+    			{
+    			}
+        	}
+		}
+	
+	@TargetApi(Build.VERSION_CODES.O)
+	public static void acceptCallOreo()
+		{
+		try
 			{
-        	GlobalVars.context.sendOrderedBroadcast(buttonUp, "android.permission.CALL_PRIVILEGED");
+	        if(context.checkSelfPermission(Manifest.permission.ANSWER_PHONE_CALLS) == PackageManager.PERMISSION_GRANTED)
+	        	{
+	            TelecomManager tm = (TelecomManager) context.getSystemService(Context.TELECOM_SERVICE);
+	            if(tm != null)
+	            	{
+	                tm.acceptRingingCall();
+	            	}
+	        	}
 			}
 			catch(Exception e)
 			{
 			}
-
-        Intent headSetUnPluggedintent = new Intent(Intent.ACTION_HEADSET_PLUG);
-        headSetUnPluggedintent.addFlags(Intent.FLAG_RECEIVER_REGISTERED_ONLY);
-        headSetUnPluggedintent.putExtra("state", 0);
-        headSetUnPluggedintent.putExtra("name", "Headset");
-        try
-			{
-            GlobalVars.context.sendOrderedBroadcast(headSetUnPluggedintent, null);
-			}
-			catch (Exception e)
-			{
-			}
 		}
 
-    private void rejectCall()
+	public static void rejectCall()
 		{
         TelephonyManager tm = (TelephonyManager) GlobalVars.context.getSystemService(Context.TELEPHONY_SERVICE);
     	TelephonyManager telephony = (TelephonyManager) GlobalVars.context.getSystemService(Context.TELEPHONY_SERVICE);
@@ -681,7 +679,7 @@ public class BlindCommunicatorService extends Service implements TextToSpeech.On
 			}
 		}
 		
-	private int detectCallMovement(MotionEvent event)
+	public static int detectCallMovement(MotionEvent event)
 		{
 		switch(event.getAction())
 			{
@@ -770,6 +768,50 @@ public class BlindCommunicatorService extends Service implements TextToSpeech.On
 				catch(Exception e)
 				{
 				}
+			}
+		}
+	
+	public static void addFloatingView()
+		{
+		try
+			{
+			if (android.os.Build.VERSION.SDK_INT>=23)
+				{
+				LAYOUT_FLAG = WindowManager.LayoutParams.TYPE_APPLICATION_OVERLAY;
+				}
+				else
+				{
+				LAYOUT_FLAG = WindowManager.LayoutParams.TYPE_PHONE;
+				}
+
+			params = new WindowManager.LayoutParams(LAYOUT_FLAG,WindowManager.LayoutParams.FLAG_NOT_FOCUSABLE|WindowManager.LayoutParams.FLAG_NOT_TOUCH_MODAL|WindowManager.LayoutParams.FLAG_WATCH_OUTSIDE_TOUCH,PixelFormat.TRANSLUCENT);
+
+			wm = (WindowManager) context.getSystemService(WINDOW_SERVICE);
+			inflater = (LayoutInflater) context.getSystemService(LAYOUT_INFLATER_SERVICE);
+			myView = inflater.inflate(R.layout.callsanswerreject, null);
+			myView.setOnTouchListener(new OnTouchListener()
+				{
+				@Override public boolean onTouch(View v, MotionEvent event)
+					{
+					int result = detectCallMovement(event);
+					switch (result)
+						{
+						case ACTION_ANSWER:
+						acceptCall();
+						break;
+
+						case ACTION_REJECT:
+						rejectCall();
+						break;
+						}
+					return true;
+					}
+				});
+			myView.setVisibility(View.GONE);
+			wm.addView(myView, params);
+			}
+			catch(Exception e)
+			{
 			}
 		}
 	}

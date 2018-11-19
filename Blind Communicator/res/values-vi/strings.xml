@@ -42,7 +42,7 @@
 	<string name="mainOf">&#160;của&#160;</string>
 	<string name="mainCarrierNotAvailable">Không xác định</string>
 	<string name="mainWifiOnWithNetwork">wifi đang bật và kết nối vào sóng wifi tên&#160;</string>
-	<string name="mainWifiOnWithoutNetwork">wifi đang bật và không kết nối với sóng wifi nào.</string>
+	<string name="mainWifiOnWithoutNetwork">, wifi đang bật và không kết nối với sóng wifi nào.</string>
 	<string name="mainWifiOff">và wifi đang tắt.</string>
 	<string name="mainMusicPlayerPleaseTryAgain">Vui lòng thử lại sau giây lát khi trình phát nhạc đang xử lý tất cả tập tin âm thanh của bạn.</string>
 	<string name="mainNoTTSInstalledTitle">Lỗi</string>
@@ -154,7 +154,7 @@
 	<string name="layoutVoiceRecorderListPlay">Phát tập tin ghi âm</string>
 	<string name="layoutVoiceRecorderListPlay2">Phát tập tin ghi âm đã chọn. Vuốt sang phải để phát và sang trái để dừng.</string>
 	<string name="layoutVoiceRecorderListDelete">Xóa tập tin ghi âm</string>
-	<string name="layoutVoiceRecorderListDelete2">Xóa tập tin ghi âm đã chọn </string>
+	<string name="layoutVoiceRecorderListDelete2">Xóa tập tin ghi âm đã chọn</string>
 	<string name="layoutVoiceRecorderListItem">Tập tin ghi âm&#160;</string>
 	<string name="layoutVoiceRecorderListItemOf">&#160;Của&#160;</string>
 	<string name="layoutVoiceRecorderListNoVoiceRecords">Không có tập tin ghi âm</string>
@@ -487,7 +487,12 @@
 					
 	<string name="backToPreviousMenu">Trở về trình đơn trước</string>
 	<string name="backToMainMenu">Trở về trình đơn chính</string>
-	
+
+	<string name="googleRequestTitle">Yêu cầu sự cho phép</string>
+	<string name="googleRequest1">Cấp quyền cho \'Blind Communicator\' trong hộp thoại sau. Điều này sẽ cho phép bạn trả lời hoặc từ chối cuộc gọi bằng cách trượt lên hoặc xuống trong Android 8.0 trở lên.\n\nTừ tháng 11 năm 2018, Google yêu cầu mọi ứng dụng phải được nhắm mục tiêu đến Android 8.0, điều này có nghĩa là bây giờ bạn phải cấp phép theo cách thủ công (bạn chỉ phải làm điều đó một lần) ứng dụng các quyền để hoạt động đúng.</string>
+	<string name="googleRequest2">Chọn \'Blind Communicator\' từ hộp thoại sau. Điều này sẽ cho phép hướng dẫn bằng giọng nói trong Ứng dụng (nếu thiết bị bị tắt tiếng) để nghe và thay đổi cấu hình (Bình thường, Rung và Im lặng) trong Android 8.0 trở lên.\n\nTừ tháng 11 năm 2018, Google yêu cầu mọi ứng dụng phải được nhắm mục tiêu đến Android 8.0, điều này có nghĩa là bây giờ bạn phải cấp phép theo cách thủ công (bạn chỉ phải làm điều đó một lần) ứng dụng các quyền để hoạt động đúng.</string>
+	<string name="googleRequestOk">OK, tôi sẽ.</string>
+		
 	<string-array name="keysAll">
 		<item>A</item>
 		<item>B</item>

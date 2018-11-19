@@ -1,11 +1,15 @@
 package ar.com.lrusso.blindcommunicator;
 
+import android.Manifest;
+import android.annotation.TargetApi;
 import android.app.*;
 import android.content.*;
+import android.content.pm.PackageManager;
 import android.database.Cursor;
 import android.media.*;
 import android.net.Uri;
 import android.os.*;
+import android.provider.Settings;
 import android.speech.tts.*;
 import android.speech.tts.TextToSpeech.OnUtteranceCompletedListener;
 import android.telephony.*;
@@ -17,6 +21,8 @@ import java.util.*;
 
 public class Main extends Activity implements TextToSpeech.OnInitListener
 	{
+	public static int SETTINGS_REQUEST_CODE = 123;
+	public static int PERMISSION_REQUEST_CODE = 456;
 	private static boolean speakOnResume = false;
 	public static TextView messages;
 	public static TextView calls;
@@ -28,12 +34,16 @@ public class Main extends Activity implements TextToSpeech.OnInitListener
 	private TextView applications;
 	private TextView settings;
 	private TextView status;
+	private Activity activity;
 	private boolean okToFinish = false;
+	private boolean hasProfileChangerPermission = false;
 	
     @Override protected void onCreate(Bundle savedInstanceState)
     	{
     	super.onCreate(savedInstanceState);
     	setContentView(R.layout.main);
+		activity = this;
+
 		GlobalVars.lastActivity = Main.class;
 		speakOnResume=false;
 		messages = (TextView) findViewById(R.id.messages);
@@ -55,21 +65,47 @@ public class Main extends Activity implements TextToSpeech.OnInitListener
 		GlobalVars.startTTS(GlobalVars.tts);
 		GlobalVars.tts = new TextToSpeech(this,this);
 		GlobalVars.tts.setPitch((float) 1.0);
+
+		try
+			{
+			//SETS THE ALARM VIBRATOR VARIABLE
+			GlobalVars.alarmVibrator = (Vibrator) getSystemService(VIBRATOR_SERVICE);
+			}
+			catch(Exception e)
+			{
+			}
 		
-		//SETS THE ALARM VIBRATOR VARIABLE
-		GlobalVars.alarmVibrator = (Vibrator) getSystemService(VIBRATOR_SERVICE);
+		try
+			{
+			//SETS PROFILE TO NORMAL
+			AudioManager audioManager = (AudioManager) getSystemService(AUDIO_SERVICE);
+			audioManager.setRingerMode(AudioManager.RINGER_MODE_NORMAL);
+			}
+			catch(Exception e)
+			{
+			}
 
-		//SETS PROFILE TO NORMAL
-		AudioManager audioManager = (AudioManager)getSystemService(AUDIO_SERVICE);
-		audioManager.setRingerMode(AudioManager.RINGER_MODE_NORMAL);
-
-		GlobalVars.alarmAlarmManager = (AlarmManager) getSystemService(ALARM_SERVICE);
-		GlobalVars.openAndLoadAlarmFile();
-		GlobalVars.setText(alarms,false, getResources().getString(R.string.mainAlarms) + " (" + GlobalVars.getPendingAlarmsForTodayCount() + ")");
+		try
+			{
+			GlobalVars.openAndLoadAlarmFile();
+			GlobalVars.setText(alarms,false, getResources().getString(R.string.mainAlarms) + " (" + GlobalVars.getPendingAlarmsForTodayCount() + ")");
+			}
+			catch(Exception e)
+			{
+			}
 
 		//HIDES THE NAVIGATION BAR
 		if (android.os.Build.VERSION.SDK_INT>11){try{GlobalVars.hideNavigationBar(this);}catch(Exception e){}}
 
+		//CHECKS IF MARSHMALLOW TO ASK THE USER FOR PERMISSIONS
+		if (android.os.Build.VERSION.SDK_INT>=23){try{marshmallowPermissions();}catch(Exception e){}}
+
+		//CHECKS IF MARSHMALLOW TO ASK FOR FLOATING VIEWS (FOR ANSWERING AND REJECTING CALLS)
+		if (android.os.Build.VERSION.SDK_INT>=23){testDrawOverlays();}
+		
+		//CHECKS IF MARSHALLOW TO ASK FOR CHANGE THE DEVICE PROFILE
+		if (android.os.Build.VERSION.SDK_INT>=23){testProfilePermission();}
+		
 		//LIST EVERY MUSIC FILE WITH THE MEDIA INFORMATION TO USE IT WITH THE MUSIC PLAYER
 		new MusicPlayerThreadRefreshDatabase().execute("");
 		
@@ -351,6 +387,12 @@ public class Main extends Activity implements TextToSpeech.OnInitListener
 			{
 			}
 		
+		// CHECKS IF THE PERMISSION FOR PROFILE CHANGING IS GRANTED
+		if (android.os.Build.VERSION.SDK_INT>=23)
+			{
+			testProfileChanger();
+			}
+		
 		//HIDES THE NAVIGATION BAR
 		if (android.os.Build.VERSION.SDK_INT>11){try{GlobalVars.hideNavigationBar(this);}catch(Exception e){}}
 		}
@@ -628,7 +670,7 @@ public class Main extends Activity implements TextToSpeech.OnInitListener
 			break;
 			
 			case 9: //SETTINGS
-			GlobalVars.startActivity(Settings.class);
+			GlobalVars.startActivity(SettingsApp.class);
 			break;
 			
 			case 10: //STATUS
@@ -832,5 +874,183 @@ public class Main extends Activity implements TextToSpeech.OnInitListener
 			{
 			}
 		return result;
+		}
+
+	@TargetApi(Build.VERSION_CODES.M)
+	public void marshmallowPermissions()
+		{
+	    List<String> listPermissionsNeeded = new ArrayList<String>();
+
+	    if (checkSelfPermission(Manifest.permission.READ_EXTERNAL_STORAGE)!=PackageManager.PERMISSION_GRANTED)
+	    	{
+	        listPermissionsNeeded.add(Manifest.permission.READ_EXTERNAL_STORAGE);
+	        listPermissionsNeeded.add(Manifest.permission.WRITE_EXTERNAL_STORAGE);
+	    	}
+
+	    if (checkSelfPermission(Manifest.permission.READ_CONTACTS)!=PackageManager.PERMISSION_GRANTED)
+    		{
+	    	listPermissionsNeeded.add(Manifest.permission.READ_CONTACTS);
+    		}
+
+	    if (checkSelfPermission(Manifest.permission.READ_CONTACTS)!=PackageManager.PERMISSION_GRANTED)
+			{
+	    	listPermissionsNeeded.add(Manifest.permission.READ_CONTACTS);
+	        listPermissionsNeeded.add(Manifest.permission.WRITE_CONTACTS);
+			}
+
+	    if (checkSelfPermission(Manifest.permission.RECORD_AUDIO) != PackageManager.PERMISSION_GRANTED)
+			{
+	    	listPermissionsNeeded.add(Manifest.permission.RECORD_AUDIO);
+			}
+
+		if (checkSelfPermission(Manifest.permission.READ_SMS) != PackageManager.PERMISSION_GRANTED)
+			{
+	    	listPermissionsNeeded.add(Manifest.permission.READ_SMS);
+	    	listPermissionsNeeded.add(Manifest.permission.SEND_SMS);
+	    	listPermissionsNeeded.add(Manifest.permission.RECEIVE_SMS);
+			}
+
+		if (checkSelfPermission(Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED)
+			{
+			listPermissionsNeeded.add(Manifest.permission.CALL_PHONE);
+			listPermissionsNeeded.add(Manifest.permission.PROCESS_OUTGOING_CALLS);
+			}
+
+		if (checkSelfPermission(Manifest.permission.READ_CALL_LOG) != PackageManager.PERMISSION_GRANTED)
+			{
+			listPermissionsNeeded.add(Manifest.permission.READ_CALL_LOG);
+			listPermissionsNeeded.add(Manifest.permission.WRITE_CALL_LOG);
+			}
+		
+		if (checkSelfPermission(Manifest.permission.READ_PHONE_STATE) != PackageManager.PERMISSION_GRANTED)
+			{
+            listPermissionsNeeded.add(Manifest.permission.READ_PHONE_STATE);
+			}
+		
+		// ANSWERING CALLS FOR ANDROID 8.0 AND ABOVE
+        if(Build.VERSION.SDK_INT >= 26)
+        	{
+            if(checkSelfPermission(Manifest.permission.ANSWER_PHONE_CALLS) != PackageManager.PERMISSION_GRANTED)
+        		{
+            	listPermissionsNeeded.add(Manifest.permission.ANSWER_PHONE_CALLS);
+        		}
+        	}
+
+	    if (!listPermissionsNeeded.isEmpty())
+	    	{
+	        requestPermissions(listPermissionsNeeded.toArray(new String[listPermissionsNeeded.size()]),PERMISSION_REQUEST_CODE);
+	    	}
+		}
+	
+	@Override protected void onActivityResult(int requestCode, int resultCode, Intent data)
+		{
+	    if (requestCode == SETTINGS_REQUEST_CODE)
+	    	{
+	    	if (android.os.Build.VERSION.SDK_INT>=23)
+				{
+				try
+					{
+					executeDrawOverlays();
+					}
+					catch(Exception e)
+					{
+					}
+				}
+	    	}
+		}
+	
+	@TargetApi(Build.VERSION_CODES.M)
+	public void testDrawOverlays()
+		{
+		if (!Settings.canDrawOverlays(this))
+	    	{
+			ContextThemeWrapper themedContext = new ContextThemeWrapper(this, android.R.style.Theme_Holo_Light_Dialog_NoActionBar);
+			new AlertDialog.Builder(themedContext).setCancelable(false).setTitle(getResources().getString(R.string.googleRequestTitle)).setMessage(getResources().getString(R.string.googleRequest1)).setPositiveButton(getResources().getString(R.string.googleRequestOk),new DialogInterface.OnClickListener()
+				{
+				public void onClick(DialogInterface dialog,int which)
+					{
+					Intent intent = new Intent(Settings.ACTION_MANAGE_OVERLAY_PERMISSION, Uri.parse("package:" + activity.getPackageName()));
+					activity.startActivityForResult(intent, SETTINGS_REQUEST_CODE);
+					}
+				}).show();
+	    	}
+	    }
+
+	@TargetApi(Build.VERSION_CODES.M)
+	public void executeDrawOverlays()
+		{
+		try
+			{
+	        if (Settings.canDrawOverlays(this))
+        		{
+	        	BlindCommunicatorService.addFloatingView();
+        		}
+			}
+			catch(Exception e)
+			{
+			}
+		}
+	
+	@TargetApi(Build.VERSION_CODES.M)
+	public void testProfilePermission()
+		{
+		NotificationManager notificationManager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
+
+		if (!notificationManager.isNotificationPolicyAccessGranted())
+			{
+			ContextThemeWrapper themedContext = new ContextThemeWrapper(this, android.R.style.Theme_Holo_Light_Dialog_NoActionBar);
+			new AlertDialog.Builder(themedContext).setCancelable(false).setTitle(getResources().getString(R.string.googleRequestTitle)).setMessage(getResources().getString(R.string.googleRequest2)).setPositiveButton(getResources().getString(R.string.googleRequestOk),new DialogInterface.OnClickListener()
+				{
+				public void onClick(DialogInterface dialog,int which)
+					{
+					Intent intent = new Intent(android.provider.Settings.ACTION_NOTIFICATION_POLICY_ACCESS_SETTINGS);
+					startActivity(intent);
+					}
+				}).show();
+			}
+		}
+	
+	@TargetApi(Build.VERSION_CODES.M)
+	public void testProfileChanger()
+		{
+		if (hasProfileChangerPermission==false)
+			{
+			NotificationManager notificationManager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
+			if (notificationManager.isNotificationPolicyAccessGranted())
+				{
+				hasProfileChangerPermission = true;
+				try
+					{
+					//SETS PROFILE TO NORMAL
+					AudioManager audioManager = (AudioManager) getSystemService(AUDIO_SERVICE);
+					audioManager.setRingerMode(AudioManager.RINGER_MODE_NORMAL);
+					}
+					catch(Exception e)
+					{
+					}
+				}
+			}
+		}
+	
+	@TargetApi(Build.VERSION_CODES.M)
+	@Override public void onRequestPermissionsResult(int requestCode, String[] permissions, int[] grantResults)
+		{
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+	    if (requestCode == PERMISSION_REQUEST_CODE)
+	    	{
+			try
+				{
+			    if (checkSelfPermission(Manifest.permission.READ_EXTERNAL_STORAGE)==PackageManager.PERMISSION_GRANTED)
+			    	{
+			    	if (GlobalVars.musicPlayerDatabaseReady==true)
+			    		{
+				    	new MusicPlayerThreadRefreshDatabase().execute("");
+			    		}
+			    	}
+				}
+				catch(Exception e)
+				{
+				}
+			}
 		}
 	}

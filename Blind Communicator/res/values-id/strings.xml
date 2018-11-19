@@ -488,6 +488,11 @@
 	<string name="backToPreviousMenu">Kembali ke menu sebelum</string>
 	<string name="backToMainMenu">Kembali ke menu utama</string>
 
+	<string name="googleRequestTitle">Permintaan izin</string>
+	<string name="googleRequest1">Berikan izin kepada \'Blind Communicator\' dalam dialog berikut. Ini akan memungkinkan Anda untuk menjawab atau menolak panggilan dengan menggeser ke atas atau ke bawah di Android 8.0 dan lebih tinggi.\n\nSejak November 2018, Google mewajibkan setiap Aplikasi harus ditargetkan ke Android 8.0, ini berarti bahwa sekarang Anda harus memberikan secara manual (Anda hanya perlu melakukannya sekali) Aplikasi izin untuk berfungsi dengan benar.</string>
+	<string name="googleRequest2">Pilih \'Blind Communicator\' dari dialog berikut. Ini akan memungkinkan panduan suara di Aplikasi (jika perangkat dibungkam) untuk didengar dan untuk mengubah profil (Normal, Getar, dan Senyap) di Android 8.0 dan lebih tinggi.\n\nSejak November 2018, Google mewajibkan setiap Aplikasi harus ditargetkan ke Android 8.0, ini berarti bahwa sekarang Anda harus memberikan secara manual (Anda hanya perlu melakukannya sekali) Aplikasi izin untuk berfungsi dengan benar.</string>
+	<string name="googleRequestOk">OK, saya akan melakukannya.</string>
+
 	<string-array name="keysAll">
 		<item>A</item>
 		<item>B</item>

@@ -488,6 +488,11 @@
 	<string name="backToPreviousMenu">Ritorna al menú precedente</string>
 	<string name="backToMainMenu">Ritorna al menú principale</string>
 
+	<string name="googleRequestTitle">Richiesta di permesso</string>
+	<string name="googleRequest1">Concedi l\'autorizzazione a \'Blind Communicator\' nella seguente finestra di dialogo. Ciò ti consentirà di rispondere o rifiutare una chiamata scorrendo verso l\'alto o verso il basso in Android 8.0 e versioni successive.\n\nDal novembre del 2018, Google richiede che ogni app sia indirizzata a Android 8.0, ciò significa che ora devi concedere manualmente (devi farlo solo una volta) all\'App le autorizzazioni per funzionare correttamente.</string>
+	<string name="googleRequest2">Seleziona \'Blind Communicator\' dalla seguente finestra di dialogo. Ciò consentirà di ascoltare la guida vocale nell\'app (se il dispositivo è silenziato) e di modificare i profili (normale, vibrazione e silenzioso) in Android 8.0 e versioni successive.\n\nDal novembre del 2018, Google richiede che ogni app sia indirizzata a Android 8.0, ciò significa che ora devi concedere manualmente (devi farlo solo una volta) all\'App le autorizzazioni per funzionare correttamente.</string>
+	<string name="googleRequestOk">OK, lo farò.</string>
+		
 	<string-array name="keysAll">
 		<item>A</item>
 		<item>B</item>

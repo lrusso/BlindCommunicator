@@ -33,7 +33,6 @@ public class ContactsList extends Activity
 		GlobalVars.activityItemLocation=0;
 		GlobalVars.activityItemLimit=5;
 		selectedContact = -1;
-		GlobalVars.context = this;
 		new ContactsListThread().execute("");
 
 		//HIDES THE NAVIGATION BAR

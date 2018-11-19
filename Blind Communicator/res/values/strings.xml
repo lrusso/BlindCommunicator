@@ -487,7 +487,12 @@
 					
 	<string name="backToPreviousMenu">Go back to the previous menu</string>
 	<string name="backToMainMenu">Go back to the main menu</string>
-	
+
+	<string name="googleRequestTitle">Permission request</string>
+	<string name="googleRequest1">Grant permission to \'Blind Communicator\' in the following dialog. This will allow you to answer or reject a call by sliding up or down in Android 8.0 and higher.\n\nSince November of 2018, Google is requiring that every App must be targeted to Android 8.0, this means that now you must manually grant (you only have to do it once) the App the permissions to work properly.</string>
+	<string name="googleRequest2">Select \'Blind Communicator\' from the following dialog. This will allow the voice guide in the App (if the device is silenced) to be heard and to change profiles (Normal, Vibrate and Silent) in Android 8.0 and higher.\n\nSince November of 2018, Google is requiring that every App must be targeted to Android 8.0, this means that now you must manually grant (you only have to do it once) the App the permissions to work properly.</string>
+	<string name="googleRequestOk">OK, I will.</string>
+
 	<string-array name="keysAll">
 		<item>A</item>
 		<item>B</item>

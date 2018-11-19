@@ -488,6 +488,11 @@
 	<string name="backToPreviousMenu">Zum vorherigen Menü zurückkehren</string>
 	<string name="backToMainMenu">Zum Hauptmenü zurückkehren</string>
 
+	<string name="googleRequestTitle">Erlaubnisanfrage</string>
+	<string name="googleRequest1">Erteilen Sie im folgenden Dialog die Berechtigung für \'Blind Communicator\'. Auf diese Weise können Sie einen Anruf entgegennehmen oder ablehnen, indem Sie in Android 8.0 oder höher nach oben oder unten gleiten.\n\nSeit November 2018 verlangt Google, dass jede App auf Android 8.0 ausgerichtet sein muss. Dies bedeutet, dass Sie nun manuell gewähren müssen (Sie müssen es nur einmal tun) der App die Berechtigungen, um ordnungsgemäß zu funktionieren.</string>
+	<string name="googleRequest2">Wählen Sie im folgenden Dialog \'Blind Communicator\' aus. Dadurch können Sie die Sprachführung in der App (wenn das Gerät stummgeschaltet ist) anhören und Profile (Normal, Vibrieren und Stumm) in Android 8.0 und höher ändern.\n\nSeit November 2018 verlangt Google von jeder App muss auf Android 8.0 ausgerichtet sein. Dies bedeutet, dass Sie der App nun manuell die Berechtigungen erteilen müssen, damit sie ordnungsgemäß funktioniert.</string>
+	<string name="googleRequestOk">OK, ich werde.</string>
+
 	<string-array name="keysAll">
 		<item>A</item>
 		<item>B</item>

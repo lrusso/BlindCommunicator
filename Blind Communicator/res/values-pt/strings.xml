@@ -488,6 +488,11 @@
 	<string name="backToPreviousMenu">Voltar ao menu anterior</string>
 	<string name="backToMainMenu">Voltar ao menu principal</string>
 
+	<string name="googleRequestTitle">Pedido de permissão</string>
+	<string name="googleRequest1">Conceda permissão para \'Blind Communicator\' na caixa de diálogo a seguir. Isso permitirá que você atenda ou rejeite uma chamada deslizando para cima ou para baixo no Android 8.0 e superior.\n\nDesde novembro de 2018, o Google exige que todos os aplicativos sejam segmentados para o Android 8.0, isso significa que agora você precisa conceder manualmente (você só tem que fazer isso uma vez) o App as permissões para funcionar corretamente.</string>
+	<string name="googleRequest2">Selecione \'Blind Communicator\' na caixa de diálogo a seguir. Isso permitirá que o guia de voz do aplicativo (se o dispositivo for silenciado) seja ouvido e altere os perfis (Normal, Vibrar e Silencioso) no Android 8.0 e superior.\n\nDesde novembro de 2018, o Google exige que todos os aplicativos sejam segmentados para o Android 8.0, isso significa que agora você precisa conceder manualmente (você só tem que fazer isso uma vez) o App as permissões para funcionar corretamente.</string>
+	<string name="googleRequestOk">Sim eu vou.</string>
+	
 	<string-array name="keysAll">
 		<item>A</item>
 		<item>B</item>
