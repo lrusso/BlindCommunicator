@@ -565,11 +565,10 @@ public class GlobalVars extends Application
 
 	public static String divideNumbersWithBlanks(String value)
 		{
-		String response = "";
+		String response = value;
 		try
 			{
-			response = value;
-			response = response.replaceAll("[^0-9]","");
+			response = response.replaceAll("[^0-9#*]","");
 			response = response.replaceAll(".(?=.)", "$0 ");
 			}
 			catch(NullPointerException e)
@@ -1613,11 +1612,11 @@ public class GlobalVars extends Application
 		
 	public static String contactsGetPhoneNumberFromListValue(String value)
 		{
-		String response = "";
+		String response = value;
 		try
 			{
 			response = value.substring(value.lastIndexOf("|") + 1, value.length());
-			response = response.replaceAll("[^0-9]","");
+			response = response.replaceAll("[^0-9#*]","");
 			}
 			catch(NullPointerException e)
 			{

@@ -203,6 +203,7 @@ public class ContactsCreate extends Activity
 			}
 			catch (Exception e)
 			{
-			} 				
+			}
+		phonenumberValue = null;
 		}
 	}
