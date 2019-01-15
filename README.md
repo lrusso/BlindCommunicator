@@ -2,6 +2,8 @@
 
 OpenSource launcher for blind people for using smartphones and tablets. The launcher has a voice-guide that tells the user everything that it's happening in the device (screen off/on, rotation, incoming call, etc.). This launcher is compatible with TalkBack.
 
+![alt screen](https://raw.githubusercontent.com/lrusso/BlindCommunicator/master/Blind%20Communicator.png)
+
 The app allows the user to:
 - Listen to music
 - Use a voice recorder
