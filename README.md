@@ -6,11 +6,11 @@ OpenSource launcher for blind people for using smartphones and tablets. The laun
 
 Video demo:
 
-    https://www.youtube.com/watch?v=2a7KJlwjXeo
+- https://www.youtube.com/watch?v=2a7KJlwjXeo
 
 Download App:
 
-    https://github.com/lrusso/BlindCommunicator/raw/master/BlindCommunicator.apk
+- https://github.com/lrusso/BlindCommunicator/raw/master/BlindCommunicator.apk
 
 The app allows the user to:
 - Listen to music
