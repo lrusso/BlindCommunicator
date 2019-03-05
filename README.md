@@ -1,6 +1,6 @@
 # Blind Communicator
 
-OpenSource launcher for blind people for using smartphones and tablets. The launcher has a voice-guide that tells the user everything that it's happening in the device (screen off/on, rotation, incoming call, etc.). This launcher is compatible with TalkBack.
+OpenSource launcher for the visually impaired for using smartphones and tablets. The launcher has a voice-guide that tells the user everything that it's happening in the device (screen off/on, rotation, incoming call, etc.). This launcher is compatible with TalkBack.
 
 ![alt screen](https://raw.githubusercontent.com/lrusso/BlindCommunicator/master/BlindCommunicator.png)
 
@@ -25,7 +25,7 @@ How to use it:
 - Slide up and down to browse the menus
 - Slide right to select an option
 
-How can i type a message? You have four ways available:
+How to type a message? There are four ways available:
 - Use your device keyboard
 - Use the voice recognition system with up to 10 possible interpretations to select from (may require Internet).
 - Use the touchscreen and slide up and down through characters and symbols and slide right to input the selected character.
