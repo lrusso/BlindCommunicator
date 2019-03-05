@@ -26,7 +26,7 @@ How to use it:
 - Slide right to select an option
 
 How to type a message? There are four ways available:
-- Use your device keyboard
+- Use the device keyboard
 - Use the voice recognition system with up to 10 possible interpretations to select from (may require Internet).
 - Use the touchscreen and slide up and down through characters and symbols and slide right to input the selected character.
 - Use the traditional software keyboard with TalkBack activated.
