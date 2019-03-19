@@ -42,4 +42,7 @@ OpenSource launcher for the visually impaired for using smartphones and tablets.
 If you have a device with Android 5.0 (Lollipop), Android 6.0 (Marshmallow) or Android 7.0 (Nougat), you have to set the way you want to answer a call by going to Settings/Accessibility/Answering/ending calls. In Android 8.0 (Oreo) and higher you can answer a call by sliding up without inconveniences.
 
 ## IMPORTANT NOTE 2
-If you have a device with Android 4.4 (KitKat) or higher, you must set Blind Communicator as your App for messages. To do so, you must go to Settings/Default applications/Messages and then select Blind Communicator from the list. Also, you will need a TTS software installed in your device in order to this App to work. You can install, for example, Google TTS for free at https://play.google.com/store/apps/details?id=com.google.android.tts.
+If you have a device with Android 4.4 (KitKat) or higher, you must set Blind Communicator as your App for messages. To do so, you must go to Settings/Default applications/Messages and then select Blind Communicator from the list.
+
+## IMPORTANT NOTE 3
+You will need a TTS software installed in your device in order to this App to work. You can install, for example, Google TTS, that is available for free at Play Store.
