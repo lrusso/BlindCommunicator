@@ -422,13 +422,14 @@ public class Main extends Activity implements TextToSpeech.OnInitListener
 			}
 			else
 			{
-			new AlertDialog.Builder(this).setTitle(getResources().getString(R.string.mainNoTTSInstalledTitle)).setMessage(getResources().getString(R.string.mainNoTTSInstalledMessage)).setPositiveButton(getResources().getString(R.string.mainNoTTSInstalledButton),new DialogInterface.OnClickListener()
+			ContextThemeWrapper themedContext = new ContextThemeWrapper(this, android.R.style.Theme_Holo_Light_Dialog_NoActionBar);
+			new AlertDialog.Builder(themedContext).setTitle(getResources().getString(R.string.mainNoTTSInstalledTitle)).setMessage(getResources().getString(R.string.mainNoTTSInstalledMessage)).setPositiveButton(getResources().getString(R.string.mainNoTTSInstalledButton),new DialogInterface.OnClickListener()
 				{
 				public void onClick(DialogInterface dialog,int which)
 					{
 					try
 						{
-					    startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("market://details?id=id=com.google.android.tts")));
+					    startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("market://details?id=com.google.android.tts")));
 						}
 						catch (ActivityNotFoundException e)
 						{
@@ -609,7 +610,23 @@ public class Main extends Activity implements TextToSpeech.OnInitListener
 			case 2: //CALLS
 			if (GlobalVars.deviceIsAPhone()==true)
 				{
-				GlobalVars.startActivity(Calls.class);
+				//CHECKS THE ANDROID VERSION
+				if (Build.VERSION.SDK_INT>=23)
+					{
+					// CHECKS IF THE APP HAS READ LOGS PERMISSION
+					if (hasReadLogsPermission()==true)
+						{
+						GlobalVars.startActivity(Calls.class);
+						}
+						else
+						{
+						GlobalVars.talk(getResources().getString(R.string.mainCallsNotAvailableOS));
+						}
+					}
+					else
+					{
+					GlobalVars.startActivity(Calls.class);
+					}
 				}
 				else
 				{
@@ -878,6 +895,23 @@ public class Main extends Activity implements TextToSpeech.OnInitListener
 		}
 
 	@TargetApi(Build.VERSION_CODES.M)
+	private boolean hasReadLogsPermission()
+		{
+		try
+			{
+			int checkPermission = checkSelfPermission(Manifest.permission.READ_CALL_LOG);
+			if (checkPermission == PackageManager.PERMISSION_GRANTED)
+				{
+				return true;
+				}
+			}
+			catch (Exception e)
+			{
+			}
+		return false;
+		}
+
+	@TargetApi(Build.VERSION_CODES.M)
 	public void marshmallowPermissions()
 		{
 	    List<String> listPermissionsNeeded = new ArrayList<String>();
@@ -970,8 +1004,14 @@ public class Main extends Activity implements TextToSpeech.OnInitListener
 				{
 				public void onClick(DialogInterface dialog,int which)
 					{
-					Intent intent = new Intent(Settings.ACTION_MANAGE_OVERLAY_PERMISSION, Uri.parse("package:" + activity.getPackageName()));
-					activity.startActivityForResult(intent, SETTINGS_REQUEST_CODE);
+					try
+						{
+						Intent intent = new Intent(Settings.ACTION_MANAGE_OVERLAY_PERMISSION, Uri.parse("package:" + activity.getPackageName()));
+						activity.startActivityForResult(intent, SETTINGS_REQUEST_CODE);
+						}
+						catch(Exception e)
+						{
+						}
 					}
 				}).show();
 	    	}
@@ -995,19 +1035,43 @@ public class Main extends Activity implements TextToSpeech.OnInitListener
 	@TargetApi(Build.VERSION_CODES.M)
 	public void testProfilePermission()
 		{
-		NotificationManager notificationManager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
-
-		if (!notificationManager.isNotificationPolicyAccessGranted())
+		if (Build.MANUFACTURER.equals("LGE")) // PATCH FOR LG DEVICES
 			{
-			ContextThemeWrapper themedContext = new ContextThemeWrapper(this, android.R.style.Theme_Holo_Light_Dialog_NoActionBar);
-			new AlertDialog.Builder(themedContext).setCancelable(false).setTitle(getResources().getString(R.string.googleRequestTitle)).setMessage(getResources().getString(R.string.googleRequest2)).setPositiveButton(getResources().getString(R.string.googleRequestOk),new DialogInterface.OnClickListener()
+			try
 				{
-				public void onClick(DialogInterface dialog,int which)
+				List<String> listPermissionsNeeded = new ArrayList<String>();
+				if (checkSelfPermission(Manifest.permission.ACCESS_NOTIFICATION_POLICY)!=PackageManager.PERMISSION_GRANTED)
 					{
-					Intent intent = new Intent(Settings.ACTION_NOTIFICATION_POLICY_ACCESS_SETTINGS);
-					startActivity(intent);
+					listPermissionsNeeded.add(Manifest.permission.BIND_NOTIFICATION_LISTENER_SERVICE);
 					}
-				}).show();
+				requestPermissions(listPermissionsNeeded.toArray(new String[listPermissionsNeeded.size()]),PERMISSION_REQUEST_CODE);
+				}
+				catch(Exception e)
+				{
+				}
+			}
+			else
+			{
+			NotificationManager notificationManager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
+
+			if (!notificationManager.isNotificationPolicyAccessGranted())
+				{
+				ContextThemeWrapper themedContext = new ContextThemeWrapper(this, android.R.style.Theme_Holo_Light_Dialog_NoActionBar);
+				new AlertDialog.Builder(themedContext).setCancelable(false).setTitle(getResources().getString(R.string.googleRequestTitle)).setMessage(getResources().getString(R.string.googleRequest2)).setPositiveButton(getResources().getString(R.string.googleRequestOk),new DialogInterface.OnClickListener()
+					{
+						public void onClick(DialogInterface dialog,int which)
+						{
+					try
+						{
+						Intent intent = new Intent(Settings.ACTION_NOTIFICATION_POLICY_ACCESS_SETTINGS);
+						startActivity(intent);
+						}
+						catch(Exception e)
+						{
+						}
+						}
+					}).show();
+				}
 			}
 		}
 	

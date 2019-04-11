@@ -18,6 +18,7 @@
     <string name="mainCallsNoMissed">Cuộc gọi. Không có cuộc gọi nhỡ.</string>
     <string name="mainCallsOneMissed">Cuộc gọi. Một cuộc gọi nhỡ.</string>
     <string name="mainCallsNotAvailable">Cuộc gọi. Không hoạt động trên thiết bị này.</string>
+	<string name="mainCallsNotAvailableOS">Phiên bản Android của thiết bị này không cho phép Blind Communicator truy cập nhật ký cuộc gọi.</string>
     <string name="mainNotAvailable">Tùy chọn không hoạt động trên thiết bị này.</string>
 	<string name="mainContacts">Danh bạ</string>
     <string name="mainMusicPlayer">Nhạc</string>
@@ -46,8 +47,8 @@
 	<string name="mainWifiOff">và wifi đang tắt.</string>
 	<string name="mainMusicPlayerPleaseTryAgain">Vui lòng thử lại sau giây lát khi trình phát nhạc đang xử lý tất cả tập tin âm thanh của bạn.</string>
 	<string name="mainNoTTSInstalledTitle">Lỗi</string>
-	<string name="mainNoTTSInstalledMessage">Không tìm thấy công cụ TTS.\nVui lòng tải ứng dụng Google TTS (miễn phí) để dùng với ứng dụng này.</string>
-	<string name="mainNoTTSInstalledButton">Tải Google TTS</string>
+	<string name="mainNoTTSInstalledMessage">Không tìm thấy công cụ TTS. Vui lòng tải ứng dụng Google TTS (miễn phí) để dùng với ứng dụng này.</string>
+	<string name="mainNoTTSInstalledButton">OK, tôi sẽ.</string>
 	<string name="mainPressBack">Bấm Back một lần nữa để đóng ứng dụng.</string>
 	
     <string name="monday">Thứ hai</string>

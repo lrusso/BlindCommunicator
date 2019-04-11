@@ -18,6 +18,7 @@
     <string name="mainCallsNoMissed">Вызовы. Нет пропущенных вызовов.</string>
     <string name="mainCallsOneMissed">Вызовы. Один пропущенный вызов.</string>
     <string name="mainCallsNotAvailable">Вызовы. Не доступны на этом устройстве.</string>
+	<string name="mainCallsNotAvailableOS">Версия Android этого устройства не позволяет Blind Communicator получать доступ к журналу вызовов.</string>
     <string name="mainNotAvailable">Опция не доступна на этом устройстве.</string>
     <string name="mainContacts">Контакты</string>
     <string name="mainMusicPlayer">Музыка</string>
@@ -46,8 +47,8 @@
 	<string name="mainWifiOff">Wifi выключен.</string>
 	<string name="mainMusicPlayerPleaseTryAgain">Повторите попытку через несколько минут, после обработки всех ваших музыкальных файлов проигрывателем.</string>
 	<string name="mainNoTTSInstalledTitle">Ошибка</string>
-	<string name="mainNoTTSInstalledMessage">Синтезатор не найден.\nПожалуйста, загрузите синтезатор Google TTS (бесплатно) для того, чтобы данное приложение правильно работало.</string>
-	<string name="mainNoTTSInstalledButton">Загрузите синтезатор Google TTS</string>
+	<string name="mainNoTTSInstalledMessage">Синтезатор не найден. Пожалуйста, загрузите синтезатор Google TTS (бесплатно) для того, чтобы данное приложение правильно работало.</string>
+	<string name="mainNoTTSInstalledButton">Хорошо, я буду.</string>
 	<string name="mainPressBack">Нажмите еще раз Назад, чтобы закрыть приложение.</string>
 
     <string name="monday">Понедельник</string>

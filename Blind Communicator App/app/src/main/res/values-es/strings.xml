@@ -18,6 +18,7 @@
     <string name="mainCallsNoMissed">Llamadas. No hay llamadas perdidas.</string>
     <string name="mainCallsOneMissed">Llamadas. Una llamada perdida.</string>
     <string name="mainCallsNotAvailable">Llamadas. No disponibles en este equipo.</string>
+	<string name="mainCallsNotAvailableOS">La versión de Android de este dispositivo no le permite a Blind Communicator el acceso al registro de llamadas.</string>
     <string name="mainNotAvailable">Esta opción no está disponible en este equipo.</string>
     <string name="mainContacts">Contactos</string>
     <string name="mainMusicPlayer">Música</string>
@@ -46,8 +47,8 @@
 	<string name="mainWifiOff">y el wifi está desactivado.</string>
 	<string name="mainMusicPlayerPleaseTryAgain">Por favor, inténtelo de nuevo en unos momentos cuando el reproductor de música haya procesado todos sus archivos de música.</string>
 	<string name="mainNoTTSInstalledTitle">Error</string>
-	<string name="mainNoTTSInstalledMessage">App de síntesis de voz no encontrado.\nPor favor descargue la App de síntesis de voz de Google (gratuita) para que esta App funcione correctamente.</string>
-	<string name="mainNoTTSInstalledButton">Descargar App de síntesis de voz de Google</string>
+	<string name="mainNoTTSInstalledMessage">App de síntesis de voz no encontrado. Por favor descargue la App de síntesis de voz de Google (gratuita) para que esta App funcione correctamente.</string>
+	<string name="mainNoTTSInstalledButton">De acuerdo, lo haré.</string>
 	<string name="mainPressBack">Presione Atrás de nuevo para cerrar la aplicación.</string>
 
     <string name="monday">Lunes</string>

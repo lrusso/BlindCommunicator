@@ -18,6 +18,7 @@
     <string name="mainCallsNoMissed">Panggilan. Tiada panggilan tidak dijawab.</string>
     <string name="mainCallsOneMissed">Panggilan. Satu panggilan tidak dijawab.</string>
     <string name="mainCallsNotAvailable">Panggilan. Tidak terdapat didalam peranti.</string>
+	<string name="mainCallsNotAvailableOS">Versi Android perangkat ini tidak memungkinkan Blind Communicator mengakses log panggilan.</string>
     <string name="mainNotAvailable">Pilihan ini tidak terdapat didalam peranti.</string>
     <string name="mainContacts">Kenalan</string>
     <string name="mainMusicPlayer">Muzik</string>
@@ -47,7 +48,7 @@
 	<string name="mainMusicPlayerPleaseTryAgain">Sila cuba sebentar lagi sementara pemain media sedang memproses kesemua fail muzik.</string>
 	<string name="mainNoTTSInstalledTitle">Ralat</string>
 	<string name="mainNoTTSInstalledMessage">Perisian TTS tidak dijumpai. Sila muat turun aplikasi Google TTS (aplikasi percuma) untuk membolehkan app ni berfungsi.</string>
-	<string name="mainNoTTSInstalledButton">Muat turun Google TTS</string>
+	<string name="mainNoTTSInstalledButton">OK, saya akan melakukannya.</string>
 	<string name="mainPressBack">Tekan kembali sekali lagi untuk menutup aplikasi.</string>
 
     <string name="monday">Isnin</string>

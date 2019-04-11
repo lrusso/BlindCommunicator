@@ -18,6 +18,7 @@
     <string name="mainCallsNoMissed">Appels. Vous n’avez d’appels.</string>
     <string name="mainCallsOneMissed">Appels. Vous avez un appel manqué.</string>
     <string name="mainCallsNotAvailable">Appels. Pas disponible dans cet appareil.</string>
+	<string name="mainCallsNotAvailableOS">La version Android de cet appareil n\'autorise pas Blind Communicator à accéder au journal des appels.</string>
     <string name="mainNotAvailable">Option pas disponible dans cet appareil.</string>
     <string name="mainContacts">Contacts</string>
     <string name="mainMusicPlayer">Musique</string>
@@ -46,8 +47,8 @@
 	<string name="mainWifiOff">et Wifi désactivé.</string>
 	<string name="mainMusicPlayerPleaseTryAgain">S\'il te plaît, attendes quelques secondes que le reproducteur finisse le processus et réessayer plus tard.</string>
 	<string name="mainNoTTSInstalledTitle">Erreur</string>
-	<string name="mainNoTTSInstalledMessage">App de synthèse vocale non trouvé. \nS\'il te plaît télécharger l’App Google (Gratuit) ou autre pour que cette App fonctionne correctement.</string>
-	<string name="mainNoTTSInstalledButton">Télécharger l’App de synthèse vocale Google.</string>
+	<string name="mainNoTTSInstalledMessage">App de synthèse vocale non trouvé. S\'il te plaît télécharger l’App Google (Gratuit) ou autre pour que cette App fonctionne correctement.</string>
+	<string name="mainNoTTSInstalledButton">OK, je vais.</string>
 	<string name="mainPressBack">Appuyer en arrière à nouveau pour fermer l’application.</string>
 
     <string name="monday">Lundi</string>

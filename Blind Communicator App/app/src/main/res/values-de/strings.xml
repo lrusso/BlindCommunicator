@@ -18,7 +18,8 @@
     <string name="mainCallsNoMissed">Anrufe. Keine entgangenen anrufe.</string>
     <string name="mainCallsOneMissed">Anrufe. Ein entgangener anruf.</string>
     <string name="mainCallsNotAvailable">Anrufe. Nicht zur verfügung in diesem gerät.</string>
-    <string name="mainNotAvailable">Diese option ist für dieses gerät nicht verfügbar .</string>
+	<string name="mainCallsNotAvailableOS">In der Android-Version dieses Geräts kann Blind Communicator nicht auf das Anrufprotokoll zugreifen.</string>
+    <string name="mainNotAvailable">Diese option ist für dieses gerät nicht verfügbar.</string>
     <string name="mainContacts">Kontakte</string>
     <string name="mainMusicPlayer">Musik</string>
     <string name="mainBrowser">Internet</string>
@@ -46,8 +47,8 @@
 	<string name="mainWifiOff">, Wifi ist ausgeschaltet.</string>
 	<string name="mainMusicPlayerPleaseTryAgain">Versuchen Sie es bitte in einigen Minuten noch einmal, wenn der Musikplayer alle Musikdateien verarbeitet hat.</string>
 	<string name="mainNoTTSInstalledTitle">Fehlermeldung</string>
-	<string name="mainNoTTSInstalledMessage">Die App Stimme Synthese wurde nicht gefunden.\nLaden Sie bitte die App Stimme Synthese von Google kostenlos herunter, damit diese App richtig funktioniert.</string>
-	<string name="mainNoTTSInstalledButton">Die App Stimme Synthese von Google herunterladen</string>
+	<string name="mainNoTTSInstalledMessage">Die App Stimme Synthese wurde nicht gefunden. Laden Sie bitte die App Stimme Synthese von Google kostenlos herunter, damit diese App richtig funktioniert.</string>
+	<string name="mainNoTTSInstalledButton">Ok, ich werde.</string>
 	<string name="mainPressBack">Drücken Sie bitte nochmal die Zurück Taste, um die App zu schliessen.</string>
 
     <string name="monday">Montag</string>

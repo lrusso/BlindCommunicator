@@ -18,6 +18,7 @@
     <string name="mainCallsNoMissed">Calls. No missed calls.</string>
     <string name="mainCallsOneMissed">Calls. One missed call.</string>
     <string name="mainCallsNotAvailable">Calls. Not available in this device.</string>
+	<string name="mainCallsNotAvailableOS">The Android version of this device doesn\'t allow Blind Communicator to access the call log.</string>
     <string name="mainNotAvailable">This option is not available in this device.</string>
 	<string name="mainContacts">Contacts</string>
     <string name="mainMusicPlayer">Music</string>
@@ -46,10 +47,10 @@
 	<string name="mainWifiOff">and the wifi is off.</string>
 	<string name="mainMusicPlayerPleaseTryAgain">Please try again in a few moments when the music player has processed all your music files.</string>
 	<string name="mainNoTTSInstalledTitle">Error</string>
-	<string name="mainNoTTSInstalledMessage">TTS software not found.\nPlease download Google TTS App (free App) in order to this App to work.</string>
-	<string name="mainNoTTSInstalledButton">Download Google TTS</string>
+	<string name="mainNoTTSInstalledMessage">TTS software not found. Please download Google TTS App (free App) in order to this App to work.</string>
+	<string name="mainNoTTSInstalledButton">Ok, I will.</string>
 	<string name="mainPressBack">Press Back again to close the App.</string>
-	
+
     <string name="monday">Monday</string>
 	<string name="tuesday">Tuesday</string>
 	<string name="wednesday">Wednesday</string>
@@ -57,7 +58,7 @@
 	<string name="friday">Friday</string>
 	<string name="saturday">Saturday</string>
     <string name="sunday">Sunday</string>
-	
+
     <string name="january">January</string>
     <string name="february">February</string>
 	<string name="march">March</string>
@@ -70,7 +71,7 @@
 	<string name="october">October</string>
 	<string name="november">November</string>
 	<string name="december">December</string>
-	
+
 	<string name="volumeMaximum">Maximum volume</string>
 	<string name="volumeHigher">Higher volume</string>
 	<string name="volumeLower">Lower volume</string>
@@ -85,7 +86,7 @@
 	<string name="screenLandscape">The screen orientation is now in landscape mode</string>
 	<string name="wifiConnectedToNetwork">Connected to a wifi network named&#160;</string>
 	<string name="wifiDisconnectedFromNetwork">Disconnected from the wifi network</string>
-	
+
 	<string name="layoutMainMessages">Messages</string>
 	<string name="layoutMainCalls">Calls</string>
 	<string name="layoutMainContacts">Contacts</string>
@@ -95,14 +96,14 @@
 	<string name="layoutMainSettings">Settings</string>
 	<string name="layoutMainStatus">Status</string>
 	<string name="layoutMainOnResume">Now you are at the main menu</string>
-	
+
 	<string name="layoutAlarmsNotifierShutdown">Slide up or down to shutdown alarm</string>
-	
+
 	<string name="layoutAlarmsList">Alarm list</string>
 	<string name="layoutAlarmsCreate">Create alarm</string>
 	<string name="layoutAlarmsAlarmCreated">The alarm was created and now you are at the alarms menu</string>
 	<string name="layoutAlarmsOnResume">Now you are at the alarms menu</string>
-	
+
 	<string name="layoutAlarmsCreateMessage">- input message -</string>
 	<string name="layoutAlarmsCreateMessage2">Alarm message. Slide right to input.</string>
 	<string name="layoutAlarmsCreateMessage3">Alarm message:\n</string>
@@ -119,7 +120,7 @@
 	<string name="layoutAlarmsCreateErrorNoMessage">Error. You must input a message.</string>
 	<string name="layoutAlarmsCreateErrorAlarmConflict">Error. Another alarm has been set for that day and time.</string>
 	<string name="layoutAlarmsCreateOnResume">Now you are at the create alarm menu</string>
-	
+
 	<string name="layoutAlarmsListNoAlarms">There are no alarms</string>
 	<string name="layoutAlarmsListList">Alarms</string>
 	<string name="layoutAlarmsListAlarmAlarmsCount">&#160;alarms has been set</string>
@@ -130,7 +131,7 @@
 	<string name="layoutAlarmsListDeleteSelectError">First you must select an alarm</string>
 	<string name="layoutAlarmsListOnResume">Now you are at the alarm list menu</string>
 	<string name="layoutAlarmsListOnResume2">All alarms were deleted successfully and now you are at the alarm list menu</string>
-	
+
 	<string name="layoutAlarmsDeleteSelected">Selected alarm for deletion.&#160;</string>
 	<string name="layoutAlarmsDeleteDelete">Confirm delete</string>
 	<string name="layoutAlarmsDeleteOnResume">Now you are at the delete alarm menu</string>
@@ -138,17 +139,17 @@
 	<string name="layoutAlarmsDeleteAllDelete">Delete all alarms. Slide right to confirm.</string>
 	<string name="layoutAlarmsDeleteAllDeleteDelete">Delete all alarms</string>
 	<string name="layoutAlarmsDeleteAllOnResume">Now you are at the delete all alarms menu</string>
-		
+
 	<string name="layoutVoiceRecorderList">List voice records</string>
 	<string name="layoutVoiceRecorderCreate">Create voice record</string>
 	<string name="layoutVoiceRecorderOnResume">Now you are at the voice recorder menu</string>
 	<string name="layoutVoiceRecorderOnResume2">The voice record has been saved and now you are at the voice recorder menu</string>
-	
+
 	<string name="layoutVoiceRecorderCreateCreate">Create voice record</string>
 	<string name="layoutVoiceRecorderCreateCreate2">Create voice record. Slide right to start recording and slide again in the same direction to stop recording.</string>
 	<string name="layoutVoiceRecorderCreateError">Error. Please check if you have a memory card in your device.</string>
 	<string name="layoutVoiceRecorderCreateOnResume">Now you are at the create voice record menu</string>
-	
+
 	<string name="layoutVoiceRecorderListList">Voice records</string>
 	<string name="layoutVoiceRecorderListList2">Voice records. Slide right or left to select each one.</string>
 	<string name="layoutVoiceRecorderListPlay">Play voice record</string>
@@ -162,13 +163,13 @@
 	<string name="layoutVoiceRecorderListError">First you must select a voice record</string>
 	<string name="layoutVoiceRecorderListOnResume">Now you are at the list voice records menu</string>
 	<string name="layoutVoiceRecorderListOnResume2">The voice record was deleted and now you are at the list voice records menu</string>
-	
+
 	<string name="layoutVoiceRecorderDeleteDelete">Selected voice record for deletion. Voice record&#160;</string>
 	<string name="layoutVoiceRecorderDeleteDelete2">. Slide right to play and slide left to stop.</string>
 	<string name="layoutVoiceRecorderDeleteToDelete">Voice record&#160;</string>
 	<string name="layoutVoiceRecorderDeleteConfirm">Confirm delete</string>
 	<string name="layoutVoiceRecorderDeleteOnResume">Now you are at the delete voice record menu</string>
-	
+
 	<string name="layoutApplicationsList">Applications</string>
 	<string name="layoutApplicationsList2">Applications. Slide right or left to hear each one.</string>
 	<string name="layoutApplicationsListPleaseWait">Please try again in a few moments when all the applications has been processed.</string>
@@ -176,7 +177,7 @@
 	<string name="layoutApplicationsLaunchError">First you must select an application</string>
 	<string name="layoutApplicationsNoApps">There are no applications</string>
 	<string name="layoutApplicationsOnResume">Now you are at the applications menu</string>
-	
+
 	<string name="layoutSettingsReadingSpeed">Reading speed:&#160;</string>
 	<string name="layoutSettingsReadingSpeed2">Reading speed.&#160;</string>
 	<string name="layoutSettingsScreenTimeout">Screen timeout:\n</string>
@@ -227,12 +228,12 @@
 	<string name="layoutSettingsPrivacyPolicy">Privacy policy</string>
 	<string name="layoutSettingsPrivacyPolicy2">Blind Communicator Privacy Policy. Released on Dec 21, 2016. I, Leonardo Javier Russo, regard your information significant and release this Privacy Statement to inform you what information I collect and how I use it to personalize and continually improve you experience. This Privacy Statement applies to the App Blind Communicator and its services and does not apply to the product or service that which does not link to this statement or has its privacy statement respectively. 1 - Collecting information. a. Personal Information. I do not collect Personal Information. Personal Information is information that identifies you or another person, such as your first name and last name, physical addresses, email addresses, telephone, fax, camera, microphone, GPS, or any information stored within your device. b. Non-personal Information. I do not collect your non-personal information when you are using the App Blind Communicator or visiting my Website, including your device information, operation system, logs. c. Information you provide. I do not collect your information when you communicate with me. How I Use Information. a. Personal Information. I do not store Personal Information and therefore I do not disclose your Personal Information. b. Non-Personal Information. I do not sell, trade, or otherwise transfer to outside parties your information. I do not combine Non-Personal Information with Personal Information (such as combining your name with your unique User Device number). Contact Me. If you have any questions or comments about this Policy or our privacy practices, or to report any violations of the Policy or abuse of the App Blind Communicator or the Website, please contact me at contacto@lrusso.com.ar. Changes. This Privacy Policy may change which will not reduce your rights under this Privacy Policy from time to time, I will post any privacy policy changes on this page, so please review it periodically. If you do not agree to any modifications to this Policy, your could immediately stop all use of all the Services. Your continued use of the App Blind Communicator following the posting of any modifications to this Policy will constitute your acceptance of the revised Policy.</string>
 	<string name="layoutSettingsOnResume">Now you are at the settings menu</string>
-	
+
 	<string name="layoutContactsList">Contacts</string>
 	<string name="layoutContactsCreate">Create contact</string>
 	<string name="layoutContactsOnResumeCreated">The contact was created and now you are at the contacts menu</string>
 	<string name="layoutContactsOnResume">Now you are at the contacts menu</string>
-	
+
 	<string name="layoutContactsCreateName">- input name -</string>
 	<string name="layoutContactsCreateName2">Contact name. Slide right to input.</string>
 	<string name="layoutContactsCreateName3">Contact name.&#160;</string>
@@ -242,7 +243,7 @@
 	<string name="layoutContactsCreateCreate">Create contact</string>
 	<string name="layoutContactsCreateErrorComplete">ERROR. You must complete every field in order to create a contact.</string>
 	<string name="layoutContactsCreateOnResume">Now you are at the create contact menu</string>
-	
+
 	<string name="layoutContactsListContactsList">Contacts</string>
 	<string name="layoutContactsListContactsList2">Contacts. Slide right or left to hear each one.</string>
 	<string name="layoutContactsListNoContacts">There are no contacts</string>
@@ -258,11 +259,11 @@
 	<string name="layoutContactsListOnResumeContactDeleted">The contact was deleted and now you are at the contact list menu</string>
 	<string name="layoutContactsListOnResume">Now you are at the contact list menu</string>
 	<string name="layoutContactsListOnResume2">The message was sent and now you are at the contact list menu</string>
-			
+
 	<string name="layoutContactsDeleteSelected">Selected contact for deletion.&#160;</string>
 	<string name="layoutContactsDeleteDelete">Confirm deletion</string>
 	<string name="layoutContactsDeleteOnResume">Now you are at the delete contact menu</string>
-	
+
 	<string name="layoutMusicPlayerNowPlaying">Now playing</string>
 	<string name="layoutMusicPlayerNowPlaying2">Now playing</string>
 	<string name="layoutMusicPlayerNowPlaying3">&#160;song&#160;</string>
@@ -284,7 +285,7 @@
 	<string name="layoutMusicPlayerAlbums">Albums</string>
 	<string name="layoutMusicPlayerUnknown">Unknown</string>
 	<string name="layoutMusicPlayerOnResume">Now you are at the music player menu</string>
-	
+
 	<string name="layoutMusicPlayerArtistsList">Artists</string>
 	<string name="layoutMusicPlayerArtistsList2">Artists. Slide right or left to hear each one.</string>
 	<string name="layoutMusicPlayerArtistsNoArtists">There are no artists.</string>
@@ -297,7 +298,7 @@
 	<string name="layoutMusicPlayerArtistsPlayError">First you must select an album.</string>
 	<string name="layoutMusicPlayerArtistsPlayError2">Error. Unable to open the music file.</string>
 	<string name="layoutMusicPlayerArtistsOnResume">Now you are at the artists menu</string>
-	
+
 	<string name="layoutBrowserSearchInGoogle">Search in Google</string>
 	<string name="layoutBrowserListBookmarks">Go to Bookmarks</string>
 	<string name="layoutBrowserAWebPageItsBeenLoading">. Please wait until the requested web page is been loaded.</string>
@@ -305,7 +306,7 @@
 	<string name="layoutBrowserLoadingPagePleaseWait">Loading page, please wait</string>
 	<string name="layoutBrowserPageNotFound">Page not found. Please check your Internet connection and the web address.</string>
 	<string name="layoutBrowserOnResume">Now you are at the web browser menu</string>
-	
+
 	<string name="layoutBrowserPageViewerReadTitle">Read Page Title</string>
 	<string name="layoutBrowserPageViewerReadTitle2">The web page title is&#160;</string>
 	<string name="layoutBrowserPageViewerReadText">Read Page Text</string>
@@ -320,7 +321,7 @@
 	<string name="layoutBrowserPageViewerAddToBookmarksAdded">The bookmark has been added</string>
 	<string name="layoutBrowserPageViewerAddToBookmarksRepeated">The bookmark already exists</string>
 	<string name="layoutBrowserPageViewerOnResume">Now you are at the webpage menu of the browser</string>
-	
+
 	<string name="layoutBookmarksListList">Bookmarks List</string>
 	<string name="layoutBookmarksListList2">Bookmarks List. Slide right or left to hear each one.</string>
 	<string name="layoutBookmarksListList3">There are no bookmarks</string>
@@ -329,25 +330,25 @@
 	<string name="layoutBookmarksListDeleted">The bookmark was deleted and now you are at the bookmarks list menu</string>
 	<string name="layoutBookmarksListSelectError">First you must select a bookmark</string>
 	<string name="layoutBookmarksListOnResume">Now you are at the bookmarks list menu</string>
-	
+
 	<string name="layoutBookmarksDeleteToDelete">Selected bookmark for deletion.&#160;</string>
 	<string name="layoutBookmarksDeleteDelete">Confirm delete</string>
 	<string name="layoutBookmarksDeleteOnResume">Now you are at the delete bookmark menu</string>
-	
+
 	<string name="layoutCallsMissedCallsList">Call logs</string>
 	<string name="layoutCallsDeleteCallLogs">Delete logs</string>
 	<string name="layoutCallsDeleteCallLogs2">Delete all call logs</string>
 	<string name="layoutCallsMakeCall">Make a call</string>
 	<string name="layoutCallsOnResume">Now you are at the calls menu</string>
 	<string name="layoutCallsOnResume2">All call logs has been deleted successfully and now you are at the calls menu</string>
-		
+
 	<string name="layoutCallsMakeCallPhone">- input phone number -</string>
 	<string name="layoutCallsMakeCallPhone2">Phone number. Slide right to input.</string>
 	<string name="layoutCallsMakeCallPhone3">Phone number.&#160;</string>
 	<string name="layoutCallsMakeCallCall">Call</string>
 	<string name="layoutCallsMakeCallCallError">First you must input a phone number</string>
 	<string name="layoutCallsMakeCallOnResume">Now you are at the make a call menu</string>
-	
+
 	<string name="layoutCallsLogsLogs">Call logs</string>
 	<string name="layoutCallsLogsLogs2">Call logs. Slide right or left to hear each one.</string>
 	<string name="layoutCallsLogsAddToNewContact">Add to new contact</string>
@@ -371,10 +372,10 @@
 	<string name="layoutCallsLogsPleaseTryAgain">Please try again in a few moments when all the call logs has been processed.</string>
 	<string name="layoutCallsLogsOnResume">Now you are at the call logs menu</string>
 	<string name="layoutCallsLogsOnResume2">The message was sent and now you are at the call logs menu</string>
-		
+
 	<string name="layoutCallsLogsDelete">Delete call logs. Slide right to confirm.</string>
 	<string name="layoutCallsLogsDeleteOnResume">Now you are at the delete call logs menu</string>
-	
+
 	<string name="layoutMessagesInbox">Inbox</string>
 	<string name="layoutMessagesInboxNew">new messages</string>
 	<string name="layoutMessagesInboxNoNew">Inbox. No new messages</string>
@@ -387,12 +388,12 @@
 	<string name="layoutMessagesNew2">Compose message</string>
 	<string name="layoutMessagesOnResume">Now you are at the messages menu</string>
 	<string name="layoutMessagesOnResume2">The message was sent and now you are at the messages menu</string>
-				
+
 	<string name="layoutMessagesDeleteNameFrom">Message to delete from&#160;</string>
 	<string name="layoutMessagesDeleteNameTo">Message to delete to&#160;</string>
 	<string name="layoutMessagesDeleteDelete">Confirm delete</string>
 	<string name="layoutMessagesDeleteOnResume">Now you are at the delete message menu</string>
-	
+
 	<string name="layoutMessagesSentSent">Sent</string>
 	<string name="layoutMessagesSentSent2">Sent messages. Slide right or left to hear each message.</string>
 	<string name="layoutMessagesSentDelete">Delete message</string>
@@ -410,7 +411,7 @@
 	<string name="layoutMessagesSentDeleteAllDelete">Delete all sent messages. Slide right to confirm.</string>
 	<string name="layoutMessagesSentDeleteAllDeleteDelete">Delete all sent messages</string>
 	<string name="layoutMessagesSentDeleteAllOnResume">Now you are at the delete all sent messages menu</string>
-		
+
 	<string name="layoutMessagesInboxInbox">Inbox</string>
 	<string name="layoutMessagesInboxInbox2">Inbox. Slide right or left to hear each message.</string>
 	<string name="layoutMessagesInboxReply">Compose message</string>
@@ -438,7 +439,7 @@
 	<string name="layoutMessagesInboxDeleteAllDelete">Delete all received messages. Slide right to confirm.</string>
 	<string name="layoutMessagesInboxDeleteAllDeleteDelete">Delete all received messages</string>
 	<string name="layoutMessagesInboxDeleteAllOnResume">Now you are at the delete all received messages menu</string>
-						
+
 	<string name="layoutMessagesComposeAddressee">Addressee</string>
 	<string name="layoutMessagesComposeAddressee2">Addressee. Slide right or left to hear each contact.</string>
 	<string name="layoutMessagesComposeAddressee3">Addressee.&#160;</string>
@@ -451,7 +452,7 @@
 	<string name="layoutMessagesComposeSendingError2">The message could not be send, check your carrier status and try again later.</string>
 	<string name="layoutMessagesComposeErrorComplete">ERROR. You must complete every field in order to send a message.</string>
 	<string name="layoutMessagesComposeOnResume">Now you are at the compose message menu</string>
-	
+
 	<string name="layoutInputKeysOnResume">Now you are at the input text mode by using the physical keyboard or the touchscreen. If you will use the touchscreen, slide up and down to select a character or key, slide right to confirm character or key and move to the next one and slide left to delete the last character.</string>
 	<string name="layoutInputKeysTips">Input text mode\n\n* Slide up and down to select character\n\n* Slide right to confirm character or key and move to the next one\n\n* Slide left to delete the last character\n\n* Physical keyboard compatible</string>
 	<string name="layoutInputKeysKeyEnter">[ENTER]</string>
@@ -463,7 +464,7 @@
 	<string name="layoutInputKeysNothingToRead">There is nothing to read</string>
 	<string name="layoutInputKeysEmptyField">The text field is now empty</string>
 	<string name="layoutInputKeysEntered">&#160;entered</string>
-		
+
 	<string name="layoutInputVoiceOnResume">Now you are at the input text mode using voice recognition menu</string>
 	<string name="layoutInputVoiceStartRecognition">Start voice recognition</string>
 	<string name="layoutInputVoiceStartRecognition2">Voice recognition. Slide right and then speak</string>
@@ -478,13 +479,13 @@
 	<string name="layoutInputVoiceCancelAndGoBack">Cancel and go back to the previous menu</string>
 
 	<string name="layoutInputKeyboardTalkbackOnResume">Now you are at the input text mode using the standard android keyboard with Talkback. You must have talkBack enabled in order to use this method. A textbox is selected right now and the standard android keyboard is available at the bottom of the screen. Write what you want and press the enter key in the keyboard to enter the data. Press the back button to cancel and go back to the previous menu.</string>
-		
+
 	<string name="callFrom">Call from&#160;</string>
 	<string name="callFromUnknown">Call from unknown number</string>
 	<string name="callingTo">Calling to&#160;</string>
 	<string name="callingToUnknown">Calling to an unregistered number</string>
 	<string name="callEnded">The call has ended</string>
-					
+
 	<string name="backToPreviousMenu">Go back to the previous menu</string>
 	<string name="backToMainMenu">Go back to the main menu</string>
 

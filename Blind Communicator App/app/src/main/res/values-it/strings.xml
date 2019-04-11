@@ -18,6 +18,7 @@
     <string name="mainCallsNoMissed">Chiamate. Non ci sono telefonate perse.</string>
     <string name="mainCallsOneMissed">Chiamate. Una chiamata persa.</string>
     <string name="mainCallsNotAvailable">Chiamate. Non disponibili su questo dispositivo.</string>
+	<string name="mainCallsNotAvailableOS">La versione Android di questo dispositivo non consente a Blind Communicator di accedere al registro delle chiamate.</string>
     <string name="mainNotAvailable">Questa opzione non è disponibile su questo dispositivo.</string>
     <string name="mainContacts">Contatti</string>
     <string name="mainMusicPlayer">Musica</string>
@@ -46,8 +47,8 @@
 	<string name="mainWifiOff">ed il wifi è disattivato.</string>
 	<string name="mainMusicPlayerPleaseTryAgain">Per favore, provi di nuovo tra qualche istante quando il riproduttore di musica abbia processato tutti i suoi file di musica.</string>
 	<string name="mainNoTTSInstalledTitle">Errore</string>
-	<string name="mainNoTTSInstalledMessage">App di sintesi vocale non trovata. /nPer favore provi a scaricare l’App del sintetizzatore vocale di Google (gratuita) per consentire a quest’App di funzionare correttamente.</string>
-	<string name="mainNoTTSInstalledButton">Scaricare l’App del sintetizzatore vocale di Google</string>
+	<string name="mainNoTTSInstalledMessage">App di sintesi vocale non trovata. Per favore provi a scaricare l’App del sintetizzatore vocale di Google (gratuita) per consentire a quest’App di funzionare correttamente.</string>
+	<string name="mainNoTTSInstalledButton">OK, lo farò.</string>
 	<string name="mainPressBack">Premere Indietro di nuovo per chiudere l’applicazione.</string>
 
     <string name="monday">Lunedí</string>
