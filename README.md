@@ -10,7 +10,7 @@ OpenSource launcher for the visually impaired for using smartphones and tablets.
 
 ## Download App
 
-- https://github.com/lrusso/BlindCommunicator/raw/master/BlindCommunicator.apk
+- https://lrusso.github.io/BlindCommunicator/BlindCommunicator.apk
 
 ## The app allows the user to
 - Listen to music
