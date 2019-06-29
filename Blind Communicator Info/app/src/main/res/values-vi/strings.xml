@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Blind Communicator Info</string>
+	<string name="app_title">QUAN TRỌNG</string>
+    <string name="app_note">Kể từ tháng 12 năm 2018, Google không xem xét Blind Communicator, Ứng dụng miễn phí dành cho người khiếm thị, ngoại lệ trên Play Store vì các quyền mà Ứng dụng yêu cầu phải hoạt động chính xác (quản lý tin nhắn, cuộc gọi và danh bạ). Ứng dụng và mã nguồn hiện có sẵn trong GitHub.</string>
+    <string name="app_download">Tải xuống tệp ứng dụng từ GitHub</string>
+    <string name="app_source">Tải xuống mã nguồn từ GitHub</string>
+    <string name="app_privacy">Chính sách bảo mật</string>
+    <string name="app_ok">được</string>
+
+</resources>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Blind Communicator Info</string>
+	<string name="app_title">WICHTIG</string>
+    <string name="app_note">Seit Dezember 2018 betrachtet Google Blind Communicator nicht mehr als kostenlose App für Sehbehinderte. Aufgrund der Berechtigungen, die für die ordnungsgemäße Funktion der App erforderlich sind (Verwalten von Nachrichten, Anrufen und Kontakten), ist dies eine Ausnahme im Play Store. Die App und der Quellcode sind jetzt in GitHub verfügbar.</string>
+    <string name="app_download">App-Datei von GitHub herunterladen</string>
+    <string name="app_source">Laden Sie den Quellcode von GitHub herunter</string>
+    <string name="app_privacy">Datenschutz-Bestimmungen</string>
+    <string name="app_ok">OK</string>
+
+</resources>
