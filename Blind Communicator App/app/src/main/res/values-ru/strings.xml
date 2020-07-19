@@ -1,0 +1,611 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Blind Communicator</string>
+    <string name="title_activity_main">Blind Communicator</string>
+    <string name="menu_settings">Settings</string>
+    
+	<string name="mainWelcome">Добро пожаловать на программу экранного доступа для пользователей с нарушением зрения, разработанный Лэонардо Хавиер Руссо. Проведите пальцем вверх или вниз, чтобы прослушать меню, а потом проведите вправо, чтобы выбрать нужную опцию. Если устройство имеет физическую клавиатуру, вы можете использовать стрелки. Если у Вас установлено TalkBack, используйте два пальца для выбора нужного меню.</string>
+    <string name="mainMessages">Сообщения</string>
+    <string name="mainMessagesNew">Новые сообщения</string>
+    <string name="mainMessagesNoNew">Сообщение. Нет новых сообщений</string>
+    <string name="mainMessagesOneNew">Сообщение. Есть новое сообщение</string>
+	<string name="mainMessagesNewFromContact">Новое сообщение от&#160;</string>
+	<string name="mainMessagesNewFromUnknown">Сообщение от анонимного абонента</string>
+	<string name="mainMessagesNotAvailable">Сообщения. Не доступны на этом устройстве.</string>
+    <string name="mainCalls">Вызовы</string>
+    <string name="mainCallsMissed">Пропущенные вызовы</string>
+    <string name="mainCallsNoMissed">Вызовы. Нет пропущенных вызовов.</string>
+    <string name="mainCallsOneMissed">Вызовы. Один пропущенный вызов.</string>
+    <string name="mainCallsNotAvailable">Вызовы. Не доступны на этом устройстве.</string>
+	<string name="mainCallsNotAvailableOS">Версия Android этого устройства не позволяет Blind Communicator получать доступ к журналу вызовов.</string>
+    <string name="mainNotAvailable">Опция не доступна на этом устройстве.</string>
+    <string name="mainContacts">Контакты</string>
+    <string name="mainMusicPlayer">Музыка</string>
+    <string name="mainBrowser">Интернет</string>
+    <string name="mainAlarms">Будильник</string>
+    <string name="mainAlarmsNoAlarms">Будильник. На сегодня нет звукового сигнала.</string>
+    <string name="mainAlarmsOneAlarm">Будильник. Сегодня один звуковой сигнал.</string>
+	<string name="mainAlarmsForToday">&#160;Сегодняшние звуковые сигналы.</string>
+	<string name="mainVoiceRecorder">Диктофон</string>
+	<string name="mainApplications">Приложения</string>
+    <string name="mainSettings">Настройки</string>
+    <string name="mainStatus">Состояние устройства</string>
+	<string name="mainCarrierIs">, Оператор&#160;</string>
+	<string name="mainProfileIsNormal">, профиль обычный&#160;</string>
+	<string name="mainProfileIsSilent">, профиль бесшумный&#160;</string>
+	<string name="mainProfileIsVibrate">, профиль вибрация&#160;</string>
+	<string name="mainNoSignal">, нет мобильной связи&#160;</string>
+	<string name="mainBatteryChargedAt">Аккумулятор заряжен на&#160;</string>
+    <string name="mainPercentAndTime">&#160;Процента, сейчас&#160;</string>
+    <string name="mainHours">&#160;часов&#160;</string>
+	<string name="mainMinutesAndDate">&#160;минут&#160;</string>
+	<string name="mainOf">&#160;от&#160;</string>
+	<string name="mainCarrierNotAvailable">Неизвестный оператор</string>
+	<string name="mainWifiOnWithNetwork">Wifi включен и подключен к сети wifi&#160;</string>
+	<string name="mainWifiOnWithoutNetwork">Wifi включен но не подключен к никакой сети wifi.</string>
+	<string name="mainWifiOff">Wifi выключен.</string>
+	<string name="mainMusicPlayerPleaseTryAgain">Повторите попытку через несколько минут, после обработки всех ваших музыкальных файлов проигрывателем.</string>
+	<string name="mainNoTTSInstalledTitle">Ошибка</string>
+	<string name="mainNoTTSInstalledMessage">Синтезатор не найден. Пожалуйста, загрузите синтезатор Google TTS (бесплатно) для того, чтобы данное приложение правильно работало.</string>
+	<string name="mainNoTTSInstalledButton">Хорошо, я буду.</string>
+	<string name="mainPressBack">Нажмите еще раз Назад, чтобы закрыть приложение.</string>
+
+    <string name="monday">Понедельник</string>
+	<string name="tuesday">Вторник</string>
+	<string name="wednesday">Среда</string>
+	<string name="thursday">Четверг</string>
+	<string name="friday">Пятница</string>
+	<string name="saturday">Суббота</string>
+    <string name="sunday">Воскресенье</string>
+	
+    <string name="january">Января</string>
+    <string name="february">Февраля</string>
+	<string name="march">Марта</string>
+	<string name="april">Апреля</string>
+	<string name="may">Мая</string>
+	<string name="june">Июня</string>
+	<string name="july">Июля</string>
+	<string name="august">Августа</string>
+	<string name="september">Сентября</string>
+	<string name="october">Октября</string>
+	<string name="november">Ноября</string>
+	<string name="december">Декабря</string>
+
+	<string name="volumeMaximum">Максимальная громкость</string>
+	<string name="volumeHigher">Громкость повышена</string>
+	<string name="volumeLower">Громкость понижена</string>
+	<string name="deviceCharged">Устройство полностью заряжено</string>
+	<string name="deviceChargedStatus">, Устройство полностью заряжено,&#160;</string>
+	<string name="deviceCharging">Устройство заряжается</string>
+	<string name="deviceChargingStatus">, Устройство заряжается,&#160;</string>
+	<string name="deviceUnplugged">Устройство выключено</string>
+	<string name="screenOn">Экран заблокирован</string>
+	<string name="screenOff">Экран потушен</string>
+	<string name="screenPortrait">Ориентация экрана в портретном режиме</string>
+	<string name="screenLandscape">Ориентация экрана в ландшафтном режиме</string>
+	<string name="wifiConnectedToNetwork">Устройство подключено к wifi &#160;</string>
+	<string name="wifiDisconnectedFromNetwork">Устройство не подключено к wifi</string>
+	
+	<string name="layoutMainMessages">Сообщения</string>
+	<string name="layoutMainCalls">Вызовы</string>
+	<string name="layoutMainContacts">Контакты</string>
+	<string name="layoutMainMusic">Музыка</string>
+	<string name="layoutMainBrowser">Интернет</string>
+	<string name="layoutMainAlarms">Звуковые сигналы</string>
+	<string name="layoutMainSettings">Настройки</string>
+	<string name="layoutMainStatus">Состояние</string>
+	<string name="layoutMainOnResume">Вы находитесь в главном меню</string>
+	
+	<string name="layoutAlarmsNotifierShutdown">Проведите пальцем вверх или вниз, чтобы выключить звуковой сигнал</string>
+	
+	<string name="layoutAlarmsList">Список звуковых сигналов</string>
+	<string name="layoutAlarmsCreate">Создать звуковой сигнал</string>
+	<string name="layoutAlarmsAlarmCreated">Уведомление создано. Вы находитесь в меню звуковых сигналов</string>
+	<string name="layoutAlarmsOnResume">Вы находитесь в меню звуковых сигналов</string>
+	
+	<string name="layoutAlarmsCreateMessage">- Введите сообщение -</string>
+	<string name="layoutAlarmsCreateMessage2">Сообщение звукового сигнала. Проведите вправо, чтобы ввойти.</string>
+	<string name="layoutAlarmsCreateMessage3">Сообщение звукового сигнала:\n</string>
+	<string name="layoutAlarmsCreateMessage4">Сообщение звукового сигнала.&#160;</string>
+	<string name="layoutAlarmsCreateCreate">Создать звуковой сигнал</string>
+	<string name="layoutAlarmsCreateDay">День звукового сигнала:&#160;</string>
+	<string name="layoutAlarmsCreateDay2">День звукового сигнала.&#160;</string>
+	<string name="layoutAlarmsCreateTimeHour">Час звукового сигнала:&#160;</string>
+	<string name="layoutAlarmsCreateTimeHour2">Час звукового сигнала.&#160;</string>
+	<string name="layoutAlarmsCreateTimeMinute">Минуты звукового сигнала:&#160;</string>
+	<string name="layoutAlarmsCreateTimeMinute2">Минуты звукового сигнала.&#160;</string>
+	<string name="layoutAlarmsCreateHours">&#160;часов</string>
+	<string name="layoutAlarmsCreateMinutes">&#160;минут</string>
+	<string name="layoutAlarmsCreateErrorNoMessage">Ошибка. Вы должны ввести сообщение.</string>
+	<string name="layoutAlarmsCreateErrorAlarmConflict">Ошибка. Уже создан звуковой сигнал на этот день и час.</string>
+	<string name="layoutAlarmsCreateOnResume">Вы находитесь в меню создания звукового сигнала</string>
+	
+	<string name="layoutAlarmsListNoAlarms">Нет звукового сигнала</string>
+	<string name="layoutAlarmsListList">Звуковые сигналы</string>
+	<string name="layoutAlarmsListAlarmAlarmsCount">&#160;Созданы звуковые сигналы</string>
+	<string name="layoutAlarmsListAt">&#160;часа&#160;</string>
+	<string name="layoutAlarmsListForToday">&#160;На сегодня. Проведите вправо или влево, чтобы прослушать созданные звуковые сигналы.</string>
+	<string name="layoutAlarmsListDelete">Удалить выбранный звуковой сигнал</string>
+	<string name="layoutAlarmsListDeleted">Звуковой сигнал  удален. Вы находитесь в меню списка звуковых сигналов</string>
+	<string name="layoutAlarmsListDeleteSelectError">Сначала вы должны выбрать звуковой сигнал</string>
+	<string name="layoutAlarmsListOnResume">Вы находитесь в меню списка звуковых сигналов</string>
+	<string name="layoutAlarmsListOnResume2">Все звуковые сигналы удалены.  Вы находитесь в меню звуковых сигналов.</string>
+		
+	<string name="layoutAlarmsDeleteSelected">Звуковой сигнал на удаление выбрано.&#160;</string>
+	<string name="layoutAlarmsDeleteDelete">Подтвердить удаление</string>
+	<string name="layoutAlarmsDeleteOnResume">Вы находитесь в меню удаления звуковых сигналов</string>
+
+	<string name="layoutAlarmsDeleteAllDelete">Удалить все звуковые сигналы. Проведите вправо для подтверждения.</string>
+	<string name="layoutAlarmsDeleteAllDeleteDelete">Удалить все звуковые сигналы</string>
+	<string name="layoutAlarmsDeleteAllOnResume">Вы находитесь в меню удаления звуковых сигналов</string>
+		
+	<string name="layoutVoiceRecorderList">Список записей</string>
+	<string name="layoutVoiceRecorderCreate">Создать запись</string>
+	<string name="layoutVoiceRecorderOnResume">Меню диктофона</string>
+	<string name="layoutVoiceRecorderOnResume2">Запись сохранена. Вы находитесь в меню диктофона</string>
+	
+	<string name="layoutVoiceRecorderCreateCreate">Создать запись</string>
+	<string name="layoutVoiceRecorderCreateCreate2">Создать запись. Проведите пальцем вверх, чтобы начать запись, проведите еще раз, чтобы закончить запись.</string>
+	<string name="layoutVoiceRecorderCreateError">Ошибка. Проверьте, если у вас есть СИМ-карта памяти в Вашем устройстве.</string>
+	<string name="layoutVoiceRecorderCreateOnResume">Вы находитесь в меню создания записей</string>
+	
+	<string name="layoutVoiceRecorderListList">Записи</string>
+	<string name="layoutVoiceRecorderListList2">Записи. Проведите пальцем вправо или влево для выбора нужной записи.</string>
+	<string name="layoutVoiceRecorderListPlay">Прослушать запись</string>
+	<string name="layoutVoiceRecorderListPlay2">Прослушать выбранную запись. Проведите пальцем вправо для прослушания записи или влево для остановки  записи.</string>
+	<string name="layoutVoiceRecorderListDelete">Удалить запись</string>
+	<string name="layoutVoiceRecorderListDelete2">Удалить выбранную запись</string>
+	<string name="layoutVoiceRecorderListItem">Запись&#160;</string>
+	<string name="layoutVoiceRecorderListItemOf">&#160;от&#160;</string>
+	<string name="layoutVoiceRecorderListNoVoiceRecords">Нет записей</string>
+	<string name="layoutVoiceRecorderListPleaseWait">Повторите попытку через несколько минут, после обработки всех записей.</string>
+	<string name="layoutVoiceRecorderListError">Сначала Вы должны выбрать запись</string>
+	<string name="layoutVoiceRecorderListOnResume">Вы находитесь в меню списков записей</string>
+	<string name="layoutVoiceRecorderListOnResume2">Запись удалена. Вы находитесь в меню списков записей</string>
+	
+	<string name="layoutVoiceRecorderDeleteDelete">Выбрана запись на удаление. Запись&#160;</string>
+	<string name="layoutVoiceRecorderDeleteDelete2">. Проведите пальцем вправо для прослушания записи или влево для остановки  записи.</string>
+	<string name="layoutVoiceRecorderDeleteToDelete">Запись&#160;</string>
+	<string name="layoutVoiceRecorderDeleteConfirm">Подтвердить удаление</string>
+	<string name="layoutVoiceRecorderDeleteOnResume">Вы находитесь в меню удаления записей</string>
+	
+	<string name="layoutApplicationsList">Приложения</string>
+	<string name="layoutApplicationsList2">Приложения. Проведите пальцем вправо или влево для прослушания приложений.</string>
+	<string name="layoutApplicationsListPleaseWait">Повторите попытку через несколько минут, после обработки всех приложений.</string>
+	<string name="layoutApplicationsLaunch">Запуск выбранного приложения</string>
+	<string name="layoutApplicationsLaunchError">Сначала вы должны выбрать приложение.</string>
+	<string name="layoutApplicationsNoApps">Нет приложений</string>
+	<string name="layoutApplicationsOnResume">Вы находитесь в меню приложений</string>
+	
+	<string name="layoutSettingsReadingSpeed">С.чтения.:&#160;</string>
+	<string name="layoutSettingsReadingSpeed2">Скорость чтения.&#160;</string>
+	<string name="layoutSettingsScreenTimeout">Выкл.экран:\n</string>
+	<string name="layoutSettingsScreenTimeout2">Выключить экран после&#160;</string>
+	<string name="layoutSettingsToneNotAvailable">Не доступно</string>
+	<string name="layoutSettingsAlarmTone">Звукового сигнала:\n</string>
+	<string name="layoutSettingsAlarmTone2">Звук звукового сигнала.&#160;</string>
+	<string name="layoutSettingsAlarmToneNotAvailable">Звук звукового сигнала. Не доступен на этом устройстве.</string>
+	<string name="layoutSettingsNotifyTone">уведомления:\n</string>
+	<string name="layoutSettingsNotifyTone2">Звук уведомления.&#160;</string>
+	<string name="layoutSettingsNotifyToneNotAvailable">Звук уведомления. Не доступен на этом устройстве</string>
+	<string name="layoutSettingsCallTone">Рингтон вызова:\n</string>
+	<string name="layoutSettingsCallTone2">Рингтон вызова.&#160;</string>
+	<string name="layoutSettingsCallToneNotAvailable">Рингтон  вызова: -</string>
+	<string name="layoutSettingsCallToneNotAvailable2">Рингтон  вызова. Не доступен на этом устройстве.</string>
+	<string name="layoutSettingsProfileNormal">Профиль: Обычный</string>
+	<string name="layoutSettingsProfileNormal2">Профиль. Обычный</string>
+	<string name="layoutSettingsProfileSilent">Профиль: Безшумный</string>
+	<string name="layoutSettingsProfileSilent2">Профиль. Безшумный</string>
+	<string name="layoutSettingsProfileVibrate">Профиль: Вибрация</string>
+	<string name="layoutSettingsProfileVibrate2">Профиль. Вибрация</string>
+	<string name="layoutSettingsWifiOn">Wifi: Включен</string>
+	<string name="layoutSettingsWifiOn2">Wifi Включен</string>
+	<string name="layoutSettingsWifiOn2WithoutNetwork">Wifi. Wifi включен но не подключен к сети Wifi.</string>
+	<string name="layoutSettingsWifiOn2WithNetwork">Wifi. Wifi включен и подключен к сети Wifi&#160;</string>
+	<string name="layoutSettingsWifiOff">Wifi: выключен</string>
+	<string name="layoutSettingsWifiOff2">Wifi. Wifi выключен</string>
+	<string name="layoutSettingsWifiOff3">Wifi выключен</string>
+	<string name="layoutSettingsBluetoothOn">Bluetooth: включен</string>
+	<string name="layoutSettingsBluetoothOn2">Bluetooth включен</string>
+	<string name="layoutSettingsBluetoothOff">Bluetooth: выключен</string>
+	<string name="layoutSettingsBluetoothOff2">Bluetooth выключен</string>
+	<string name="layoutSettingsInputMode">Режим ввода информации:&#160;</string>
+	<string name="layoutSettingsInputMode2">Ввести информацию&#160;</string>
+	<string name="layoutSettingsInputModeKeyboard">С помощью клавиатуры</string>
+	<string name="layoutSettingsInputModeKeyboard2">С помощью физической клавиатуры и сенсорного экрана</string>
+	<string name="layoutSettingsInputModeVoice">С помощью голосового управления</string>
+	<string name="layoutSettingsInputModeVoice2">С помощью распознавание голоса. Может потребоваться подключение к Интернету.</string>
+	<string name="layoutSettingsInputModeKeyboardTalkback">Клавиатура с Talkback</string>
+	<string name="layoutSettingsInputModeKeyboardTalkback2">С обычной клавиатурой Андройд с Talkback. Talkback должен быть включен.</string>
+	<string name="layoutSettingsSystemSettings">Настройки системы</string>
+	<string name="layoutSettingsSeconds">&#160;сек</string>
+	<string name="layoutSettingsSeconds2">&#160;секунды бездействия</string>
+	<string name="layoutSettingsMinute">&#160;мин</string>
+	<string name="layoutSettingsMinute2">&#160;Минута бездействия</string>
+	<string name="layoutSettingsMinutes">&#160;мин</string>
+	<string name="layoutSettingsMinutes2">&#160;Минуты бездействия</string>
+	<string name="layoutSettingsPrivacyPolicy">политика конфиденциальности</string>
+	<string name="layoutSettingsPrivacyPolicy2">Слепой Communicator Политика конфиденциальности. Дата выхода на 21 декабря 2016 года I, Leonardo Javier Руссо, считают вашу информацию значимой и выпустить это заявление о конфиденциальности, чтобы сообщить вам, что информация, которую я собираем и как я использую его, чтобы персонализировать и постоянно улучшать вы испытываете. Настоящее Положение о конфиденциальности относится к App Blind Communicator и его услугах и не относится к продукту или услуге, которые, не используйте ссылку на это заявление или имеет свое заявление о конфиденциальности соответственно. 1 - Сбор информации. а. Личная информация. Я не собирать персональные данные. Персональная информация это информация, которая идентифицирует вас или другое лицо, например, ваше имя и фамилию, физические адреса, адреса электронной почты, телефон, факс, камера, микрофон, GPS, или любой информации, хранящейся в устройстве. б. Номера для личной информации. Я не собираю свой некоммерческий личную информацию, когда вы используете приложение Blind Communicator или посещение моего сайта, включая вашу информацию об устройстве, операционной системы, журналы. гр. Информация вы предоставляете. Я не собираю информацию, когда вы общаетесь со мной. Как я могу использовать информацию. а. Личная информация. Я не хранить личную информацию, и поэтому я не разглашать вашу личную информацию. б. Не является личной информацией. Я не продавать, или иным образом передавать третьим лицам информацию. Я не совмещаем информацию неличного характера с личной информацией (например, комбинируя свое имя с номером уникальным пользовательским устройством). Свяжитесь со мной. Если у вас есть какие-либо вопросы или комментарии по поводу этой политики или мерах по обеспечению конфиденциальности, или сообщать о любых нарушениях политики или злоупотребления App Blind Communicator или веб-сайта, пожалуйста, свяжитесь со мной по contacto@lrusso.com.ar~~pobj. Изменения. Эта политика конфиденциальности может измениться, не уменьшит ваши права в соответствии с данной политикой конфиденциальности время от времени, я буду размещать какие-либо изменения в политике конфиденциальности на этой странице, пожалуйста, рассмотреть его периодически. Если вы не согласны с любыми изменениями в этой политике, ваш может немедленно прекратить любое использование всех служб. Ваше дальнейшее использование App Blind Communicator после внесения каких-либо изменений в этой политике будет означать ваше согласие с пересмотренной политикой.</string>
+	<string name="layoutSettingsOnResume">Вы находитесь в меню настроек</string>
+	
+	<string name="layoutContactsList">Список контактов</string>
+	<string name="layoutContactsCreate">Создать контакт</string>
+	<string name="layoutContactsOnResumeCreated">Контакт создан. Вы находитесь в меню контактов</string>
+	<string name="layoutContactsOnResume">Вы находитесь в меню контактов</string>
+	
+	<string name="layoutContactsCreateName">- Введите имя -</string>
+	<string name="layoutContactsCreateName2">Имя контакта. Проведите вправо для введения контакта.</string>
+	<string name="layoutContactsCreateName3">Имя контакта.&#160;</string>
+	<string name="layoutContactsCreatePhone">- Введите номер телефона -</string>
+	<string name="layoutContactsCreatePhone2">Номер телефона. Проведите вправо для введения номера телефона.</string>
+	<string name="layoutContactsCreatePhone3">Номер телефона.&#160;</string>
+	<string name="layoutContactsCreateCreate">Создать контакт</string>
+	<string name="layoutContactsCreateErrorComplete">Ошибка. Для создания контакта, Вы должны заполнить все поля.</string>
+	<string name="layoutContactsCreateOnResume">Вы находитесь в меню создания контакта</string>
+	
+	<string name="layoutContactsListContactsList">Контакты</string>
+	<string name="layoutContactsListContactsList2">Контакты. Проведите вправо или влево, чтобы прослушать все контакты.</string>
+	<string name="layoutContactsListNoContacts">Нет контактов</string>
+	<string name="layoutContactsListWithThePhoneNumber">&#160;С номером телефона&#160;</string>
+	<string name="layoutContactsListCall">Вызвать</string>
+	<string name="layoutContactsListCall2">Вызвать выбранный контакт</string>
+	<string name="layoutContactsListSendMessage">Написать сообщение</string>
+	<string name="layoutContactsListSendMessage2">Написать сообщение выбранному контакту</string>
+	<string name="layoutContactsListDelete">Удалить контакт</string>
+	<string name="layoutContactsListDelete2">Удалить выбранный контакт</string>
+	<string name="layoutContactsListError">Сначала вы должны выбрать контакт</string>
+	<string name="layoutContactsListPleaseWait">Повторите попытку через несколько минут, после обработки всех Ваших контактов.</string>
+	<string name="layoutContactsListOnResumeContactDeleted">Контакт удален. Вы находитесь в списке контактов</string>
+	<string name="layoutContactsListOnResume">Вы находитесь в списке контактов</string>
+	<string name="layoutContactsListOnResume2">Сообщение отправлено. Вы находитесь в списке контактов</string>
+			
+	<string name="layoutContactsDeleteSelected">Контакт для удаления выбран.&#160;</string>
+	<string name="layoutContactsDeleteDelete">Подтвердить удаление</string>
+	<string name="layoutContactsDeleteOnResume">Вы находитесь в меню удаления контакта</string>
+	
+	<string name="layoutMusicPlayerNowPlaying">Сейчас играет</string>
+	<string name="layoutMusicPlayerNowPlaying2">Сейчас играет</string>
+	<string name="layoutMusicPlayerNowPlaying3">&#160;песня&#160;</string>
+	<string name="layoutMusicPlayerNowPlaying4">&#160;.&#160;</string>
+	<string name="layoutMusicPlayerNowPlaying5">&#160;от&#160;</string>
+	<string name="layoutMusicPlayerNowPlayingError1">Сначала вы должны выбрать артиста и альбом</string>
+	<string name="layoutMusicPlayerNowPlayingError2">Музыка не играет</string>
+	<string name="layoutMusicPlayerPlay">Проиграть</string>
+	<string name="layoutMusicPlayerStop">Остановить</string>
+	<string name="layoutMusicPlayerPreviousTrack">Предыдущая п.</string>
+	<string name="layoutMusicPlayerPreviousTrack2">Предыдущая песня</string>
+	<string name="layoutMusicPlayerNextTrack">Следующая п.</string>
+	<string name="layoutMusicPlayerNextTrack2">Следующая песня</string>
+	<string name="layoutMusicPlayerLowerVolume">Уменьшить гром.</string>
+	<string name="layoutMusicPlayerLowerVolume2">Уменьшить громкость</string>
+	<string name="layoutMusicPlayerHigherVolume">Увеличить гром.</string>
+	<string name="layoutMusicPlayerHigherVolume2">Увеличить громкость</string>
+	<string name="layoutMusicPlayerArtists">Артисты</string>
+	<string name="layoutMusicPlayerAlbums">Альбомы</string>
+	<string name="layoutMusicPlayerUnknown">Неизвестный</string>
+	<string name="layoutMusicPlayerOnResume">Вы находитесь в меню проигрывателя</string>
+	
+	<string name="layoutMusicPlayerArtistsList">Артисты</string>
+	<string name="layoutMusicPlayerArtistsList2">Артисты. Проведите пальцем вправо или влево, чтобы прослушать всех артистов.</string>
+	<string name="layoutMusicPlayerArtistsNoArtists">Нет артистов.</string>
+	<string name="layoutMusicPlayerArtistsAlbumsList">Альбомы артиста</string>
+	<string name="layoutMusicPlayerArtistsAlbumsList2">Альбомы артиста. Проведите пальцем вправо или влево, чтобы прослушать все альбомы.</string>
+	<string name="layoutMusicPlayerArtistsAlbumsList3">Сначала Вы должны выбрать артиста.</string>
+	<string name="layoutMusicPlayerArtisrsAlbumsNoAlbums">Нет альбомов.</string>
+	<string name="layoutMusicPlayerArtistsPleaseWait">Повторите попытку через несколько минут, после обработки всех альбомов артиста.</string>
+	<string name="layoutMusicPlayerArtistsPlayAlbum">Проиграть альбом</string>
+	<string name="layoutMusicPlayerArtistsPlayError">Сначала Вы должны выбрать альбом.</string>
+	<string name="layoutMusicPlayerArtistsPlayError2">Ошибка. Невозможно открыть музыкальный файл.</string>
+	<string name="layoutMusicPlayerArtistsOnResume">Вы находитесь в меню артистов</string>
+	
+	<string name="layoutBrowserSearchInGoogle">Найти в Google</string>
+	<string name="layoutBrowserListBookmarks">Перейти в закладки</string>
+	<string name="layoutBrowserAWebPageItsBeenLoading">. Подождите пока загрузится страница.</string>
+	<string name="layoutBrowserErrorPendingRequest">Ошибка. Веб-страница загружается, подождите, пожалуйста.</string>
+	<string name="layoutBrowserLoadingPagePleaseWait">Веб-страница загружается, подождите, пожалуйста</string>
+	<string name="layoutBrowserPageNotFound">Страница не найдена. Пожалуйста, проверьте подключение к Интернету и веб-адрес.</string>
+	<string name="layoutBrowserOnResume">Вы находитесь в меню браузера</string>
+	
+	<string name="layoutBrowserPageViewerReadTitle">Читать заголовок страницы</string>
+	<string name="layoutBrowserPageViewerReadTitle2">Заголовок страницы&#160;</string>
+	<string name="layoutBrowserPageViewerReadText">Читать текст страницы</string>
+	<string name="layoutBrowserPageViewerPageLinks">Ссылки страницы</string>
+	<string name="layoutBrowserPageViewerPageLinks2">Ссылки страницы. Проведите пальцем вправо или влево, чтобы прослушать все ссылки.</string>
+	<string name="layoutBrowserPageViewerPageLinks3">Ссылка&#160;</string>
+	<string name="layoutBrowserPageViewerPageLinks3Of">&#160;от&#160;</string>
+	<string name="layoutBrowserPageViewerPageLinks4">Настоящая страница не имеет ссылок.</string>
+	<string name="layoutBrowserPageViewerPageLinkSelectError">Сначала Вы должны выбрать ссылку.</string>
+	<string name="layoutBrowserPageViewerGoToLink">Перейти на выбранную ссылку</string>
+	<string name="layoutBrowserPageViewerAddToBookmarks">Добавить страницу в закладки</string>
+	<string name="layoutBrowserPageViewerAddToBookmarksAdded">Страница добавлена</string>
+	<string name="layoutBrowserPageViewerAddToBookmarksRepeated">Закладка уже существует</string>
+	<string name="layoutBrowserPageViewerOnResume">Вы находитесь в меню веб-страницы браузера</string>
+	
+	<string name="layoutBookmarksListList">Список закладок</string>
+	<string name="layoutBookmarksListList2">Список закладок. Проведите пальцем вправо или влево, чтобы прослушать все закладки.</string>
+	<string name="layoutBookmarksListList3">Нет закладок</string>
+	<string name="layoutBookmarksListGoToLink">Перейти на выбранную закладку</string>
+	<string name="layoutBookmarksListDelete">Удалить выбранную закладку</string>
+	<string name="layoutBookmarksListDeleted">Закладка удалена. Вы находитесь в меню списка закладок</string>
+	<string name="layoutBookmarksListSelectError">Сначала вы должны выбрать закладку</string>
+	<string name="layoutBookmarksListOnResume">Вы находитесь в меню списка закладок</string>
+	
+	<string name="layoutBookmarksDeleteToDelete">Закладка для удаления выбрана.&#160;</string>
+	<string name="layoutBookmarksDeleteDelete">Подтвердить удаление</string>
+	<string name="layoutBookmarksDeleteOnResume">Вы находитесь в меню удаления закладок</string>
+	
+	<string name="layoutCallsMissedCallsList">Списки вызовов</string>
+	<string name="layoutCallsDeleteCallLogs">Удалить списки вызовов</string>
+	<string name="layoutCallsDeleteCallLogs2">Удалить все списки вызовов</string>
+	<string name="layoutCallsMakeCall">Набрать номер</string>
+	<string name="layoutCallsOnResume">Вы находитесь в меню вызовов</string>
+	<string name="layoutCallsOnResume2">Все списки вызовов успешно удалены. Вы находитесь в меню вызовов</string>
+		
+	<string name="layoutCallsMakeCallPhone">- Введите номер телефона -</string>
+	<string name="layoutCallsMakeCallPhone2">Номер телефона. Проведите пальцем вправо, чтобы войти.</string>
+	<string name="layoutCallsMakeCallPhone3">Номер телефона.&#160;</string>
+	<string name="layoutCallsMakeCallCall">Вызвать</string>
+	<string name="layoutCallsMakeCallCallError">Сначала Вы должны ввести номер телефона</string>
+	<string name="layoutCallsMakeCallOnResume">Вы находитесь в меню вызовов</string>
+	
+	<string name="layoutCallsLogsLogs">Списки вызовов</string>
+	<string name="layoutCallsLogsLogs2">Списки вызовов. Проведите пальцем вправо или влево, чтобы прослушать все вызовы.</string>
+	<string name="layoutCallsLogsAddToNewContact">Добавить к новым контактам</string>
+	<string name="layoutCallsLogsCall">Позвонить</string>
+	<string name="layoutCallsLogsCall2">Позвонить выбранному абоненту</string>
+	<string name="layoutCallsLogsSendMessage">Отправить сообщение</string>
+	<string name="layoutCallsLogsSendMessage2">Отправить сообщение выбранному абоненту</string>
+	<string name="layoutCallsLogsNoLogs">Нет списков вызовов</string>
+	<string name="layoutCallsLogsOutgoingCall">Исходящий вызов</string>
+	<string name="layoutCallsLogsIncomingCall">Входящий вызов</string>
+	<string name="layoutCallsLogsMissedCall">Пропущенный вызов</string>
+	<string name="layoutCallsLogsLogItem">Вызовы&#160;</string>
+	<string name="layoutCallsLogsOfNumber">&#160;от&#160;</string>
+	<string name="layoutCallsLogsAt">&#160;в&#160;</string>
+	<string name="layoutCallsLogsHours">&#160;часа&#160;</string>
+	<string name="layoutCallsLogsMinutes">&#160;минут&#160;</string>
+	<string name="layoutCallsLogsSeconds">&#160;секунд.</string>
+	<string name="layoutCallsLogsCallTo">&#160;К кому&#160;</string>
+	<string name="layoutCallsLogsCallFrom">&#160;от&#160;</string>
+	<string name="layoutCallsLogsError">Сначала вы должны выбрать вызов</string>
+	<string name="layoutCallsLogsPleaseTryAgain">Повторите попытку через несколько минут, после обработки всех списков вызовов.</string>
+	<string name="layoutCallsLogsOnResume">Входящие списков вызовов</string>
+	<string name="layoutCallsLogsOnResume2">Сообщение отправлено. Вы находитесь в меню списков вызовов</string>
+
+	<string name="layoutCallsLogsDelete">Удалить все списки вызовов. Проведите пальцем вправо для подтверждения.</string>
+	<string name="layoutCallsLogsDeleteOnResume">Вы находитесь в меню подтверждения удаления списков вызовов</string>
+				
+	<string name="layoutMessagesInbox">Входящие</string>
+	<string name="layoutMessagesInboxNew">Новые сообщения</string>
+	<string name="layoutMessagesInboxNoNew">Входящие. Нет новых сообщений</string>
+	<string name="layoutMessagesInboxOneNew">Входящие. Новое сообщение</string>
+	<string name="layoutMessagesSent">Исходящие</string>
+	<string name="layoutMessagesMessageLogs">Список сообщений</string>
+	<string name="layoutMessagesMessageLogsDelete">Удалить списки</string>
+	<string name="layoutMessagesMessageLogsDelete2">Удалить все списки сообщений</string>
+	<string name="layoutMessagesNew">Написать</string>
+	<string name="layoutMessagesNew2">Написать сообщение</string>
+	<string name="layoutMessagesOnResume">Вы находитесь в меню сообщений</string>
+	<string name="layoutMessagesOnResume2">Сообщение отправлено. Вы находитесь в меню сообщений</string>
+					
+	<string name="layoutMessagesDeleteNameFrom">Удалить сообщение от&#160;</string>
+	<string name="layoutMessagesDeleteNameTo">Удалить сообщение кому&#160;</string>
+	<string name="layoutMessagesDeleteDelete">Подтвердить удаление</string>
+	<string name="layoutMessagesDeleteOnResume">Вы находитесь в меню удаления сообщений</string>
+	
+	<string name="layoutMessagesSentSent">Отправленные</string>
+	<string name="layoutMessagesSentSent2">Отправленные сообщения. Проведите пальцем вправо или влево, чтобы услышать каждое сообщение.</string>
+	<string name="layoutMessagesSentDelete">Удалить сообщение</string>
+	<string name="layoutMessagesSentMessageItem">Сообщение&#160;</string>
+	<string name="layoutMessagesSentMessageOf">&#160;от&#160;</string>
+	<string name="layoutMessagesSentMessageSent">Отправлено&#160;</string>
+	<string name="layoutMessagesSentMessageMessageBody">Текст сообщения,&#160;</string>
+	<string name="layoutMessagesSentTryAgain">Повторите попытку через несколько минут, после обработки всех новых сообщений.</string>
+	<string name="layoutMessagesSentNoMessages">Нет сообщений</string>
+	<string name="layoutMessagesSentError">Сначала Вы должны выбрать сообщение</string>
+	<string name="layoutMessagesSentOnResume">Вы находитесь в меню отправленных сообщений</string>
+	<string name="layoutMessagesSentOnResume2">Сообщение удалено. Вы находитесь в меню отправленных сообщений</string>
+	<string name="layoutMessagesSentOnResume3">Все отправленные сообщения успешно удалены. Вы находитесь в меню Отправленные сообщения</string>
+	
+	<string name="layoutMessagesSentDeleteAllDelete">Удалить все отправленные сообщения.  Проведите пальцем вправо для подтверждения.</string>
+	<string name="layoutMessagesSentDeleteAllDeleteDelete">Удалить все отправленные сообщения</string>
+	<string name="layoutMessagesSentDeleteAllOnResume">Вы находитесь в меню подтверждения удаления отправленных сообщений.</string>
+		
+	<string name="layoutMessagesInboxInbox">Полученные</string>
+	<string name="layoutMessagesInboxInbox2">Полученные. Проведите пальцем вправо или влево, чтобы услышать каждое сообщение.</string>
+	<string name="layoutMessagesInboxReply">Написать сообщение</string>
+	<string name="layoutMessagesInboxDelete">Удалить сообщение</string>
+	<string name="layoutMessagesInboxDeleteAll">Удалить все полученные сообщения.</string>
+	<string name="layoutMessagesInboxCallTo">Вызвать контакт</string>
+	<string name="layoutMessagesInboxAddToNewContact">Создать новый контакт</string>
+	<string name="layoutMessagesInboxMessageReceived">Получено от&#160;</string>
+	<string name="layoutMessagesInboxMessageOn">&#160;в&#160;</string>
+	<string name="layoutMessagesInboxMessageItem">Сообщение&#160;</string>
+	<string name="layoutMessagesInboxMessageOf">&#160;от&#160;</string>
+	<string name="layoutMessagesInboxMessageAt">&#160;в&#160;</string>
+	<string name="layoutMessagesInboxMessageHours">&#160;часа&#160;</string>
+	<string name="layoutMessagesInboxMessageMinutes">&#160;Минут&#160;</string>
+	<string name="layoutMessagesInboxMessageSeconds">&#160;секунд.&#160;</string>
+	<string name="layoutMessagesInboxMessageMessageBody">Текст сообщения,&#160;</string>
+	<string name="layoutMessagesInboxTryAgain">Повторите попытку через несколько минут, после обработки всех полученных сообщений.</string>
+	<string name="layoutMessagesInboxError">Сначала вы должны выбрать сообщение</string>
+	<string name="layoutMessagesInboxNoMessages">Нет сообщений</string>
+	<string name="layoutMessagesInboxOnResume">Вы находитесь в меню полученных сообщений</string>
+	<string name="layoutMessagesInboxOnResume2">Сообщение отправлено. Вы находитесь в меню полученных сообщений</string>
+	<string name="layoutMessagesInboxOnResume3">Сообщение удалено. Вы находитесь в меню полученных сообщений</string>
+	<string name="layoutMessagesInboxOnResume4">Все полученные сообщения успешно удалены. Вы находитесь в меню Полученные сообщения</string>
+	
+	<string name="layoutMessagesInboxDeleteAllDelete">Удалить все полученные сообщения. Проведите пальцем вправо для подтверждения.</string>
+	<string name="layoutMessagesInboxDeleteAllDeleteDelete">Удалить все полученные сообщения</string>
+	<string name="layoutMessagesInboxDeleteAllOnResume">Вы находитесь в меню подтверждения удаления полученных сообщений.</string>
+	
+	<string name="layoutMessagesComposeAddressee">Адресат</string>
+	<string name="layoutMessagesComposeAddressee2">Адресат. Проведите пальцем вправо или влево, чтобы услышать каждый контакт.</string>
+	<string name="layoutMessagesComposeAddressee3">Адресат.&#160;</string>
+	<string name="layoutMessagesComposeMessage">Сообщение</string>
+	<string name="layoutMessagesComposeMessage2">Сообщение. Проведите пальцем вправо или влево, чтобы войти в сообщение.</string>
+	<string name="layoutMessagesComposeMessage3">Сообщение.&#160;</string>
+	<string name="layoutMessagesComposeSend">Отправить сообщение</string>
+	<string name="layoutMessagesComposeSending">Сообщение отправляется, подождите, пожалуйста...</string>
+	<string name="layoutMessagesComposeSendingError">Ваше сообщение отправляется, подождите, пожалуйста...</string>
+	<string name="layoutMessagesComposeSendingError2">Сообщение не смогло быть отправлено, проверьте статус оператора и повторите попытку позже.</string>
+	<string name="layoutMessagesComposeErrorComplete">Ошибка. Заполните все поля для отправки сообщения.</string>
+	<string name="layoutMessagesComposeOnResume">Вы находитесь в меню нового сообщения</string>
+	
+	<string name="layoutInputKeysOnResume">Вы находитесь в режиме ввода текста с помощью физической клавиатуры или сенсорного экрана. При использовании сенсорного экрана, проведите пальцем вверх и вниз, чтобы выбрать букву/номер или клавишу, проведите вправо, чтобы подтвердить букву/номер или клавишу и перейти к следующему букве/номеру, а влево для удаления последнего букву/номер.</string>
+	<string name="layoutInputKeysTips">Текстовый режим ввода\n\n* Проведите вверх и вниз, чтобы выбрать букву/номер\n\n* Проведите право для подтверждения буквы/номера или клавышу и перейти к следующему букве/номеру\n\n* Проведите  пальцем влево, чтобы удалить последний букву/номер\n\n* Совместимо с физической клавиатурой</string>
+	<string name="layoutInputKeysKeyEnter">[ВВОД]</string>
+	<string name="layoutInputKeysKeyEnter2">ВВОД</string>
+	<string name="layoutInputKeysKeyRead">[ЧИТАТЬ]</string>
+	<string name="layoutInputKeysKeyReadText">ЧИТАТЬ ТЕКСТ</string>
+	<string name="layoutInputKeysKeyReadNumber">ЧИТАТЬ НОМЕР</string>
+	<string name="layoutInputKeysKeySpace">ПРОБЕЛ</string>
+	<string name="layoutInputKeysNothingToRead">Нет текста</string>
+	<string name="layoutInputKeysEmptyField">Текстовое поле пустое</string>
+	<string name="layoutInputKeysEntered">&#160;введено</string>
+		
+	<string name="layoutInputVoiceOnResume">Вы находитесь в режиме ввода текста с помощью голосового управления</string>
+	<string name="layoutInputVoiceStartRecognition">Начать распознавание речи</string>
+	<string name="layoutInputVoiceStartRecognition2">Распознавание речи. Проведите пальцем вправо и начните говорить</string>
+	<string name="layoutInputVoicePossibleResult">Результат&#160;</string>
+	<string name="layoutInputVoicePossibleResults">Результаты (</string>
+	<string name="layoutInputVoicePossibleResults2">Возможные результаты.&#160;</string>
+	<string name="layoutInputVoicePossibleResults3">. Проведите пальцем вправо, чтобы услышать каждый результат.</string>
+	<string name="layoutInputVoiceEnterSelectedResult">Ввести выбранный результат</string>
+	<string name="layoutInputVoiceNoResultToSelect">Сначала Вы должны выбрать результат</string>
+	<string name="layoutInputVoiceNoRecognition">Нет возможных результатов. Пожалуйста, повторите попытку или проверьте, если распознавание речи на устройстве требует подключение к Интернету. Если это так, проверьте состояние подключения к Интернету.</string>
+	<string name="layoutInputVoiceSystemError">Ошибка системы. Распознавание речи не может быть выполнено</string>
+	<string name="layoutInputVoiceCancelAndGoBack">Отмена и возврат в предыдущее меню</string>
+
+	<string name="layoutInputKeyboardTalkbackOnResume">Вы находитесь в режиме ввода текста с помощью стандартной клавиатуры Андройд с Talkback. Вы должны включить TALKBACK, чтобы использовать этот режим. Текст выбран, и стандартная клавиатура Андройд доступна в нижней части экрана. Напишите, что вы хотите, и нажмите клавишу ввода на клавиатуре для ввода данных. Нажмите кнопку Назад, чтобы отменить и вернуться к предыдущему меню.</string>
+		
+	<string name="callFrom">Вызов от&#160;</string>
+	<string name="callFromUnknown">Вызов от неизвестного абонента</string>
+	<string name="callingTo">Вызов абонента&#160;</string>
+	<string name="callingToUnknown">Вызов неизвестного абонента</string>
+	<string name="callEnded">Конец вызова</string>
+			
+	<string name="backToPreviousMenu">Вернуться на предыдущее меню</string>
+	<string name="backToMainMenu">Вернуться на главную</string>
+
+	<string name="googleRequestTitle">Запрос на разрешение</string>
+	<string name="googleRequest1">Предоставьте разрешение на \'Слепой коммуникатор\' в следующем диалоговом окне. Это позволит вам ответить или отклонить вызов, сдвинув вверх или вниз на Android 8.0 и выше.\n\nС ноября 2018 года Google требует, чтобы каждое приложение предназначалось для Android 8.0, это означает, что теперь вы должны вручную предоставить (вам нужно сделать это только один раз), чтобы приложение разрешило работать правильно.</string>
+	<string name="googleRequest2">Выберите \'Слепой коммуникатор\' в следующем диалоговом окне. Это позволит прослушивать голосовое руководство в приложении (если устройство отключено) и изменять профили (Нормальный, вибрационный и бесшумный) на Android 8.0 и выше.\n\nС ноября 2018 года Google требует, чтобы каждое приложение предназначалось для Android 8.0, это означает, что теперь вы должны вручную предоставить (вам нужно сделать это только один раз), чтобы приложение разрешило работать правильно.</string>
+	<string name="googleRequestOk">Хорошо, я буду.</string>
+	
+	<string-array name="keysAll">
+	    <item>А</item>
+	    <item>Б</item>
+	    <item>В</item>
+	    <item>Г</item>
+	    <item>Д</item>
+	    <item>Е</item>
+	    <item>Ё</item>
+	    <item>Ж</item>
+	    <item>З</item>
+	    <item>И</item>
+	    <item>Й</item>
+	    <item>К</item>
+	    <item>Л</item>
+	    <item>М</item>
+	    <item>Н</item>
+	    <item>О</item>
+	    <item>П</item>
+	    <item>Р</item>
+	    <item>С</item>
+	    <item>Т</item>
+	    <item>У</item>
+	    <item>Ф</item>
+	    <item>Х</item>
+	    <item>Ц</item>
+	    <item>Ч</item>
+	    <item>Ш</item>
+	    <item>Щ</item>
+	    <item>Ъ</item>
+	    <item>Ы</item>
+	    <item>Ь</item>
+	    <item>Э</item>
+	    <item>Ю</item>
+	    <item>Я</item>
+		<item>A</item>
+		<item>B</item>
+		<item>C</item>
+		<item>D</item>
+		<item>E</item>
+		<item>F</item>
+		<item>G</item>
+		<item>H</item>
+		<item>I</item>
+		<item>J</item>
+		<item>K</item>
+		<item>L</item>
+		<item>M</item>
+		<item>N</item>
+		<item>O</item>
+		<item>P</item>
+		<item>Q</item>
+		<item>R</item>
+		<item>S</item>
+		<item>T</item>
+		<item>U</item>
+		<item>V</item>
+		<item>W</item>
+		<item>X</item>
+		<item>Y</item>
+		<item>Z</item>
+		<item>0</item>
+		<item>1</item>
+		<item>2</item>
+		<item>3</item>
+		<item>4</item>
+		<item>5</item>
+		<item>6</item>
+		<item>7</item>
+		<item>8</item>
+		<item>9</item>
+		<item>.</item>
+		<item>,</item>
+		<item>:</item>
+		<item>;</item>
+		<item>¡</item>
+		<item>!</item>
+		<item>¿</item>
+		<item>\?</item>
+		<item>+</item>
+		<item>-</item>
+		<item>*</item>
+		<item>#</item>
+		<item>%</item>
+		<item>&amp;</item>
+		<item>$</item>
+		<item>/</item>
+		<item>"\\"</item>
+		<item>(</item>
+		<item>)</item>
+		<item>{</item>
+		<item>}</item>
+		<item>\"</item>
+		<item>\@</item>
+		<item>[ЧИТАТЬ]</item>
+		<item>[ВВОД]</item>
+		<item>_</item>
+	</string-array>
+
+	<string-array name="keysOnlyNumbers">
+		<item>#</item>
+	    <item>*</item>
+	    <item>0</item>
+		<item>1</item>
+		<item>2</item>
+		<item>3</item>
+		<item>4</item>
+		<item>5</item>
+		<item>6</item>
+		<item>7</item>
+		<item>8</item>
+		<item>9</item>
+		<item>[ЧИТАТЬ]</item>
+		<item>[ВВОД]</item>
+	</string-array>
+</resources>

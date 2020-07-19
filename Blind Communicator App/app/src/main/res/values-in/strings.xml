@@ -1,0 +1,578 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Blind Communicator</string>
+    <string name="title_activity_main">Blind Communicator</string>
+    <string name="menu_settings">Settings</string>
+    
+	<string name="mainWelcome">Selamat datang ke sistem Blind Communicator yang dibangunkan oleh Leonardo Javier Russo. Slaid keatas dan kebawah untuk melihat pilihan dan slaid kekanan untuk memilih. Jika peranti anda mempunyai papan kekunci fizikal, anda boleh menggunakan kekunci arah. Jika anda menggunakan TalkBack, slaid dan pilih menu menggunakan dua jari.</string>
+    <string name="mainMessages">Mesej</string>
+    <string name="mainMessagesNew">mesej baru</string>
+    <string name="mainMessagesNoNew">Mesej. Tiada mesej baru.</string>
+    <string name="mainMessagesOneNew">Mesej. Satu mesej baru.</string>
+	<string name="mainMessagesNewFromContact">Mesej baru daripada&#160;</string>
+	<string name="mainMessagesNewFromUnknown">Mesej dari nombor tidak dikenali</string>
+	<string name="mainMessagesNotAvailable">Mesej. Tidak terdapat didalam peranti.</string>
+    <string name="mainCalls">Panggilan</string>
+    <string name="mainCallsMissed">panggilan tidak dijawab</string>
+    <string name="mainCallsNoMissed">Panggilan. Tiada panggilan tidak dijawab.</string>
+    <string name="mainCallsOneMissed">Panggilan. Satu panggilan tidak dijawab.</string>
+    <string name="mainCallsNotAvailable">Panggilan. Tidak terdapat didalam peranti.</string>
+	<string name="mainCallsNotAvailableOS">Versi Android perangkat ini tidak memungkinkan Blind Communicator mengakses log panggilan.</string>
+    <string name="mainNotAvailable">Pilihan ini tidak terdapat didalam peranti.</string>
+    <string name="mainContacts">Kenalan</string>
+    <string name="mainMusicPlayer">Muzik</string>
+    <string name="mainBrowser">Internet</string>
+    <string name="mainAlarms">Penggera</string>
+    <string name="mainAlarmsNoAlarms">Penggera. Tiada penggera hari ini.</string>
+    <string name="mainAlarmsOneAlarm">Penggera. Satu penggera hari ini.</string>
+	<string name="mainAlarmsForToday">&#160;penggera untuk hari ini.</string>
+	<string name="mainVoiceRecorder">Perakam suara</string>
+	<string name="mainApplications">Aplikasi</string>
+    <string name="mainSettings">Tetapan</string>
+    <string name="mainStatus">Status peranti</string>
+	<string name="mainCarrierIs">, pembawa ialah&#160;</string>
+	<string name="mainProfileIsNormal">, profil normal&#160;</string>
+	<string name="mainProfileIsSilent">, profil senyap&#160;</string>
+	<string name="mainProfileIsVibrate">, profil getar&#160;</string>
+	<string name="mainNoSignal">, tiada rangkaian telefon&#160;</string>
+	<string name="mainBatteryChargedAt">Bateri sedang dicaj&#160;</string>
+    <string name="mainPercentAndTime">&#160;peratus, masa ialah&#160;</string>
+    <string name="mainHours">&#160;jam&#160;</string>
+	<string name="mainMinutesAndDate">&#160;minit dan tarikh ialah&#160;</string>
+	<string name="mainOf">&#160;daripada&#160;</string>
+	<string name="mainCarrierNotAvailable">Tidak diketahui</string>
+	<string name="mainWifiOnWithNetwork">dan wifi telah dibuka dan&#160;</string>
+	<string name="mainWifiOnWithoutNetwork">dan wifi dihidupkan dan tidak berhubung dengan mana-mana rangkaian wifi.</string>
+	<string name="mainWifiOff">Dan wifi ditutup.</string>
+	<string name="mainMusicPlayerPleaseTryAgain">Sila cuba sebentar lagi sementara pemain media sedang memproses kesemua fail muzik.</string>
+	<string name="mainNoTTSInstalledTitle">Ralat</string>
+	<string name="mainNoTTSInstalledMessage">Perisian TTS tidak dijumpai. Sila muat turun aplikasi Google TTS (aplikasi percuma) untuk membolehkan app ni berfungsi.</string>
+	<string name="mainNoTTSInstalledButton">OK, saya akan melakukannya.</string>
+	<string name="mainPressBack">Tekan kembali sekali lagi untuk menutup aplikasi.</string>
+
+    <string name="monday">Isnin</string>
+	<string name="tuesday">Selasa</string>
+	<string name="wednesday">Rabu</string>
+	<string name="thursday">Khamis</string>
+	<string name="friday">Jumaat</string>
+	<string name="saturday">Sabtu</string>
+    <string name="sunday">Ahad</string>
+	
+    <string name="january">Januari</string>
+    <string name="february">Febuari</string>
+	<string name="march">Mac</string>
+	<string name="april">April</string>
+	<string name="may">Mei</string>
+	<string name="june">Jun</string>
+	<string name="july">Julai</string>
+	<string name="august">Ogos</string>
+	<string name="september">September</string>
+	<string name="october">Oktober</string>
+	<string name="november">November</string>
+	<string name="december">Disember</string>
+
+	<string name="volumeMaximum">Kelantangan maksimum</string>
+	<string name="volumeHigher">Kelantangan tertinggi</string>
+	<string name="volumeLower">Kelantangan terendah</string>
+	<string name="deviceCharged">Peranti sedang dicaj penuh</string>
+	<string name="deviceChargedStatus">, peranti telah dicaj penuh,&#160;</string>
+	<string name="deviceCharging">Peranti sedang dicaj</string>
+	<string name="deviceChargingStatus">, peranti dicaj cargando,&#160;</string>
+	<string name="deviceUnplugged">Plug peranti dicabut</string>
+	<string name="screenOn">Skrin buka</string>
+	<string name="screenOff">Skrin tutup</string>
+	<string name="screenPortrait">Orentasi skrin didalam mod potret</string>
+	<string name="screenLandscape">Orentasi skrin didalam lanskap</string>
+	<string name="wifiConnectedToNetwork">Wifi dihubung dengan rangkaian bernama&#160;</string>
+	<string name="wifiDisconnectedFromNetwork">Wifi tidak dihubung dengan mana-mana rangkaian</string>
+	
+	<string name="layoutMainMessages">Mesej</string>
+	<string name="layoutMainCalls">Panggilan</string>
+	<string name="layoutMainContacts">Kenalan</string>
+	<string name="layoutMainMusic">Muzik</string>
+	<string name="layoutMainBrowser">Internet</string>
+	<string name="layoutMainAlarms">Penggera</string>
+	<string name="layoutMainSettings">Tetapan</string>
+	<string name="layoutMainStatus">Status</string>
+	<string name="layoutMainOnResume">Anda berada di menu utama</string>
+	
+	<string name="layoutAlarmsNotifierShutdown">Slaid keatas atau kebawah untuk mematikan penggera</string>
+	
+	<string name="layoutAlarmsList">Senarai penggera</string>
+	<string name="layoutAlarmsCreate">Cipta penggera</string>
+	<string name="layoutAlarmsAlarmCreated">Penggera dicipta dan anda berada di menu penggera</string>
+	<string name="layoutAlarmsOnResume">Anda berada di menu penggera</string>
+	
+	<string name="layoutAlarmsCreateMessage">- mesej input -</string>
+	<string name="layoutAlarmsCreateMessage2">Mesej penggera. Slaid kekanan untuk input.</string>
+	<string name="layoutAlarmsCreateMessage3">Mesej penggera:\n</string>
+	<string name="layoutAlarmsCreateMessage4">Mesej penggera.&#160;</string>
+	<string name="layoutAlarmsCreateCreate">Cipta penggera</string>
+	<string name="layoutAlarmsCreateDay">Penggera hari:&#160;</string>
+	<string name="layoutAlarmsCreateDay2">Penggera hari.&#160;</string>
+	<string name="layoutAlarmsCreateTimeHour">Jam penggera:&#160;</string>
+	<string name="layoutAlarmsCreateTimeHour2">Jam penggera.&#160;</string>
+	<string name="layoutAlarmsCreateTimeMinute">Minit penggera:&#160;</string>
+	<string name="layoutAlarmsCreateTimeMinute2">Minit penggera.&#160;</string>
+	<string name="layoutAlarmsCreateHours">&#160;jam</string>
+	<string name="layoutAlarmsCreateMinutes">&#160;minit</string>
+	<string name="layoutAlarmsCreateErrorNoMessage">Ralat. Anda perlu inputkan mesej.</string>
+	<string name="layoutAlarmsCreateErrorAlarmConflict">Ralat. Terdapat penggera lain ditetapkan pada hari dan waktu yang sama.</string>
+	<string name="layoutAlarmsCreateOnResume">Anda berada di menu mencipta penggera</string>
+	
+	<string name="layoutAlarmsListNoAlarms">Tiada penggera dicipta</string>
+	<string name="layoutAlarmsListList">Penggera</string>
+	<string name="layoutAlarmsListAlarmAlarmsCount">&#160;penggera telah dicipta</string>
+	<string name="layoutAlarmsListAt">&#160;pada&#160;</string>
+	<string name="layoutAlarmsListForToday">&#160;untuk hari ini. Slaid kekanan atau kekiri untuk mendengar salah satu.</string>
+	<string name="layoutAlarmsListDelete">Memadam penggera pilihan</string>
+	<string name="layoutAlarmsListDeleted">Penggera telah dipadam dan anda berada di menu senarai penggera</string>
+	<string name="layoutAlarmsListDeleteSelectError">Anda harus memilih penggera dahulu</string>
+	<string name="layoutAlarmsListOnResume">Anda berada di menu senarai penggera</string>
+	<string name="layoutAlarmsListOnResume2">Semua alarm telah Berjaya dipadamkan dan anda berada di menu senarai penggera</string>
+		
+	<string name="layoutAlarmsDeleteSelected">Penggera pilihan untuk dihapus.&#160;</string>
+	<string name="layoutAlarmsDeleteDelete">Pemadaman dipastikan</string>
+	<string name="layoutAlarmsDeleteOnResume">Anda berada dia menu memadam penggera</string>
+
+	<string name="layoutAlarmsDeleteAllDelete">Memadam semua penggera. Slaid kekanan untuk memastikan.</string>
+	<string name="layoutAlarmsDeleteAllDeleteDelete">Padam semua penggera</string>
+	<string name="layoutAlarmsDeleteAllOnResume">Anda berada di menu memadam semua penggera</string>
+		
+	<string name="layoutVoiceRecorderList">Senarai perakam suara</string>
+	<string name="layoutVoiceRecorderCreate">Cipta perakam suara</string>
+	<string name="layoutVoiceRecorderOnResume">Anda berada di menu perakam suara</string>
+	<string name="layoutVoiceRecorderOnResume2">Perakam suara telah disimpan dan anda berada di menu perakam suara</string>
+	
+	<string name="layoutVoiceRecorderCreateCreate">Cipta perakam suara</string>
+	<string name="layoutVoiceRecorderCreateCreate2">Cipta perakam suara. Slaid kekanan untuk mula merekod dan slaid sekali lagi pada arah yang sama untuk berhenti merekod.</string>
+	<string name="layoutVoiceRecorderCreateError">Ralat. Sila pastikan memori kad terdapat didalam peranti.</string>
+	<string name="layoutVoiceRecorderCreateOnResume">Anda berada di menu mencipta perakam suara</string>
+	
+	<string name="layoutVoiceRecorderListList">Perakam suara</string>
+	<string name="layoutVoiceRecorderListList2">Perakam suara. Slaid kekanan atau kekiri untuk memilih salah satu.</string>
+	<string name="layoutVoiceRecorderListPlay">Main perakam suara</string>
+	<string name="layoutVoiceRecorderListPlay2">Main pilihan perakam suara. Slaid kekanan atau untuk main dan kekiri untuk berhenti.</string>
+	<string name="layoutVoiceRecorderListDelete">Padam perakam suara</string>
+	<string name="layoutVoiceRecorderListDelete2">Padam perakam suara dipilih</string>
+	<string name="layoutVoiceRecorderListItem">Perakam suara&#160;</string>
+	<string name="layoutVoiceRecorderListItemOf">&#160;daripada&#160;</string>
+	<string name="layoutVoiceRecorderListNoVoiceRecords">Tiada perakam suara didapati</string>
+	<string name="layoutVoiceRecorderListPleaseWait">Sila cuba sebentar lagi apabila perakam suara sedang memproses.</string>
+	<string name="layoutVoiceRecorderListError">Anda harus memilih perakam suara dahulu</string>
+	<string name="layoutVoiceRecorderListOnResume">Anda berada di menu senarai perakam suara</string>
+	<string name="layoutVoiceRecorderListOnResume2">Perakam suara telah dipadam dan anda berada dimenu senatai perakam suara</string>
+	
+	<string name="layoutVoiceRecorderDeleteDelete">Perakam suara pilihan untuk dihapus. Perakam suara&#160;</string>
+	<string name="layoutVoiceRecorderDeleteDelete2">. Slaid kekanan untuk mendengar dan slaid kekiri untuk berhenti.</string>
+	<string name="layoutVoiceRecorderDeleteToDelete">Perakam suara&#160;</string>
+	<string name="layoutVoiceRecorderDeleteConfirm">Pastikan memadam</string>
+	<string name="layoutVoiceRecorderDeleteOnResume">Anda berada di menu memadam perakam suara</string>
+	
+	<string name="layoutApplicationsList">Aplikasi</string>
+	<string name="layoutApplicationsList2">Aplikasi. Slaid kekanan atau kekiri untuk mendengar salah satu.</string>
+	<string name="layoutApplicationsListPleaseWait">Sila cuba sebentar lagi sementara aplikasi dalam pemprosesan.</string>
+	<string name="layoutApplicationsLaunch">Lancarkan aplikasi yang dipilih</string>
+	<string name="layoutApplicationsLaunchError">Anda harus memilih aplikasi dahulu.</string>
+	<string name="layoutApplicationsNoApps">Tiada aplikasi</string>
+	<string name="layoutApplicationsOnResume">Anda berada di menu aplikasi</string>
+	
+	<string name="layoutSettingsReadingSpeed">Kelajuan membaca:&#160;</string>
+	<string name="layoutSettingsReadingSpeed2">Kelajuan membaca.&#160;</string>
+	<string name="layoutSettingsScreenTimeout">Masa tamat skrin:\n</string>
+	<string name="layoutSettingsScreenTimeout2">Masa tamat skrin selepas&#160;</string>
+	<string name="layoutSettingsToneNotAvailable">Tidak ada</string>
+	<string name="layoutSettingsAlarmTone">Nada penggera:\n</string>
+	<string name="layoutSettingsAlarmTone2">Nada penggera.&#160;</string>
+	<string name="layoutSettingsAlarmToneNotAvailable">Nada penggera. Tidak ada di dalam peranti</string>
+	<string name="layoutSettingsNotifyTone">Nada pemberitahu:\n</string>
+	<string name="layoutSettingsNotifyTone2">Nada pemberitahu.&#160;</string>
+	<string name="layoutSettingsNotifyToneNotAvailable">Nada pemberitahu. Tidak ada di dalam peranti</string>
+	<string name="layoutSettingsCallTone">Nada panggilan:\n</string>
+	<string name="layoutSettingsCallTone2">Nada panggilan.&#160;</string>
+	<string name="layoutSettingsCallToneNotAvailable">Nada panggilan: -</string>
+	<string name="layoutSettingsCallToneNotAvailable2">Nada panggilan. Tidak ada di dalam peranti.</string>
+	<string name="layoutSettingsProfileNormal">Profil: Normal</string>
+	<string name="layoutSettingsProfileNormal2">Profil. Normal</string>
+	<string name="layoutSettingsProfileSilent">Profil: Silent</string>
+	<string name="layoutSettingsProfileSilent2">Profil. Silent</string>
+	<string name="layoutSettingsProfileVibrate">Profil: Vibrate</string>
+	<string name="layoutSettingsProfileVibrate2">Profil. Vibrate</string>
+	<string name="layoutSettingsWifiOn">Wifi: buka</string>
+	<string name="layoutSettingsWifiOn2">Wifi dibuka</string>
+	<string name="layoutSettingsWifiOn2WithoutNetwork">Wifi. Wifi dibuka dan tidak berhubung dengan mana-mana rangkaian.</string>
+	<string name="layoutSettingsWifiOn2WithNetwork">Wifi. Wifi dibuka dan berhubung dengan rangkaian bernama&#160;</string>
+	<string name="layoutSettingsWifiOff">Wifi: tutup</string>
+	<string name="layoutSettingsWifiOff2">Wifi. Wifi ditutup</string>
+	<string name="layoutSettingsWifiOff3">Wifi ditutup</string>
+	<string name="layoutSettingsBluetoothOn">Bluetooth: buka</string>
+	<string name="layoutSettingsBluetoothOn2">Bluetooth dibuka</string>
+	<string name="layoutSettingsBluetoothOff">Bluetooth: tutup</string>
+	<string name="layoutSettingsBluetoothOff2">Bluetooth ditutup</string>
+	<string name="layoutSettingsInputMode">Mod input:&#160;</string>
+	<string name="layoutSettingsInputMode2">Teks input daripada&#160;</string>
+	<string name="layoutSettingsInputModeKeyboard">Papan kekunci</string>
+	<string name="layoutSettingsInputModeKeyboard2">Papan kekunci fizikal dan skrin sentuh</string>
+	<string name="layoutSettingsInputModeVoice">Suara</string>
+	<string name="layoutSettingsInputModeVoice2">pengecaman suara. Mungkin menggunakan internet.</string>
+	<string name="layoutSettingsInputModeKeyboardTalkback">Papan kekunci Talkback</string>
+	<string name="layoutSettingsInputModeKeyboardTalkback2">Papan kekunci android biasa bersama Talkback. Talkback perlu diaktifkan.</string>
+	<string name="layoutSettingsSystemSettings">Tetapan sistem</string>
+	<string name="layoutSettingsSeconds">&#160;saat</string>
+	<string name="layoutSettingsSeconds2">&#160;saat tidak diaktif</string>
+	<string name="layoutSettingsMinute">&#160;minit</string>
+	<string name="layoutSettingsMinute2">&#160;minit tidak aktif</string>
+	<string name="layoutSettingsMinutes">&#160;minit</string>
+	<string name="layoutSettingsMinutes2">&#160;minit tidak aktif</string>
+	<string name="layoutSettingsPrivacyPolicy">Kebijakan pribadi</string>
+	<string name="layoutSettingsPrivacyPolicy2">Communicator Kebijakan Privasi buta. Dirilis pada 21 Des 2016. Saya, Leonardo Javier Russo, menganggap informasi Anda yang signifikan dan melepaskan Pernyataan Privasi ini untuk memberitahu Anda informasi apa yang saya kumpulkan dan bagaimana saya menggunakannya untuk personalisasi dan terus meningkatkan Anda mengalami. Pernyataan Privasi ini berlaku untuk App Blind Communicator dan layanannya dan tidak berlaku untuk produk atau jasa yang yang tidak link ke pernyataan ini atau memiliki pernyataan privasi masing-masing. 1 - Mengumpulkan informasi. Sebuah. Informasi pribadi. Saya tidak mengumpulkan informasi pribadi. Informasi pribadi adalah informasi yang mengidentifikasi Anda atau orang lain, seperti nama depan dan nama belakang, alamat fisik, alamat email, telepon, fax, kamera, mikrofon, GPS, atau informasi yang tersimpan dalam perangkat Anda. b. Informasi non-pribadi. Saya tidak mengumpulkan informasi non-pribadi Anda ketika Anda menggunakan App Blind Communicator atau mengunjungi website saya, termasuk informasi perangkat Anda, sistem operasi, log. c. Informasi yang Anda berikan. Saya tidak mengumpulkan informasi Anda ketika Anda berkomunikasi dengan saya. Bagaimana saya Gunakan Informasi. Sebuah. Informasi pribadi. Saya tidak menyimpan informasi pribadi dan karena itu saya tidak mengungkapkan Informasi Pribadi. b. Informasi Non-Pribadi. Saya tidak menjual, memperdagangkan, atau mengalihkan kepada pihak luar informasi Anda. Saya tidak menggabungkan Informasi Non-Pribadi dengan Informasi Pribadi (seperti menggabungkan nama Anda dengan nomor Perangkat unik User). Hubungi saya. Jika Anda memiliki pertanyaan atau komentar tentang Kebijakan ini atau praktik privasi kami, atau untuk melaporkan setiap pelanggaran Kebijakan atau penyalahgunaan App Blind Communicator atau Website, silahkan hubungi saya di contacto@lrusso.com.ar. Perubahan. Kebijakan Privasi ini dapat berubah yang tidak akan mengurangi hak Anda dalam Kebijakan Privasi ini dari waktu ke waktu, saya akan posting perubahan kebijakan privasi di halaman ini, jadi silakan meninjau secara berkala. Jika Anda tidak setuju untuk modifikasi Kebijakan ini, Anda bisa segera menghentikan semua penggunaan semua Layanan. Dengan terus menggunakan App Blind Communicator setelah posting modifikasi Kebijakan ini akan merupakan penerimaan Anda dari Kebijakan direvisi.</string>
+	<string name="layoutSettingsOnResume">Anda berada di menu tetapan</string>
+	
+	<string name="layoutContactsList">Kenalan</string>
+	<string name="layoutContactsCreate">Cipta kenalan</string>
+	<string name="layoutContactsOnResumeCreated">Kenalan telah dicipta dan anda berada di menu kenalan</string>
+	<string name="layoutContactsOnResume">Anda berada di menu kenalan</string>
+	
+	<string name="layoutContactsCreateName">- nama input -</string>
+	<string name="layoutContactsCreateName2">Nama kenalan. Slaid kekanan untuk input.</string>
+	<string name="layoutContactsCreateName3">Nama kenalan.&#160;</string>
+	<string name="layoutContactsCreatePhone">- input nombor telefon -</string>
+	<string name="layoutContactsCreatePhone2">Nombor telefon. Slaid kekanan untuk input.</string>
+	<string name="layoutContactsCreatePhone3">Nombor telefon.&#160;</string>
+	<string name="layoutContactsCreateCreate">Cipta kenalan</string>
+	<string name="layoutContactsCreateErrorComplete">RALAT. Anda harus selesaikan setiap ruang Kotak untuk cipta kenalan.</string>
+	<string name="layoutContactsCreateOnResume">Anda berada di menu kenalan</string>
+	
+	<string name="layoutContactsListContactsList">Kenalan</string>
+	<string name="layoutContactsListContactsList2">Kenalan. Slaid kekanan atau kekiri untuk mendengar salah satu.</string>
+	<string name="layoutContactsListNoContacts">Tiada kenalan</string>
+	<string name="layoutContactsListWithThePhoneNumber">&#160;dengan nombor telefon&#160;</string>
+	<string name="layoutContactsListCall">Panggilan</string>
+	<string name="layoutContactsListCall2">Panggil kenalan dipilih</string>
+	<string name="layoutContactsListSendMessage">Hantarkan mesej</string>
+	<string name="layoutContactsListSendMessage2">Hantarkan mesej kenalan yang dipilih</string>
+	<string name="layoutContactsListDelete">Padam kenalan</string>
+	<string name="layoutContactsListDelete2">Memadam kenalan dipilih</string>
+	<string name="layoutContactsListError">Anda harus memilih kenalan dahulu</string>
+	<string name="layoutContactsListPleaseWait">Sila cuba sebentar lagi sementara kenalan dalam pemprosesan.</string>
+	<string name="layoutContactsListOnResumeContactDeleted">Kenalan telah dipadam dan anda berada di menu senarai kenalan</string>
+	<string name="layoutContactsListOnResume">Anda berada di menu senarai kenalan</string>
+	<string name="layoutContactsListOnResume2">Mesej telah dihantar dan anda berada di menu senarai kenalan</string>
+			
+	<string name="layoutContactsDeleteSelected">Pilihan kenalan untuk dipadam.&#160;</string>
+	<string name="layoutContactsDeleteDelete">Pastikan pemadaman</string>
+	<string name="layoutContactsDeleteOnResume">Anda berada di menu pemadaman kenalan</string>
+	
+	<string name="layoutMusicPlayerNowPlaying">Sedang diputarkan</string>
+	<string name="layoutMusicPlayerNowPlaying2">Sedang diputarkan</string>
+	<string name="layoutMusicPlayerNowPlaying3">&#160;lagu&#160;</string>
+	<string name="layoutMusicPlayerNowPlaying4">&#160;daripada&#160;</string>
+	<string name="layoutMusicPlayerNowPlaying5">&#160;oleh&#160;</string>
+	<string name="layoutMusicPlayerNowPlayingError1">Anda harus memilih artis disertakan album dahulu</string>
+	<string name="layoutMusicPlayerNowPlayingError2">Tiada muzik yang sedang diputarkan</string>
+	<string name="layoutMusicPlayerPlay">Putar</string>
+	<string name="layoutMusicPlayerStop">Berhenti</string>
+	<string name="layoutMusicPlayerPreviousTrack">Lagu sebelumnya</string>
+	<string name="layoutMusicPlayerPreviousTrack2">Lagu sebelumnya</string>
+	<string name="layoutMusicPlayerNextTrack">Lagu seterusnya</string>
+	<string name="layoutMusicPlayerNextTrack2">Lagu seterusnya</string>
+	<string name="layoutMusicPlayerLowerVolume">Kelantangan rendah</string>
+	<string name="layoutMusicPlayerLowerVolume2">Kelantangan rendah</string>
+	<string name="layoutMusicPlayerHigherVolume">Kelantangan tinggi</string>
+	<string name="layoutMusicPlayerHigherVolume2">Kelantangan tinggi</string>
+	<string name="layoutMusicPlayerArtists">Artis</string>
+	<string name="layoutMusicPlayerAlbums">Album</string>
+	<string name="layoutMusicPlayerUnknown">Tidak diketahui</string>
+	<string name="layoutMusicPlayerOnResume">Sekarang anda berada di menu pemutar muzik</string>
+	
+	<string name="layoutMusicPlayerArtistsList">Artis</string>
+	<string name="layoutMusicPlayerArtistsList2">Artis. Slaid kekanan atau kekiri untuk mendengar setiap satu.</string>
+	<string name="layoutMusicPlayerArtistsNoArtists">Tiada artis.</string>
+	<string name="layoutMusicPlayerArtistsAlbumsList">Album</string>
+	<string name="layoutMusicPlayerArtistsAlbumsList2">Album. Slaid kekanan atau kekiri untuk mendengar setiap satu.</string>
+	<string name="layoutMusicPlayerArtistsAlbumsList3">Pertama anda mesti memilih seorang artis.</string>
+	<string name="layoutMusicPlayerArtisrsAlbumsNoAlbums">Tiada album.</string>
+	<string name="layoutMusicPlayerArtistsPleaseWait">Sila cuba sebentar lagi sementara pemutar muzik mepaparkan semua artis album.</string>
+	<string name="layoutMusicPlayerArtistsPlayAlbum">Putarkan album</string>
+	<string name="layoutMusicPlayerArtistsPlayError">Anda harus memilih album dahulu.</string>
+	<string name="layoutMusicPlayerArtistsPlayError2">Ralat. Tidak dapat membuka fail muzik.</string>
+	<string name="layoutMusicPlayerArtistsOnResume">Anda berada di menu artis</string>
+	
+	<string name="layoutBrowserSearchInGoogle">Cari dalam Google</string>
+	<string name="layoutBrowserListBookmarks">Pergi ke Bookmarks</string>
+	<string name="layoutBrowserAWebPageItsBeenLoading">. Sila tunggu sehingga laman web yang diminta telah dimuatkan.</string>
+	<string name="layoutBrowserErrorPendingRequest">RALAT. Laman web sedang diproses, sila tunggu sehingga tamat.</string>
+	<string name="layoutBrowserLoadingPagePleaseWait">Laman diproses, tunggu sebentar</string>
+	<string name="layoutBrowserPageNotFound">Halaman tidak dijumpai. Sila semak sambungan Internet anda dan alamat web.</string>
+	<string name="layoutBrowserOnResume">Anda berada di menu pelayar web</string>
+	
+	<string name="layoutBrowserPageViewerReadTitle">Baca Tajuk Halaman</string>
+	<string name="layoutBrowserPageViewerReadTitle2">Tajuk halaman web adalah&#160;</string>
+	<string name="layoutBrowserPageViewerReadText">Baca Teks Halaman</string>
+	<string name="layoutBrowserPageViewerPageLinks">Pautan laman web</string>
+	<string name="layoutBrowserPageViewerPageLinks2">Pautan laman web. Slaid kekanan atau kekiri untuk mendengar salah satu.</string>
+	<string name="layoutBrowserPageViewerPageLinks3">Penghubung&#160;</string>
+	<string name="layoutBrowserPageViewerPageLinks3Of">&#160;daripada&#160;</string>
+	<string name="layoutBrowserPageViewerPageLinks4">Laman web semasa tidak mempunyai pautan.</string>
+	<string name="layoutBrowserPageViewerPageLinkSelectError">Pertama anda mesti memilih pautan.</string>
+	<string name="layoutBrowserPageViewerGoToLink">Pergi ke pautan pilihan</string>
+	<string name="layoutBrowserPageViewerAddToBookmarks">Tambah laman semasa di Bookmarks</string>
+	<string name="layoutBrowserPageViewerAddToBookmarksAdded">Bookmarks telah ditambah</string>
+	<string name="layoutBrowserPageViewerAddToBookmarksRepeated">Bookmarks telah wujud</string>
+	<string name="layoutBrowserPageViewerOnResume">Anda berada di menu laman web pelayar</string>
+	
+	<string name="layoutBookmarksListList">Senarai Bookmarks</string>
+	<string name="layoutBookmarksListList2">Senarai bookmarks. Slaid kekanan atau kekiri untuk mendengar salah satu.</string>
+	<string name="layoutBookmarksListList3">Tiada bookmarks</string>
+	<string name="layoutBookmarksListGoToLink">Pergi ke bookmark pilihan</string>
+	<string name="layoutBookmarksListDelete">Padam bookmark pilihan</string>
+	<string name="layoutBookmarksListDeleted">Bookmark telah dipadam dan anda berada di menu senarai bookmarks</string>
+	<string name="layoutBookmarksListSelectError">Anda harus memilih bookmark dahulu</string>
+	<string name="layoutBookmarksListOnResume">Anda berada di menu senarai bookmarks</string>
+	
+	<string name="layoutBookmarksDeleteToDelete">Bookmarks pilihan untuk dipadamkan.&#160;</string>
+	<string name="layoutBookmarksDeleteDelete">Pasti padam</string>
+	<string name="layoutBookmarksDeleteOnResume">Anda berada di menu memadam bookmark</string>
+	
+	<string name="layoutCallsMissedCallsList">Catatan panggilan</string>
+	<string name="layoutCallsDeleteCallLogs">Padam catatan</string>
+	<string name="layoutCallsDeleteCallLogs2">Padam semua catatan panggilan</string>
+	<string name="layoutCallsMakeCall">Lakukan panggilan</string>
+	<string name="layoutCallsOnResume">Anda berada di menu panggilan</string>
+	<string name="layoutCallsOnResume2">Semua catatan panggilan telah berjaya dipadam dan anda berada di menu panggilan</string>
+		
+	<string name="layoutCallsMakeCallPhone">- input nombor telefon -</string>
+	<string name="layoutCallsMakeCallPhone2">Nombor telefon. Slaid kekanan untuk memasukkan nombor.</string>
+	<string name="layoutCallsMakeCallPhone3">Nombor telefon.&#160;</string>
+	<string name="layoutCallsMakeCallCall">Panggilan</string>
+	<string name="layoutCallsMakeCallCallError">Anda harus memasukkan nombor telefon</string>
+	<string name="layoutCallsMakeCallOnResume">Anda berada di menu untuk membuat panggilan</string>
+	
+	<string name="layoutCallsLogsLogs">Catatan panggilan</string>
+	<string name="layoutCallsLogsLogs2">Catatan panggilan. Slaid kekanan atau kekiri untuk mendengar.</string>
+	<string name="layoutCallsLogsAddToNewContact">Tambah kenalan baru</string>
+	<string name="layoutCallsLogsCall">Panggil</string>
+	<string name="layoutCallsLogsCall2">Panggil nombor pilihan</string>
+	<string name="layoutCallsLogsSendMessage">Hantar mesej</string>
+	<string name="layoutCallsLogsSendMessage2">Hantar mesej pilihan kenalan</string>
+	<string name="layoutCallsLogsNoLogs">Tiada catatan panggilan</string>
+	<string name="layoutCallsLogsOutgoingCall">Panggilan keluar</string>
+	<string name="layoutCallsLogsIncomingCall">Panggilan masuk</string>
+	<string name="layoutCallsLogsMissedCall">Panggilan tidak dijawab</string>
+	<string name="layoutCallsLogsLogItem">Catatan&#160;</string>
+	<string name="layoutCallsLogsOfNumber">&#160;daripada&#160;</string>
+	<string name="layoutCallsLogsAt">&#160;pada&#160;</string>
+	<string name="layoutCallsLogsHours">&#160;jam&#160;</string>
+	<string name="layoutCallsLogsMinutes">&#160;minit&#160;</string>
+	<string name="layoutCallsLogsSeconds">&#160;saat.</string>
+	<string name="layoutCallsLogsCallTo">&#160;hingga&#160;</string>
+	<string name="layoutCallsLogsCallFrom">&#160;dari&#160;</string>
+	<string name="layoutCallsLogsError">Anda harus memilih catatan</string>
+	<string name="layoutCallsLogsPleaseTryAgain">Sila cuba sebentar lagi sementara catatan panggilan dalam pemprosesan.</string>
+	<string name="layoutCallsLogsOnResume">Anda berada di menu catatan panggilan</string>
+	<string name="layoutCallsLogsOnResume2">Mesej telah dihantar dan anda berada di menu catatan panggilan</string>
+
+	<string name="layoutCallsLogsDelete">Padam catatan panggilan. Slaid kekanan untuk memastikan.</string>
+	<string name="layoutCallsLogsDeleteOnResume">Anda berada di menu memadam catatan panggilan</string>
+				
+	<string name="layoutMessagesInbox">Peti masuk</string>
+	<string name="layoutMessagesInboxNew">mesej baru</string>
+	<string name="layoutMessagesInboxNoNew">Peti masuk. Tiada mesej baru</string>
+	<string name="layoutMessagesInboxOneNew">Peti masuk. Satu mesej baru</string>
+	<string name="layoutMessagesSent">Menghantar</string>
+	<string name="layoutMessagesMessageLogs">Catatan mesej</string>
+	<string name="layoutMessagesMessageLogsDelete">Padam catatan</string>
+	<string name="layoutMessagesMessageLogsDelete2">Padam semua catatan mesej</string>
+	<string name="layoutMessagesNew">Karang</string>
+	<string name="layoutMessagesNew2">Karang mesej baru</string>
+	<string name="layoutMessagesOnResume">Anda berada di menu mesej</string>
+	<string name="layoutMessagesOnResume2">Mesej telah dihantar dan anda berada di menu mesej</string>
+					
+	<string name="layoutMessagesDeleteNameFrom">Mesej untuk dipadam dari&#160;</string>
+	<string name="layoutMessagesDeleteNameTo">Mesej untuk dipadam hingga&#160;</string>
+	<string name="layoutMessagesDeleteDelete">Pasti padam</string>
+	<string name="layoutMessagesDeleteOnResume">Anda berada di menu memadam mesej</string>
+	
+	<string name="layoutMessagesSentSent">Menghantar</string>
+	<string name="layoutMessagesSentSent2">Menghantar mesej. Slaid kekanan atau kekiri untuk mendengar mesej.</string>
+	<string name="layoutMessagesSentDelete">Padam mesej</string>
+	<string name="layoutMessagesSentMessageItem">Mesej&#160;</string>
+	<string name="layoutMessagesSentMessageOf">&#160;dari&#160;</string>
+	<string name="layoutMessagesSentMessageSent">Menghantar kepada&#160;</string>
+	<string name="layoutMessagesSentMessageMessageBody">Mesej berkata,&#160;</string>
+	<string name="layoutMessagesSentTryAgain">Sila cuba sebentar lagi sementara mesej masuk sedang memproses.</string>
+	<string name="layoutMessagesSentNoMessages">Tiada mesej</string>
+	<string name="layoutMessagesSentError">Anda harus memilih mesej dahulu</string>
+	<string name="layoutMessagesSentOnResume">Anda berada di menu mesej telah dihantar</string>
+	<string name="layoutMessagesSentOnResume2">Mesej telah dipadam dan anda berada di menu mesej di hantar</string>
+	<string name="layoutMessagesSentOnResume3">Semua mesej telah dihantar telah berjaya dipadam dan anda berada di menu mesej telah dihantar</string>
+	
+	<string name="layoutMessagesSentDeleteAllDelete">Padam semua mesej telah dihantar. Slaid kekanan untuk memastikan.</string>
+	<string name="layoutMessagesSentDeleteAllDeleteDelete">Padam semua mesej telah dihantar</string>
+	<string name="layoutMessagesSentDeleteAllOnResume">Anda berada di menu memadam semua mesej telah dihantar</string>
+		
+	<string name="layoutMessagesInboxInbox">Peti masuk</string>
+	<string name="layoutMessagesInboxInbox2">Peti masuk. Slaid kekanan atau kekiri untuk mendengar mesej.</string>
+	<string name="layoutMessagesInboxReply">Karang mesej baru</string>
+	<string name="layoutMessagesInboxDelete">Padam mesej</string>
+	<string name="layoutMessagesInboxDeleteAll">Padam semua mesej yang diterima</string>
+	<string name="layoutMessagesInboxCallTo">Panggil kenalan</string>
+	<string name="layoutMessagesInboxAddToNewContact">Tambah kenalan baru</string>
+	<string name="layoutMessagesInboxMessageReceived">Terima daripada&#160;</string>
+	<string name="layoutMessagesInboxMessageOn">&#160;Pada&#160;</string>
+	<string name="layoutMessagesInboxMessageItem">Mesej&#160;</string>
+	<string name="layoutMessagesInboxMessageOf">&#160;daripada&#160;</string>
+	<string name="layoutMessagesInboxMessageAt">&#160;di&#160;</string>
+	<string name="layoutMessagesInboxMessageHours">&#160;jam&#160;</string>
+	<string name="layoutMessagesInboxMessageMinutes">&#160;minit&#160;</string>
+	<string name="layoutMessagesInboxMessageSeconds">&#160;saat.&#160;</string>
+	<string name="layoutMessagesInboxMessageMessageBody">Mesej berkata,&#160;</string>
+	<string name="layoutMessagesInboxTryAgain">Sila cuba sebentar lagi sementara mesej masuk sedang memproses.</string>
+	<string name="layoutMessagesInboxError">Anda harus mememilih mesej dahulu</string>
+	<string name="layoutMessagesInboxNoMessages">Tiada mesej</string>
+	<string name="layoutMessagesInboxOnResume">Anda berada di menu peti masuk mesej</string>
+	<string name="layoutMessagesInboxOnResume2">Mesej telah dihantar dan anda berada di menu peti masuk mesejs</string>
+	<string name="layoutMessagesInboxOnResume3">Mesej telah dipadam dan anda berada di menu peti masuk mesej</string>
+	<string name="layoutMessagesInboxOnResume4">Semua mesej diterima berjaya dipadam dan anda berada di menu peti masuk mesej</string>
+	
+	<string name="layoutMessagesInboxDeleteAllDelete">Memadam semua mesej yang diterima. Slaid kekanan untuk memastikan.</string>
+	<string name="layoutMessagesInboxDeleteAllDeleteDelete">Memadam semua mesej diterima</string>
+	<string name="layoutMessagesInboxDeleteAllOnResume">Anda berada di menu menerima mesej</string>
+	
+	<string name="layoutMessagesComposeAddressee">Penerima</string>
+	<string name="layoutMessagesComposeAddressee2">Penerima. Slaid kekanan atau kekiri untuk mendengar kenalan.</string>
+	<string name="layoutMessagesComposeAddressee3">Penerima..&#160;</string>
+	<string name="layoutMessagesComposeMessage">Mesej</string>
+	<string name="layoutMessagesComposeMessage2">Mesej. Slaid kekanan untuk mesej input.</string>
+	<string name="layoutMessagesComposeMessage3">Mesej.&#160;</string>
+	<string name="layoutMessagesComposeSend">Mesej dihantar</string>
+	<string name="layoutMessagesComposeSending">Mesej dihantar, sila tunggu...</string>
+	<string name="layoutMessagesComposeSendingError">Mesej sedang dihantar, sila tunggu...</string>
+	<string name="layoutMessagesComposeSendingError2">Mesej tidak boleh dihantar, periksa status pembawa dan sila cuba lagi.</string>
+	<string name="layoutMessagesComposeErrorComplete">RALAT. Anda harus menyiapkan setiap ruang kotak untuk menghantar mesej.</string>
+	<string name="layoutMessagesComposeOnResume">Anda berada di menu karang mesej</string>
+	
+	<string name="layoutInputKeysOnResume">Sekarang anda berada di mod teks input dengan menggunakan papan kekunci fizikal atau skrin sentuh. Jika anda menggunakan skrin sentuh, slaid keatas dan kebawah untuk memilih watak atau kekunci, slaid kekanan untuk mengesahkan watak atau kekunci dan bergerak kehadapan dan slaid kekiri untuk memadam aksara terakhir.</string>
+	<string name="layoutInputKeysTips">Input mod teks \n\n * Slide keatas dan kebawah untuk memilih watak \n\n * Slaid kekanan untuk mengesahkannya watak atau kekunci dan bergerak kehadapan seterusnya \n\n * Slaid kekiri untuk memadam watak lepas \n\n * Papan kekunci fizikal serasi</string>
+	<string name="layoutInputKeysKeyEnter">[MASUK]</string>
+	<string name="layoutInputKeysKeyEnter2">MASUK</string>
+	<string name="layoutInputKeysKeyRead">[BACA]</string>
+	<string name="layoutInputKeysKeyReadText">BACA TEKS</string>
+	<string name="layoutInputKeysKeyReadNumber">BACA NOMBOR</string>
+	<string name="layoutInputKeysKeySpace">RUANG</string>
+	<string name="layoutInputKeysNothingToRead">Tiada apa untuk dibaca</string>
+	<string name="layoutInputKeysEmptyField">Ruang teks dikosongkan</string>
+	<string name="layoutInputKeysEntered">&#160;dimasukkan</string>
+		
+	<string name="layoutInputVoiceOnResume">Anda berada di input mod teks  menggunakan menu pengecaman suara</string>
+	<string name="layoutInputVoiceStartRecognition">Mula pengecaman suara</string>
+	<string name="layoutInputVoiceStartRecognition2">Pengecaman suara. Slaid kekanan dan kemudian cakap</string>
+	<string name="layoutInputVoicePossibleResult">Keputusan&#160;</string>
+	<string name="layoutInputVoicePossibleResults">Keputusan (</string>
+	<string name="layoutInputVoicePossibleResults2">Keputusan diperoleh.&#160;</string>
+	<string name="layoutInputVoicePossibleResults3">. Slaid kekanan untuk mendengar</string>
+	<string name="layoutInputVoiceEnterSelectedResult">Masukkan keputusan pilihan</string>
+	<string name="layoutInputVoiceNoResultToSelect">Anda perlu memilih keputusan</string>
+	<string name="layoutInputVoiceNoRecognition">Tiada keputusan diperoleh. Sila cuba lagi atau pastikan adakah pengecaman suara memerlukan internet. Jika ya, periksa status hubungan internet.</string>
+	<string name="layoutInputVoiceSystemError">Sistem ralat. Pengecaman suara tidak boleh dibaca</string>
+	<string name="layoutInputVoiceCancelAndGoBack">Batal dan kembali kepada menu sebelum</string>
+
+	<string name="layoutInputKeyboardTalkbackOnResume">Sekarang anda berada di mod teks menggunakan papan kekunci Android biasa dengan Talkback. Anda mesti mempunyai TalkBack untuk mengguna kaedah ini. Kotak teks dipilih dan android papan kekunci biasa boleh didapati di bahagian bawah skrin. Tulis apa yang anda mahu dan tekan kekunci masuk pada papan kekunci untuk memasukkan data. Tekan butang kembali untuk membatalkan dan pergi semula ke menu sebelumnya.</string>
+		
+	<string name="callFrom">Panggilan daripada&#160;</string>
+	<string name="callFromUnknown">Panggilan daripada nombor tidak dikenali</string>
+	<string name="callingTo">Memanggil&#160;</string>
+	<string name="callingToUnknown">Memanggil nombor yang tidak didaftar</string>
+	<string name="callEnded">Panggilan telah tamat</string>
+			
+	<string name="backToPreviousMenu">Kembali ke menu sebelum</string>
+	<string name="backToMainMenu">Kembali ke menu utama</string>
+
+	<string name="googleRequestTitle">Permintaan izin</string>
+	<string name="googleRequest1">Berikan izin kepada \'Blind Communicator\' dalam dialog berikut. Ini akan memungkinkan Anda untuk menjawab atau menolak panggilan dengan menggeser ke atas atau ke bawah di Android 8.0 dan lebih tinggi.\n\nSejak November 2018, Google mewajibkan setiap Aplikasi harus ditargetkan ke Android 8.0, ini berarti bahwa sekarang Anda harus memberikan secara manual (Anda hanya perlu melakukannya sekali) Aplikasi izin untuk berfungsi dengan benar.</string>
+	<string name="googleRequest2">Pilih \'Blind Communicator\' dari dialog berikut. Ini akan memungkinkan panduan suara di Aplikasi (jika perangkat dibungkam) untuk didengar dan untuk mengubah profil (Normal, Getar, dan Senyap) di Android 8.0 dan lebih tinggi.\n\nSejak November 2018, Google mewajibkan setiap Aplikasi harus ditargetkan ke Android 8.0, ini berarti bahwa sekarang Anda harus memberikan secara manual (Anda hanya perlu melakukannya sekali) Aplikasi izin untuk berfungsi dengan benar.</string>
+	<string name="googleRequestOk">OK, saya akan melakukannya.</string>
+
+	<string-array name="keysAll">
+		<item>A</item>
+		<item>B</item>
+		<item>C</item>
+		<item>D</item>
+		<item>E</item>
+		<item>F</item>
+		<item>G</item>
+		<item>H</item>
+		<item>I</item>
+		<item>J</item>
+		<item>K</item>
+		<item>L</item>
+		<item>M</item>
+		<item>N</item>
+		<item>O</item>
+		<item>P</item>
+		<item>Q</item>
+		<item>R</item>
+		<item>S</item>
+		<item>T</item>
+		<item>U</item>
+		<item>V</item>
+		<item>W</item>
+		<item>X</item>
+		<item>Y</item>
+		<item>Z</item>
+		<item>0</item>
+		<item>1</item>
+		<item>2</item>
+		<item>3</item>
+		<item>4</item>
+		<item>5</item>
+		<item>6</item>
+		<item>7</item>
+		<item>8</item>
+		<item>9</item>
+		<item>.</item>
+		<item>,</item>
+		<item>:</item>
+		<item>;</item>
+		<item>¡</item>
+		<item>!</item>
+		<item>¿</item>
+		<item>\?</item>
+		<item>+</item>
+		<item>-</item>
+		<item>*</item>
+		<item>#</item>
+		<item>%</item>
+		<item>&amp;</item>
+		<item>$</item>
+		<item>/</item>
+		<item>"\\"</item>
+		<item>(</item>
+		<item>)</item>
+		<item>{</item>
+		<item>}</item>
+		<item>\"</item>
+		<item>\@</item>
+		<item>[BACA]</item>
+		<item>[MASUK]</item>
+		<item>_</item>
+	</string-array>
+
+	<string-array name="keysOnlyNumbers">
+		<item>#</item>
+	    <item>*</item>
+	    <item>0</item>
+		<item>1</item>
+		<item>2</item>
+		<item>3</item>
+		<item>4</item>
+		<item>5</item>
+		<item>6</item>
+		<item>7</item>
+		<item>8</item>
+		<item>9</item>
+		<item>[BACA]</item>
+		<item>[MASUK]</item>
+	</string-array>
+</resources>

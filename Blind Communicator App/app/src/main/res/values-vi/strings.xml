@@ -1,0 +1,576 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Blind Communicator</string>
+    <string name="title_activity_main">Blind Communicator</string>
+    <string name="menu_settings">Settings</string>
+
+    <string name="mainWelcome">Chào mừng đến với hệ thống Blind Communicator phát triển bởi Leonardo Javier Russo. Vuốt lên và xuống để duyệt qua các tùy chọn và vuốt qua phải để kích hoạt mục đã chọn. Nếu thiết bị của bạn có bàn phím vật lý, bạn có thể dùng các phím điều hướng. Nếu đang dùng TalkBack, vuốt và kích hoạt các tùy chọn bằng hai ngón tay.</string>
+    <string name="mainMessages">Tin nhắn</string>
+    <string name="mainMessagesNew">tin nhắn mới</string>
+    <string name="mainMessagesNoNew">Tin nhắn. Không có tin nhắn mới.</string>
+    <string name="mainMessagesOneNew">Tin nhắn. Một tin nhắn mới.</string>
+	<string name="mainMessagesNewFromContact">Tin nhắn mới từ&#160;</string>
+	<string name="mainMessagesNewFromUnknown">Tin nhắn mới từ số không xác định</string>
+	<string name="mainMessagesNotAvailable">Tin nhắn. Không hoạt động trên thiết bị này.</string>
+    <string name="mainCalls">Cuộc gọi</string>
+    <string name="mainCallsMissed">cuộc gọi nhỡ</string>
+    <string name="mainCallsNoMissed">Cuộc gọi. Không có cuộc gọi nhỡ.</string>
+    <string name="mainCallsOneMissed">Cuộc gọi. Một cuộc gọi nhỡ.</string>
+    <string name="mainCallsNotAvailable">Cuộc gọi. Không hoạt động trên thiết bị này.</string>
+	<string name="mainCallsNotAvailableOS">Phiên bản Android của thiết bị này không cho phép Blind Communicator truy cập nhật ký cuộc gọi.</string>
+    <string name="mainNotAvailable">Tùy chọn không hoạt động trên thiết bị này.</string>
+	<string name="mainContacts">Danh bạ</string>
+    <string name="mainMusicPlayer">Nhạc</string>
+    <string name="mainBrowser">Duyệt web</string>
+    <string name="mainAlarms">Báo thức</string>
+    <string name="mainAlarmsNoAlarms">Báo thức. Không có báo thức hôm nay.</string>
+    <string name="mainAlarmsOneAlarm">Báo thức. Một báo thức hôm nay.</string>
+    <string name="mainAlarmsForToday">&#160;báo thức hôm nay.</string>
+	<string name="mainVoiceRecorder">Ghi âm</string>
+	<string name="mainApplications">Ứng dụng</string>
+    <string name="mainSettings">Cài đặt</string>
+    <string name="mainStatus">Trạn thái thiết bị</string>
+	<string name="mainCarrierIs">, nhà cung cấp mạng là&#160;</string>
+	<string name="mainProfileIsNormal">, cấu hình là bình thường&#160;</string>
+	<string name="mainProfileIsSilent">, cấu hình là im lặng&#160;</string>
+	<string name="mainProfileIsVibrate">, cấu hình là rung&#160;</string>
+	<string name="mainNoSignal">, không có tín hiệu điện thoại&#160;</string>
+	<string name="mainBatteryChargedAt">Pin được sạc ở mức&#160;</string>
+    <string name="mainPercentAndTime">&#160;phần trăm, thời gian là&#160;</string>
+    <string name="mainHours">&#160;giờ&#160;</string>
+	<string name="mainMinutesAndDate">&#160;phút và hôm nay là ngày&#160;</string>
+	<string name="mainOf">&#160;của&#160;</string>
+	<string name="mainCarrierNotAvailable">Không xác định</string>
+	<string name="mainWifiOnWithNetwork">wifi đang bật và kết nối vào sóng wifi tên&#160;</string>
+	<string name="mainWifiOnWithoutNetwork">, wifi đang bật và không kết nối với sóng wifi nào.</string>
+	<string name="mainWifiOff">và wifi đang tắt.</string>
+	<string name="mainMusicPlayerPleaseTryAgain">Vui lòng thử lại sau giây lát khi trình phát nhạc đang xử lý tất cả tập tin âm thanh của bạn.</string>
+	<string name="mainNoTTSInstalledTitle">Lỗi</string>
+	<string name="mainNoTTSInstalledMessage">Không tìm thấy công cụ TTS. Vui lòng tải ứng dụng Google TTS (miễn phí) để dùng với ứng dụng này.</string>
+	<string name="mainNoTTSInstalledButton">OK, tôi sẽ.</string>
+	<string name="mainPressBack">Bấm Back một lần nữa để đóng ứng dụng.</string>
+	
+    <string name="monday">Thứ hai</string>
+	<string name="tuesday">Thứ ba</string>
+	<string name="wednesday">Thứ tư</string>
+	<string name="thursday">Thứ năm</string>
+	<string name="friday">Thứ sáu</string>
+	<string name="saturday">Thứ bảy</string>
+    <string name="sunday">Chủ nhật</string>
+	
+    <string name="january">Tháng 1</string>
+    <string name="february">Tháng 2</string>
+	<string name="march">Tháng 3</string>
+	<string name="april">Tháng tư</string>
+	<string name="may">Tháng 5</string>
+	<string name="june">Tháng 6</string>
+	<string name="july">Tháng 7</string>
+	<string name="august">Tháng 8</string>
+	<string name="september">Tháng 9</string>
+	<string name="october">Tháng 10</string>
+	<string name="november">Tháng 11</string>
+	<string name="december">Tháng 12</string>
+	
+	<string name="volumeMaximum">Âm lượng tối đa</string>
+	<string name="volumeHigher">Tăng âm lượng</string>
+	<string name="volumeLower">Giảm âm lượng</string>
+	<string name="deviceCharged">Thiết bị giờ đã được sạc đầy</string>
+	<string name="deviceChargedStatus">, thiết bị đã được sạc đầy,&#160;</string>
+	<string name="deviceCharging">Thiết bị đang sạc</string>
+	<string name="deviceChargingStatus">, thiết bị đang sạc&#160;</string>
+	<string name="deviceUnplugged">Thiết bị đã được rút bộ sạc</string>
+	<string name="screenOn">Màn hình đã bật</string>
+	<string name="screenOff">Màn hình đã tắt</string>
+	<string name="screenPortrait">Hướng màn hình hiện ở chế độ dọc</string>
+	<string name="screenLandscape">Hướng màn hình hiện ở chế độ ngang</string>
+	<string name="wifiConnectedToNetwork">Đã kết nối vào mạng wifi&#160;</string>
+	<string name="wifiDisconnectedFromNetwork">Đã ngắt kết nối wifi</string>
+	
+	<string name="layoutMainMessages">Tin nhắn</string>
+	<string name="layoutMainCalls">Cuộc gọi</string>
+	<string name="layoutMainContacts">Danh bạ</string>
+	<string name="layoutMainMusic">Nhạc</string>
+	<string name="layoutMainBrowser">Duyệt web</string>
+	<string name="layoutMainAlarms">Báo thức</string>
+	<string name="layoutMainSettings">Cài đặt</string>
+	<string name="layoutMainStatus">Trạng thái</string>
+	<string name="layoutMainOnResume">Giờ bạn đang ở trình đơn chính</string>
+	
+	<string name="layoutAlarmsNotifierShutdown">Vuốt lên hoặc xuống để tắt báo thức</string>
+	
+	<string name="layoutAlarmsList">Danh sách báo thức</string>
+	<string name="layoutAlarmsCreate">Đặt báo thức</string>
+	<string name="layoutAlarmsAlarmCreated">Đã đặt báo thức và giờ bạn đang ở tại trình đơn báo thức</string>
+	<string name="layoutAlarmsOnResume">Giờ bạn đang ở trình đơn báo thức</string>
+	
+	<string name="layoutAlarmsCreateMessage">- nhập tin nhắn -</string>
+	<string name="layoutAlarmsCreateMessage2">Thông điệp báo thức. Vuốt qua phải để nhập.</string>
+	<string name="layoutAlarmsCreateMessage3">Thông điệp báo thức:\n</string>
+	<string name="layoutAlarmsCreateMessage4">Thông điệp báo thức.&#160;</string>
+	<string name="layoutAlarmsCreateCreate">Đặt báo thức</string>
+	<string name="layoutAlarmsCreateDay">Ngày báo thức:&#160;</string>
+	<string name="layoutAlarmsCreateDay2">Ngày báo thức.&#160;</string>
+	<string name="layoutAlarmsCreateTimeHour">Giờ báo thức:&#160;</string>
+	<string name="layoutAlarmsCreateTimeHour2">Giờ báo thức.&#160;</string>
+	<string name="layoutAlarmsCreateTimeMinute">Phút báo thức:&#160;</string>
+	<string name="layoutAlarmsCreateTimeMinute2">Phút báo thức.&#160;</string>
+	<string name="layoutAlarmsCreateHours">&#160;Giờ</string>
+	<string name="layoutAlarmsCreateMinutes">&#160;phút</string>
+	<string name="layoutAlarmsCreateErrorNoMessage">Lỗi. Bạn phải nhập một thông điệp.</string>
+	<string name="layoutAlarmsCreateErrorAlarmConflict">Lỗi. Đã có một báo thức khác được đặt vào ngày giờ đó.</string>
+	<string name="layoutAlarmsCreateOnResume">Giờ bạn đang ở trình đơn đặt báo thức</string>
+	
+	<string name="layoutAlarmsListNoAlarms">Không có báo thức</string>
+	<string name="layoutAlarmsListList">Báo thức</string>
+	<string name="layoutAlarmsListAlarmAlarmsCount">&#160;đã đặt báo thức</string>
+	<string name="layoutAlarmsListAt">&#160;lúc&#160;</string>
+	<string name="layoutAlarmsListForToday">&#160;hôm nay. Vuốt sang trái hoặc phải để nghe từng mục.</string>
+	<string name="layoutAlarmsListDelete">Xóa báo thức đã chọn</string>
+	<string name="layoutAlarmsListDeleted">Đã xóa báo thức và giờ bạn đang ở trình đơn danh sách báo thức</string>
+	<string name="layoutAlarmsListDeleteSelectError">Trước tiên bạn phải chọn một báo thức</string>
+	<string name="layoutAlarmsListOnResume">Giờ bạn đang ở trình đơn danh sách báo thức</string>
+	<string name="layoutAlarmsListOnResume2">Đã xóa tất cả báo thức và giờ bạn đang ở trình đơn danh sách báo thức</string>
+	
+	<string name="layoutAlarmsDeleteSelected">Đã chọn báo thức để xóa.&#160;</string>
+	<string name="layoutAlarmsDeleteDelete">Xác nhận xóa</string>
+	<string name="layoutAlarmsDeleteOnResume">Giờ bạn đang ở trình đơn xóa báo thức</string>
+
+	<string name="layoutAlarmsDeleteAllDelete">Xóa tất cả báo thức. Vuốt sang phải để xác nhận.</string>
+	<string name="layoutAlarmsDeleteAllDeleteDelete">Xóa tất cả báo thức</string>
+	<string name="layoutAlarmsDeleteAllOnResume">Giờ bạn đang ở trình đơn xóa tất cả báo thức</string>
+		
+	<string name="layoutVoiceRecorderList">Danh sách các tập tin ghi âm</string>
+	<string name="layoutVoiceRecorderCreate">Ghi âm</string>
+	<string name="layoutVoiceRecorderOnResume">Giờ bạn đang ở trình đơn ghi âm</string>
+	<string name="layoutVoiceRecorderOnResume2">Đã lưu tập tin ghi âm và giờ bạn đang ở trình đơn ghi âm</string>
+	
+	<string name="layoutVoiceRecorderCreateCreate">Ghi âm</string>
+	<string name="layoutVoiceRecorderCreateCreate2">Ghi âm. Vuốt sang phải để bắt đầu ghi âm và vuốt lại một lần nữa để dừng.</string>
+	<string name="layoutVoiceRecorderCreateError">Lỗi. Hãy kiểm tra để chắc chắn rằng thiết bị của bạn có thẻ nhớ.</string>
+	<string name="layoutVoiceRecorderCreateOnResume">Giờ bạn đang ở trình đơn ghi âm</string>
+	
+	<string name="layoutVoiceRecorderListList">Các tập tin ghi âm</string>
+	<string name="layoutVoiceRecorderListList2">Các tập tin ghi âm. Vuốt sang phải hoặc trái để chọn từng mục.</string>
+	<string name="layoutVoiceRecorderListPlay">Phát tập tin ghi âm</string>
+	<string name="layoutVoiceRecorderListPlay2">Phát tập tin ghi âm đã chọn. Vuốt sang phải để phát và sang trái để dừng.</string>
+	<string name="layoutVoiceRecorderListDelete">Xóa tập tin ghi âm</string>
+	<string name="layoutVoiceRecorderListDelete2">Xóa tập tin ghi âm đã chọn</string>
+	<string name="layoutVoiceRecorderListItem">Tập tin ghi âm&#160;</string>
+	<string name="layoutVoiceRecorderListItemOf">&#160;Của&#160;</string>
+	<string name="layoutVoiceRecorderListNoVoiceRecords">Không có tập tin ghi âm</string>
+	<string name="layoutVoiceRecorderListPleaseWait">Vui lòng thử lại sau giây lát trong khi các tập tin ghi âm đang được xử lý.</string>
+	<string name="layoutVoiceRecorderListError">Trước tiên bạn phải chọn một tập tin ghi âm</string>
+	<string name="layoutVoiceRecorderListOnResume">Giờ bạn đang ở trình đơn danh sách tập tin ghi âm</string>
+	<string name="layoutVoiceRecorderListOnResume2">Đã xóa tập tin ghi âm và giờ bạn đang ở trình đơn danh sách tập tin ghi âm</string>
+	
+	<string name="layoutVoiceRecorderDeleteDelete">Đã chọn tập tin ghi âm để xóa.Tập tin ghi âm&#160;</string>
+	<string name="layoutVoiceRecorderDeleteDelete2">. Vuốt sang phải để phát và sang trái để dừng.</string>
+	<string name="layoutVoiceRecorderDeleteToDelete">Ghi âm&#160;</string>
+	<string name="layoutVoiceRecorderDeleteConfirm">Xác nhận xóa</string>
+	<string name="layoutVoiceRecorderDeleteOnResume">Giờ bạn đang ở trình đơn xóa tập tin ghi âm</string>
+	
+	<string name="layoutApplicationsList">Ứng dụng</string>
+	<string name="layoutApplicationsList2">Ứng dụng. Vuốt sang phải hoặc trái để nghe từng mục.</string>
+	<string name="layoutApplicationsListPleaseWait">Vui lòng thử lại sau giây lát trong khi các ứng dụng đang được xử lý.</string>
+	<string name="layoutApplicationsLaunch">Chạy ứng dụng được chọn</string>
+	<string name="layoutApplicationsLaunchError">Trước tiên bạn phải chọn một ứng dụng</string>
+	<string name="layoutApplicationsNoApps">Không có ứng dụng</string>
+	<string name="layoutApplicationsOnResume">Giờ bạn đang ở trình đơn ứng dụng</string>
+	
+	<string name="layoutSettingsReadingSpeed">Tốc độ đọc:&#160;</string>
+	<string name="layoutSettingsReadingSpeed2">Tốc độ đọc.&#160;</string>
+	<string name="layoutSettingsScreenTimeout">Thời gian sáng màn hình:\n</string>
+	<string name="layoutSettingsScreenTimeout2">Tắt màn hình sau&#160;</string>
+	<string name="layoutSettingsToneNotAvailable">Không hoạt động</string>
+	<string name="layoutSettingsAlarmTone">Âm báo thức:\n</string>
+	<string name="layoutSettingsAlarmTone2">Âm báo thức.&#160;</string>
+	<string name="layoutSettingsAlarmToneNotAvailable">Âm báo thức. Không hoạt động trên thiết bị này</string>
+	<string name="layoutSettingsNotifyTone">Âm thanh thông báo:\n</string>
+	<string name="layoutSettingsNotifyTone2">Âm thanh thông báo.&#160;</string>
+	<string name="layoutSettingsNotifyToneNotAvailable">Âm thanh thông báo. Không hoạt động trên thiết bị này</string>
+	<string name="layoutSettingsCallTone">Âm báo cuộc gọi:\n</string>
+	<string name="layoutSettingsCallTone2">Âm báo cuộc gọi.&#160;</string>
+	<string name="layoutSettingsCallToneNotAvailable">Âm báo cuộc gọi: -</string>
+	<string name="layoutSettingsCallToneNotAvailable2">Âm báo cuộc gọi. Không hoạt động trên thiết bị này</string>
+	<string name="layoutSettingsProfileNormal">Cấu hình: Bình thường</string>
+	<string name="layoutSettingsProfileNormal2">Cấu hình. Bình thường</string>
+	<string name="layoutSettingsProfileSilent">Cấu hình: Im lặng</string>
+	<string name="layoutSettingsProfileSilent2">Cấu hình. Im lặng</string>
+	<string name="layoutSettingsProfileVibrate">Cấu hình: Rung</string>
+	<string name="layoutSettingsProfileVibrate2">Cấu hình. Rung</string>
+	<string name="layoutSettingsWifiOn">Wifi: Bật</string>
+	<string name="layoutSettingsWifiOn2">Wifi đang bật</string>
+	<string name="layoutSettingsWifiOn2WithoutNetwork">Wifi. Wifi đang bật và không kết nối vào sóng wifi nào</string>
+	<string name="layoutSettingsWifiOn2WithNetwork">Wifi. Wifi đang bật và đã kết nối vào sóng wifi tên &#160;</string>
+	<string name="layoutSettingsWifiOff">Wifi: Tắt</string>
+	<string name="layoutSettingsWifiOff2">Wifi. Wifi đang tắt</string>
+	<string name="layoutSettingsWifiOff3">Wifi đang tắt</string>
+	<string name="layoutSettingsBluetoothOn">Bluetooth: Bật</string>
+	<string name="layoutSettingsBluetoothOn2">Bluetooth đang bật</string>
+	<string name="layoutSettingsBluetoothOff">Bluetooth: Tắt</string>
+	<string name="layoutSettingsBluetoothOff2">Bluetooth đang tắt</string>
+	<string name="layoutSettingsInputMode">Chế độ nhập:&#160;</string>
+	<string name="layoutSettingsInputMode2">Nhập văn bản từ&#160;</string>
+	<string name="layoutSettingsInputModeKeyboard">Bàn phím</string>
+	<string name="layoutSettingsInputModeKeyboard2">bàn phím vật lí và màn hình cảm ứng</string>
+	<string name="layoutSettingsInputModeVoice">Giọng nói</string>
+	<string name="layoutSettingsInputModeVoice2">Nhận dạng giọng nói. Có thể yêu cầu kết nối mạng.</string>
+	<string name="layoutSettingsInputModeKeyboardTalkback">Bàn phím với Talkback</string>
+	<string name="layoutSettingsInputModeKeyboardTalkback2">bàn phím chuẩn của android với Talkback. Talkback phải được kích hoạt.</string>
+	<string name="layoutSettingsSystemSettings">Cài đặt hệ thống</string>
+	<string name="layoutSettingsSeconds">&#160;giây</string>
+	<string name="layoutSettingsSeconds2">&#160;giây khi không hoạt động</string>
+	<string name="layoutSettingsMinute">&#160;phút</string>
+	<string name="layoutSettingsMinute2">&#160;phút khi không hoạt động</string>
+	<string name="layoutSettingsMinutes">&#160;phút</string>
+	<string name="layoutSettingsMinutes2">&#160;phút khi không hoạt động</string>
+	<string name="layoutSettingsPrivacyPolicy">Chính sách bảo mật</string>
+	<string name="layoutSettingsPrivacyPolicy2">Blind Communicator Privacy Policy. Released on Dec 21, 2016. I, Leonardo Javier Russo, regard your information significant and release this Privacy Statement to inform you what information I collect and how I use it to personalize and continually improve you experience. This Privacy Statement applies to the App Blind Communicator and its services and does not apply to the product or service that which does not link to this statement or has its privacy statement respectively. 1 - Collecting information. a. Personal Information. I do not collect Personal Information. Personal Information is information that identifies you or another person, such as your first name and last name, physical addresses, email addresses, telephone, fax, camera, microphone, GPS, or any information stored within your device. b. Non-personal Information. I do not collect your non-personal information when you are using the App Blind Communicator or visiting my Website, including your device information, operation system, logs. c. Information you provide. I do not collect your information when you communicate with me. How I Use Information. a. Personal Information. I do not store Personal Information and therefore I do not disclose your Personal Information. b. Non-Personal Information. I do not sell, trade, or otherwise transfer to outside parties your information. I do not combine Non-Personal Information with Personal Information (such as combining your name with your unique User Device number). Contact Me. If you have any questions or comments about this Policy or our privacy practices, or to report any violations of the Policy or abuse of the App Blind Communicator or the Website, please contact me at contacto@lrusso.com.ar. Changes. This Privacy Policy may change which will not reduce your rights under this Privacy Policy from time to time, I will post any privacy policy changes on this page, so please review it periodically. If you do not agree to any modifications to this Policy, your could immediately stop all use of all the Services. Your continued use of the App Blind Communicator following the posting of any modifications to this Policy will constitute your acceptance of the revised Policy.</string>
+	<string name="layoutSettingsOnResume">Giờ bạn đang ở trình đơn cài đặt</string>
+	
+	<string name="layoutContactsList">Danh bạ</string>
+	<string name="layoutContactsCreate">Tạo danh bạ</string>
+	<string name="layoutContactsOnResumeCreated">Danh bạ đã được tạo và giờ bạn đang ở trình đơn danh bạ</string>
+	<string name="layoutContactsOnResume">Giờ bạn đang ở trình đơn danh bạ</string>
+	
+	<string name="layoutContactsCreateName">- nhập tên -</string>
+	<string name="layoutContactsCreateName2">Tên danh bạ. Vuốt sang phải để nhập.</string>
+	<string name="layoutContactsCreateName3">Tên danh bạ.&#160;</string>
+	<string name="layoutContactsCreatePhone">- nhập số điện thoại -</string>
+	<string name="layoutContactsCreatePhone2">Số điện thoại. Vuốt sang phải để nhập.</string>
+	<string name="layoutContactsCreatePhone3">Số điện thoại.&#160;</string>
+	<string name="layoutContactsCreateCreate">Tạo danh bạ</string>
+	<string name="layoutContactsCreateErrorComplete">Lỗi. Bạn phải điền tất cả các trường để tạo danh bạ.</string>
+	<string name="layoutContactsCreateOnResume">Giờ bạn đang ở trình đơn tạo danh bạ</string>
+	
+	<string name="layoutContactsListContactsList">Danh bạ</string>
+	<string name="layoutContactsListContactsList2">Danh bạ. Vuốt sang phải hoặc trái để nghe từng mục.</string>
+	<string name="layoutContactsListNoContacts">Không có danh bạ</string>
+	<string name="layoutContactsListWithThePhoneNumber">&#160;với số điện thoại&#160;</string>
+	<string name="layoutContactsListCall">Gọi</string>
+	<string name="layoutContactsListCall2">Gọi cho danh bạ đã chọn</string>
+	<string name="layoutContactsListSendMessage">Gửi tin nhắn</string>
+	<string name="layoutContactsListSendMessage2">Gửi tin nhắn cho danh bạ đã chọn</string>
+	<string name="layoutContactsListDelete">Xóa danh bạ</string>
+	<string name="layoutContactsListDelete2">Xóa danh bạ đã chọn</string>
+	<string name="layoutContactsListError">Trước tiên bạn phải chọn một danh bạ</string>
+	<string name="layoutContactsListPleaseWait">Vui lòng thử lại sau giây lát trong khi tất cả danh bạ đang được xử lý.</string>
+	<string name="layoutContactsListOnResumeContactDeleted">Đã xóa danh bạ và giờ bạn đang ở trình đơn danh sách danh bạ</string>
+	<string name="layoutContactsListOnResume">Giờ bạn đang ở trình đơn danh sách danh bạ</string>
+	<string name="layoutContactsListOnResume2">Đã gửi tin nhắn và giờ bạn đang ở trình đơn danh sách danh bạ</string>
+			
+	<string name="layoutContactsDeleteSelected">Đã chọn danh bạ để xóa.&#160;</string>
+	<string name="layoutContactsDeleteDelete">Xác nhận xóa</string>
+	<string name="layoutContactsDeleteOnResume">Giờ bạn đang ở trình đơn xóa danh bạ</string>
+	
+	<string name="layoutMusicPlayerNowPlaying">Đang phát</string>
+	<string name="layoutMusicPlayerNowPlaying2">Đang phát</string>
+	<string name="layoutMusicPlayerNowPlaying3">&#160;Bài hát&#160;</string>
+	<string name="layoutMusicPlayerNowPlaying4">&#160;Của&#160;</string>
+	<string name="layoutMusicPlayerNowPlaying5">&#160;Bởi&#160;</string>
+	<string name="layoutMusicPlayerNowPlayingError1">Trước tiên bạn phải chọn một ca sĩ với một album</string>
+	<string name="layoutMusicPlayerNowPlayingError2">Không có nhạc đang phát</string>
+	<string name="layoutMusicPlayerPlay">Phát</string>
+	<string name="layoutMusicPlayerStop">Dừng</string>
+	<string name="layoutMusicPlayerPreviousTrack">T. trước</string>
+	<string name="layoutMusicPlayerPreviousTrack2">Track trước</string>
+	<string name="layoutMusicPlayerNextTrack">T. kế</string>
+	<string name="layoutMusicPlayerNextTrack2">Track kế</string>
+	<string name="layoutMusicPlayerLowerVolume">Giảm âm</string>
+	<string name="layoutMusicPlayerLowerVolume2">Giảm âm lượng</string>
+	<string name="layoutMusicPlayerHigherVolume">Tăng âm.</string>
+	<string name="layoutMusicPlayerHigherVolume2">Tăng âm lượng</string>
+	<string name="layoutMusicPlayerArtists">Ca sỹ</string>
+	<string name="layoutMusicPlayerAlbums">Album</string>
+	<string name="layoutMusicPlayerUnknown">Không xác định</string>
+	<string name="layoutMusicPlayerOnResume">Giờ bạn đang ở trình đơn trình phát nhạc</string>
+	
+	<string name="layoutMusicPlayerArtistsList">Ca sỹ</string>
+	<string name="layoutMusicPlayerArtistsList2">Ca sỹ. vuốt sang phải hoặc trái để nghe từng mục.</string>
+	<string name="layoutMusicPlayerArtistsNoArtists">Không có ca sỹ.</string>
+	<string name="layoutMusicPlayerArtistsAlbumsList">Album</string>
+	<string name="layoutMusicPlayerArtistsAlbumsList2">Album. Vuốt sang phải hoặc trái để nghe từng mục.</string>
+	<string name="layoutMusicPlayerArtistsAlbumsList3">Trước tiên bạn phải chọn một ca sỹ.</string>
+	<string name="layoutMusicPlayerArtisrsAlbumsNoAlbums">Không có album.</string>
+	<string name="layoutMusicPlayerArtistsPleaseWait">Vui lòng thử lại sau giây lát trong khi trình phát nhạc đang lọc tất cả ca sỹ và album.</string>
+	<string name="layoutMusicPlayerArtistsPlayAlbum">Phát album</string>
+	<string name="layoutMusicPlayerArtistsPlayError">Trước tiên bạn phải chọn một album.</string>
+	<string name="layoutMusicPlayerArtistsPlayError2">Lỗi. Không mở được tập tin nhạc.</string>
+	<string name="layoutMusicPlayerArtistsOnResume">Giờ bạn đang ở trình đơn ca sỹ</string>
+	
+	<string name="layoutBrowserSearchInGoogle">Tìm kiếm trên Google</string>
+	<string name="layoutBrowserListBookmarks">Đi đến điểm đánh dấu</string>
+	<string name="layoutBrowserAWebPageItsBeenLoading">. vui lòng đợi đến khi trang web được tải về.</string>
+	<string name="layoutBrowserErrorPendingRequest">Lỗi. Một trang web đang được tải về. vui lòng đợi đến khi tải xong.</string>
+	<string name="layoutBrowserLoadingPagePleaseWait">Đang tải trang. vui lòng đợi</string>
+	<string name="layoutBrowserPageNotFound">Không tìm thấy trang. Vui lòng kiểm tra kết nối mạng của bạn và địa chỉ web.</string>
+	<string name="layoutBrowserOnResume">Giờ bạn đang ở trình đơn trình duyệt web</string>
+	
+	<string name="layoutBrowserPageViewerReadTitle">Đọc tên trang</string>
+	<string name="layoutBrowserPageViewerReadTitle2">Tên trang web là&#160;</string>
+	<string name="layoutBrowserPageViewerReadText">Đọc nội dung trang</string>
+	<string name="layoutBrowserPageViewerPageLinks">Các liên kết của trang web</string>
+	<string name="layoutBrowserPageViewerPageLinks2">Các liên kết của trang web. Vuốt sang phải hoặc trái để nghe từng mục.</string>
+	<string name="layoutBrowserPageViewerPageLinks3">Liên kết&#160;</string>
+	<string name="layoutBrowserPageViewerPageLinks3Of">&#160;của&#160;</string>
+	<string name="layoutBrowserPageViewerPageLinks4">Trang web hiện tại không có liên kết nào.</string>
+	<string name="layoutBrowserPageViewerPageLinkSelectError">Trước tiên bạn phải chọn một liên kết.</string>
+	<string name="layoutBrowserPageViewerGoToLink">Đến liên kết đã chọn</string>
+	<string name="layoutBrowserPageViewerAddToBookmarks">Thêm trang hiện tại vào ưa thích</string>
+	<string name="layoutBrowserPageViewerAddToBookmarksAdded">Đã thêm vào ưa thích</string>
+	<string name="layoutBrowserPageViewerAddToBookmarksRepeated">Đã có trong danh sách ưa hích</string>
+	<string name="layoutBrowserPageViewerOnResume">Giờ bạn đang ở trình đơn trang web của trình duyệt</string>
+	
+	<string name="layoutBookmarksListList">Danh sách trang web ưa thích</string>
+	<string name="layoutBookmarksListList2">Danh sách trang web ưa thích. Vuốt sang phải hoặc trái để nghe từng mục.</string>
+	<string name="layoutBookmarksListList3">Không có trang web ưa thích nào</string>
+	<string name="layoutBookmarksListGoToLink">Mở trang web ưa thích đã chọn</string>
+	<string name="layoutBookmarksListDelete">Xóa trang web ưa thích đã chọn</string>
+	<string name="layoutBookmarksListDeleted">Đã xóa trang web ưa thích và giờ bạn đang ở trình đơn danh sách các trang web ưa thích</string>
+	<string name="layoutBookmarksListSelectError">Trước tiên bạn phải chọn một trang web</string>
+	<string name="layoutBookmarksListOnResume">Giờ bạn đang ở trình đơn danh sách trang web ưa thích</string>
+	
+	<string name="layoutBookmarksDeleteToDelete">Đã chọn trang web để xóa.&#160;</string>
+	<string name="layoutBookmarksDeleteDelete">Xác nhận xóa</string>
+	<string name="layoutBookmarksDeleteOnResume">Giờ bạn đang ở trình đơn xóa trang web ưa thích</string>
+	
+	<string name="layoutCallsMissedCallsList">Nhật kí cuộc gọi</string>
+	<string name="layoutCallsDeleteCallLogs">Xóa nhật kí</string>
+	<string name="layoutCallsDeleteCallLogs2">Xóa tất cả nhật kí cuộc gọi</string>
+	<string name="layoutCallsMakeCall">Thực hiện cuộc gọi</string>
+	<string name="layoutCallsOnResume">Giờ bạn đang ở trình đơn cuộc gọi</string>
+	<string name="layoutCallsOnResume2">Đã xóa tất cả nhật kí cuộc gọi và giờ bạn đang ở trình đơn cuộc gọi</string>
+		
+	<string name="layoutCallsMakeCallPhone">- nhập số điện thoại -</string>
+	<string name="layoutCallsMakeCallPhone2">Số điện thoại. vuốt sang phải để nhập.</string>
+	<string name="layoutCallsMakeCallPhone3">Số điện thoại.&#160;</string>
+	<string name="layoutCallsMakeCallCall">Gọi</string>
+	<string name="layoutCallsMakeCallCallError">Trước tiên bạn phải nhập một số điện thoại</string>
+	<string name="layoutCallsMakeCallOnResume">Giờ bạn đang ở trình đơn thực hiện cuộc gọi</string>
+	
+	<string name="layoutCallsLogsLogs">Nhật kí cuộc gọi</string>
+	<string name="layoutCallsLogsLogs2">Nhật kí cuộc gọi. vuốt sang phải hoặc trái để nghe từng mục.</string>
+	<string name="layoutCallsLogsAddToNewContact">Thêm vào danh bạ mới</string>
+	<string name="layoutCallsLogsCall">Gọi</string>
+	<string name="layoutCallsLogsCall2">Gọi cho số đã chọn</string>
+	<string name="layoutCallsLogsSendMessage">Gửi tin nhắn</string>
+	<string name="layoutCallsLogsSendMessage2">Gửi tin nhắn cho danh bạ đã chọn</string>
+	<string name="layoutCallsLogsNoLogs">Không có nhật kí cuộc gọi</string>
+	<string name="layoutCallsLogsOutgoingCall">Cuộc gọi đi</string>
+	<string name="layoutCallsLogsIncomingCall">Cuộc gọi đến</string>
+	<string name="layoutCallsLogsMissedCall">Cuộc gọi nhỡ</string>
+	<string name="layoutCallsLogsLogItem">Nhật kí&#160;</string>
+	<string name="layoutCallsLogsOfNumber">&#160;của&#160;</string>
+	<string name="layoutCallsLogsAt">&#160;vào lúc&#160;</string>
+	<string name="layoutCallsLogsHours">&#160;giờ&#160;</string>
+	<string name="layoutCallsLogsMinutes">&#160;phút&#160;</string>
+	<string name="layoutCallsLogsSeconds">&#160;giây.</string>
+	<string name="layoutCallsLogsCallTo">&#160;đến&#160;</string>
+	<string name="layoutCallsLogsCallFrom">&#160;từ&#160;</string>
+	<string name="layoutCallsLogsError">Trước tiên bạn phải chọn một nhật kí</string>
+	<string name="layoutCallsLogsPleaseTryAgain">Vui lòng thử lại sau giây lát trong khi tất cả nhật kí cuộc gọi đang được xử lý.</string>
+	<string name="layoutCallsLogsOnResume">Giờ bạn đang ở trình đơn nhật kí cuộc gọi</string>
+	<string name="layoutCallsLogsOnResume2">Đã gửi tin nhắn và giờ bạn đang ở trình đơn nhật kí cuộc gọi</string>
+		
+	<string name="layoutCallsLogsDelete">Xóa nhật kí cuộc gọi. vuốt sang phải để xác nhận.</string>
+	<string name="layoutCallsLogsDeleteOnResume">Giờ bạn đang ở trình đơn xóa nhật kí cuộc gọi</string>
+	
+	<string name="layoutMessagesInbox">Hộp thư đến</string>
+	<string name="layoutMessagesInboxNew">Tin nhắn mới</string>
+	<string name="layoutMessagesInboxNoNew">Hộp thư đến. không có tin nhắn mới</string>
+	<string name="layoutMessagesInboxOneNew">Hộp thư đến. một tin nhắn mới</string>
+	<string name="layoutMessagesSent">Hộp thư đi</string>
+	<string name="layoutMessagesMessageLogs">Nhật kí tin nhắn</string>
+	<string name="layoutMessagesMessageLogsDelete">Xóa nhật kí</string>
+	<string name="layoutMessagesMessageLogsDelete2">Xóa tất cả nhật kí tin nhắn</string>
+	<string name="layoutMessagesNew">Soạn tin</string>
+	<string name="layoutMessagesNew2">Soạn tin nhắn</string>
+	<string name="layoutMessagesOnResume">Giờ bạn đang ở trình đơn tin nhắn</string>
+	<string name="layoutMessagesOnResume2">Đã gửi tin nhắn và giờ bạn đang ở trình đơn tin nhắn</string>
+				
+	<string name="layoutMessagesDeleteNameFrom">Xóa tin nhắn từ&#160;</string>
+	<string name="layoutMessagesDeleteNameTo">Xóa tin nhắn đến&#160;</string>
+	<string name="layoutMessagesDeleteDelete">Xác nhận xóa</string>
+	<string name="layoutMessagesDeleteOnResume">Giờ bạn đang ở trình đơn xóa tin nhắn</string>
+	
+	<string name="layoutMessagesSentSent">Đã gửi</string>
+	<string name="layoutMessagesSentSent2">Tin nhắn đã gửi. vuốt sang phải hoặc trái để nghe từng mục.</string>
+	<string name="layoutMessagesSentDelete">Xóa tin nhắn</string>
+	<string name="layoutMessagesSentMessageItem">Tin nhắn&#160;</string>
+	<string name="layoutMessagesSentMessageOf">&#160;của&#160;</string>
+	<string name="layoutMessagesSentMessageSent">Gửi cho&#160;</string>
+	<string name="layoutMessagesSentMessageMessageBody">Nội dung tin nhắn,&#160;</string>
+	<string name="layoutMessagesSentTryAgain">Vui lòng thử lại sau giây lát trong khi tất cả tin đã gửi đang được xử lý.</string>
+	<string name="layoutMessagesSentNoMessages">Không có tin nhắn</string>
+	<string name="layoutMessagesSentError">Trước tiên bạn phải chọn một tin nhắn</string>
+	<string name="layoutMessagesSentOnResume">Giờ bạn đang ở trình đơn tin đã gửi</string>
+	<string name="layoutMessagesSentOnResume2">đã xóa tin nhắn và giờ bạn đang ở trình đơn tin đã gửi</string>
+	<string name="layoutMessagesSentOnResume3">Đã xóa tất cả tin đã gửi và giờ bạn đang ở trình đơn tin đã gửi</string>
+
+	<string name="layoutMessagesSentDeleteAllDelete">Xóa tất cả tin đã gửi. vuốt sang phải để xác nhận.</string>
+	<string name="layoutMessagesSentDeleteAllDeleteDelete">Xóa tất cả tin đã gửi</string>
+	<string name="layoutMessagesSentDeleteAllOnResume">Giờ bạn đang ở trình đơn xóa tất cả tin đã gửi</string>
+		
+	<string name="layoutMessagesInboxInbox">Hộp thư đến</string>
+	<string name="layoutMessagesInboxInbox2">Hộp thư đến. vuốt sang phải hoặc trái để nghe từng tin nhắn.</string>
+	<string name="layoutMessagesInboxReply">Soạn tin nhắn</string>
+	<string name="layoutMessagesInboxDelete">Xóa tin nhắn</string>
+	<string name="layoutMessagesInboxDeleteAll">Xóa tất cả tin đã nhận</string>
+	<string name="layoutMessagesInboxCallTo">Gọi cho danh bạ</string>
+	<string name="layoutMessagesInboxAddToNewContact">Thêm vào danh bạ mới</string>
+	<string name="layoutMessagesInboxMessageReceived">Nhận từ&#160;</string>
+	<string name="layoutMessagesInboxMessageOn">&#160;vào lúc&#160;</string>
+	<string name="layoutMessagesInboxMessageItem">tin nhắn&#160;</string>
+	<string name="layoutMessagesInboxMessageOf">&#160;của&#160;</string>
+	<string name="layoutMessagesInboxMessageAt">&#160;vào lúc&#160;</string>
+	<string name="layoutMessagesInboxMessageHours">&#160;giờ&#160;</string>
+	<string name="layoutMessagesInboxMessageMinutes">&#160;phút&#160;</string>
+	<string name="layoutMessagesInboxMessageSeconds">&#160;giây.&#160;</string>
+	<string name="layoutMessagesInboxMessageMessageBody">Nội dung tin nhắn,&#160;</string>
+	<string name="layoutMessagesInboxTryAgain">Vui lòng thử lại sau giây lát trogn khi tất cả tin nhắn trong hộp thư đến đang được xử lý.</string>
+	<string name="layoutMessagesInboxError">Trước tiên bạn phải chọn một tin nhắn</string>
+	<string name="layoutMessagesInboxNoMessages">Không có tin nhắn</string>
+	<string name="layoutMessagesInboxOnResume">Giờ bạn đang ở trình đơn hộp thư đến</string>
+	<string name="layoutMessagesInboxOnResume2">Đã gửi tin nhắn và giờ bạn đang ở trình đơn hộp thư đến</string>
+	<string name="layoutMessagesInboxOnResume3">Đã xóa tin nhắn và giờ bạn đang ở trình đơn hộp thư đến</string>
+	<string name="layoutMessagesInboxOnResume4">Đã xóa tất cả tin nhắn đã nhận và giờ bạn đang ở trình đơn hộp thư đến</string>
+
+	<string name="layoutMessagesInboxDeleteAllDelete">Xóa tất cả tin nhắn đã nhận. vuốt qua phải để xác nhận.</string>
+	<string name="layoutMessagesInboxDeleteAllDeleteDelete">Xóa tất cả tin nhắn đã nhận</string>
+	<string name="layoutMessagesInboxDeleteAllOnResume">Giờ bạn đang ở trình đơn xóa tất cả tin nhắn đã nhận</string>
+						
+	<string name="layoutMessagesComposeAddressee">Người nhận</string>
+	<string name="layoutMessagesComposeAddressee2">Người nhận. vuốt sang phải hoặc trái để nghe từng danh bạ.</string>
+	<string name="layoutMessagesComposeAddressee3">Người nhận.&#160;</string>
+	<string name="layoutMessagesComposeMessage">Tin nhắn</string>
+	<string name="layoutMessagesComposeMessage2">Tin nhắn. vuốt sang phải để nhập tin nhắn.</string>
+	<string name="layoutMessagesComposeMessage3">Tin nhắn.&#160;</string>
+	<string name="layoutMessagesComposeSend">Gửi tin nhắn</string>
+	<string name="layoutMessagesComposeSending">Đang gửi tin nhắn. vui lòng chờ...</string>
+	<string name="layoutMessagesComposeSendingError">Tin nhắn của bạn đang được gửi. vui lòng chờ...</string>
+	<string name="layoutMessagesComposeSendingError2">Không thể gửi tin nhắn. kiểm tra trạng thái nhà mạng của bạn và thử lại sau.</string>
+	<string name="layoutMessagesComposeErrorComplete">Lỗi. bạn phải hoàn thành mọi trường để gửi tin nhắn.</string>
+	<string name="layoutMessagesComposeOnResume">Giờ bạn đang ở trình đơn soạn tin nhắn</string>
+	
+	<string name="layoutInputKeysOnResume">Giờ bạn đang ở chế độ nhập văn bản bằng bàn phím vật lý hoặc màn hình cảm ứng. Nếu dùng màn hình cảm ứng, vuốt lên hoặc xuống để chọn kí tự hoặc phím, vuốt sang phải để nhập kí tự hoặc phím và đi đến kí tự tiếp theo, và vuốt sang trái để xóa kí tự cuối cùng.</string>
+	<string name="layoutInputKeysTips">Chế độ nhập văn bản\n\n* Vuốt lên và xuống để chọn kí tự\n\n* Vuốt sang phải để nhập kí tự hoặc phím và di chuyển đến mục tiếp theo\n\n* Vuốt sang trái để xóa kí tự cuối cùng\n\n* Tương thích với bàn phím vật lý</string>
+	<string name="layoutInputKeysKeyEnter">[ENTER]</string>
+	<string name="layoutInputKeysKeyEnter2">ENTER</string>
+	<string name="layoutInputKeysKeyRead">[ĐỌC]</string>
+	<string name="layoutInputKeysKeyReadText">ĐỌC VĂN BẢN</string>
+	<string name="layoutInputKeysKeyReadNumber">ĐỌC SỐ</string>
+	<string name="layoutInputKeysKeySpace">KHOẢNG TRẮNG</string>
+	<string name="layoutInputKeysNothingToRead">Không có gì để đọc</string>
+	<string name="layoutInputKeysEmptyField">Trường văn bản rỗng</string>
+	<string name="layoutInputKeysEntered">&#160;đã nhạp</string>
+		
+	<string name="layoutInputVoiceOnResume">Giờ bạn đang ở trình đơn chế độ nhập văn bản bằng giọng nói</string>
+	<string name="layoutInputVoiceStartRecognition">Bắt đầu nhận dạng giọng nói</string>
+	<string name="layoutInputVoiceStartRecognition2">Nhận dạng giọng nói. Vuốt sang phải rồi nói</string>
+	<string name="layoutInputVoicePossibleResult">Kết quả&#160;</string>
+	<string name="layoutInputVoicePossibleResults">Các kết quả (</string>
+	<string name="layoutInputVoicePossibleResults2">Kết quả khả thi.&#160;</string>
+	<string name="layoutInputVoicePossibleResults3">. Vuốt sang phải để nghe từng mục</string>
+	<string name="layoutInputVoiceEnterSelectedResult">Nhập kết quả đã chọn</string>
+	<string name="layoutInputVoiceNoResultToSelect">Trước tiên bạn phải chọn một kết quả</string>
+	<string name="layoutInputVoiceNoRecognition">Không có kết quả nào khả thi. Vui lòng thử lại hoặc kiểm tra xem việc nhận dạng giọng nói trên thiết bị của bạn có yêu cầu kết nối mạng không. Nếu có, kiểm tra trạng thái kết nối mạng của bạn.</string>
+	<string name="layoutInputVoiceSystemError">Lỗi hệ thống. Không thể thực hiện nhận dạng giọng nói</string>
+	<string name="layoutInputVoiceCancelAndGoBack">Hủy và trở về trình đơn trước</string>
+
+	<string name="layoutInputKeyboardTalkbackOnResume">Giờ bạn đang ở chế độ nhập văn bản bằng bàn phím chuẩn của android với Talkback. Bạn phải bật Talkback để dùng phương thức nhập này. Giờ đây một ô nhập văn bản đã được chọn và bàn phím chuẩn của android đã được bất ở phần dưới màn hình. Hãy viết và bấm phím enter để nhập liệu. Bấm nút back để hủy và trở về trình đơn trước.</string>
+		
+	<string name="callFrom">Cuộc gọi từ&#160;</string>
+	<string name="callFromUnknown">Cuộc gọi từ số không xác định</string>
+	<string name="callingTo">Đang gọi đến&#160;</string>
+	<string name="callingToUnknown">Đang gọi đến một số chưa đăng kí</string>
+	<string name="callEnded">Đã kết thúc cuộc gọi</string>
+					
+	<string name="backToPreviousMenu">Trở về trình đơn trước</string>
+	<string name="backToMainMenu">Trở về trình đơn chính</string>
+
+	<string name="googleRequestTitle">Yêu cầu sự cho phép</string>
+	<string name="googleRequest1">Cấp quyền cho \'Blind Communicator\' trong hộp thoại sau. Điều này sẽ cho phép bạn trả lời hoặc từ chối cuộc gọi bằng cách trượt lên hoặc xuống trong Android 8.0 trở lên.\n\nTừ tháng 11 năm 2018, Google yêu cầu mọi ứng dụng phải được nhắm mục tiêu đến Android 8.0, điều này có nghĩa là bây giờ bạn phải cấp phép theo cách thủ công (bạn chỉ phải làm điều đó một lần) ứng dụng các quyền để hoạt động đúng.</string>
+	<string name="googleRequest2">Chọn \'Blind Communicator\' từ hộp thoại sau. Điều này sẽ cho phép hướng dẫn bằng giọng nói trong Ứng dụng (nếu thiết bị bị tắt tiếng) để nghe và thay đổi cấu hình (Bình thường, Rung và Im lặng) trong Android 8.0 trở lên.\n\nTừ tháng 11 năm 2018, Google yêu cầu mọi ứng dụng phải được nhắm mục tiêu đến Android 8.0, điều này có nghĩa là bây giờ bạn phải cấp phép theo cách thủ công (bạn chỉ phải làm điều đó một lần) ứng dụng các quyền để hoạt động đúng.</string>
+	<string name="googleRequestOk">OK, tôi sẽ.</string>
+		
+	<string-array name="keysAll">
+		<item>A</item>
+		<item>B</item>
+		<item>C</item>
+		<item>D</item>
+		<item>E</item>
+		<item>F</item>
+		<item>G</item>
+		<item>H</item>
+		<item>I</item>
+		<item>J</item>
+		<item>K</item>
+		<item>L</item>
+		<item>M</item>
+		<item>N</item>
+		<item>O</item>
+		<item>P</item>
+		<item>Q</item>
+		<item>R</item>
+		<item>S</item>
+		<item>T</item>
+		<item>U</item>
+		<item>V</item>
+		<item>W</item>
+		<item>X</item>
+		<item>Y</item>
+		<item>Z</item>
+		<item>0</item>
+		<item>1</item>
+		<item>2</item>
+		<item>3</item>
+		<item>4</item>
+		<item>5</item>
+		<item>6</item>
+		<item>7</item>
+		<item>8</item>
+		<item>9</item>
+		<item>.</item>
+		<item>,</item>
+		<item>:</item>
+		<item>;</item>
+		<item>!</item>
+		<item>\?</item>
+		<item>+</item>
+		<item>-</item>
+		<item>*</item>
+		<item>#</item>
+		<item>%</item>
+		<item>&amp;</item>
+		<item>$</item>
+		<item>/</item>
+		<item>"\\"</item>
+		<item>(</item>
+		<item>)</item>
+		<item>{</item>
+		<item>}</item>
+		<item>\"</item>
+		<item>\@</item>
+		<item>[ĐỌC]</item>
+		<item>[ENTER]</item>
+		<item>_</item>
+	</string-array>
+	
+	<string-array name="keysOnlyNumbers">
+		<item>#</item>
+	    <item>*</item>
+		<item>0</item>
+		<item>1</item>
+		<item>2</item>
+		<item>3</item>
+		<item>4</item>
+		<item>5</item>
+		<item>6</item>
+		<item>7</item>
+		<item>8</item>
+		<item>9</item>
+		<item>[ĐỌC]</item>
+		<item>[ENTER]</item>
+	</string-array>
+</resources>

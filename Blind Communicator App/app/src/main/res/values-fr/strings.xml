@@ -1,0 +1,590 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Blind Communicator</string>
+    <string name="title_activity_main">Blind Communicator</string>
+    <string name="menu_settings">Settings</string>
+    
+	<string name="mainWelcome">Bienvenue au Communicateur pour personnes ayant une déficience visuelle, développé par Leonardo Javier Russo. Faite glisser vers le Haut ou le Bas pour vous déplacer dans le menu et/ou vers la droite ou gauche pour sélectionner l’option souhaitait. Si votre dispositif à un clavier physique, vous pouvez utiliser les flèches, et dans le cas d’avoir TalkBack activé, vous pouvez utiliser vos doigts pour vous déplacer et sélectionner menu.</string>
+    <string name="mainMessages">Messages</string>
+    <string name="mainMessagesNew">nouveaux messages</string>
+    <string name="mainMessagesNoNew">Messages. Vous n’avez pas des nouveaux messages.</string>
+    <string name="mainMessagesOneNew">Messages. Vous avez un nouveau message.</string>
+	<string name="mainMessagesNewFromContact">Nouveau message de&#160;</string>
+	<string name="mainMessagesNewFromUnknown">Nouveau message de un numéro inconnu.</string>
+	<string name="mainMessagesNotAvailable">Messages. Pas disponible dans cet appareil.</string>
+    <string name="mainCalls">Appels</string>
+    <string name="mainCallsMissed">appels manqués</string>
+    <string name="mainCallsNoMissed">Appels. Vous n’avez d’appels.</string>
+    <string name="mainCallsOneMissed">Appels. Vous avez un appel manqué.</string>
+    <string name="mainCallsNotAvailable">Appels. Pas disponible dans cet appareil.</string>
+	<string name="mainCallsNotAvailableOS">La version Android de cet appareil n\'autorise pas Blind Communicator à accéder au journal des appels.</string>
+    <string name="mainNotAvailable">Option pas disponible dans cet appareil.</string>
+    <string name="mainContacts">Contacts</string>
+    <string name="mainMusicPlayer">Musique</string>
+    <string name="mainBrowser">Internet</string>
+    <string name="mainAlarms">Alarmes</string>
+    <string name="mainAlarmsNoAlarms">Alarmes. Vous n’avez pas d’alarmes.</string>
+    <string name="mainAlarmsOneAlarm">Alarmes. Vous avez une alarme.</string>
+	<string name="mainAlarmsForToday">&#160;alarmes pour d’aujourd’hui.</string>
+	<string name="mainVoiceRecorder">Enregistrement vocale</string>
+	<string name="mainApplications">Applications</string>
+    <string name="mainSettings">Configuration</string>
+    <string name="mainStatus">Etat de l’appareil</string>
+	<string name="mainCarrierIs">, l’opérateur est&#160;</string>
+	<string name="mainProfileIsNormal">, le profil est normal&#160;</string>
+	<string name="mainProfileIsSilent">, le profil est en silence&#160;</string>
+	<string name="mainProfileIsVibrate">, le profil est en vibreur&#160;</string>
+	<string name="mainNoSignal">, pas de signal mobile&#160;</string>
+	<string name="mainBatteryChargedAt">La batterie est chargé au&#160;</string>
+    <string name="mainPercentAndTime">&#160;pour cent, sont&#160;</string>
+    <string name="mainHours">&#160;heures&#160;</string>
+	<string name="mainMinutesAndDate">&#160;minutes du jour&#160;</string>
+	<string name="mainOf">&#160;de&#160;</string>
+	<string name="mainCarrierNotAvailable">Inconnu</string>
+	<string name="mainWifiOnWithNetwork">et Wifi activé et connecté au réseaux wifi&#160;</string>
+	<string name="mainWifiOnWithoutNetwork">et Wifi activé et non connecté au réseau wifi.</string>
+	<string name="mainWifiOff">et Wifi désactivé.</string>
+	<string name="mainMusicPlayerPleaseTryAgain">S\'il te plaît, attendes quelques secondes que le reproducteur finisse le processus et réessayer plus tard.</string>
+	<string name="mainNoTTSInstalledTitle">Erreur</string>
+	<string name="mainNoTTSInstalledMessage">App de synthèse vocale non trouvé. S\'il te plaît télécharger l’App Google (Gratuit) ou autre pour que cette App fonctionne correctement.</string>
+	<string name="mainNoTTSInstalledButton">OK, je vais.</string>
+	<string name="mainPressBack">Appuyer en arrière à nouveau pour fermer l’application.</string>
+
+    <string name="monday">Lundi</string>
+	<string name="tuesday">Mardi</string>
+	<string name="wednesday">Mercredi</string>
+	<string name="thursday">Jeudi</string>
+	<string name="friday">Vendredi</string>
+	<string name="saturday">Samedi</string>
+    <string name="sunday">Dimanche</string>
+	
+    <string name="january">Janvier</string>
+    <string name="february">Février</string>
+	<string name="march">Mars</string>
+	<string name="april">Avril</string>
+	<string name="may">Mai</string>
+	<string name="june">Juin</string>
+	<string name="july">Juillet</string>
+	<string name="august">Août</string>
+	<string name="september">Septembre</string>
+	<string name="october">Octobre</string>
+	<string name="november">Novembre</string>
+	<string name="december">Décembre</string>
+
+	<string name="volumeMaximum">Volume au maximum</string>
+	<string name="volumeHigher">Volume augmenté</string>
+	<string name="volumeLower">Volume réduit</string>
+	<string name="deviceCharged">La charge du dispositif est maintenant complète</string>
+	<string name="deviceChargedStatus">, le dispositif est chargé complètement.&#160;</string>
+	<string name="deviceCharging">Le dispositif est en charge</string>
+	<string name="deviceChargingStatus">, le dispositif est en charge,&#160;</string>
+	<string name="deviceUnplugged">Le dispositif est débranché</string>
+	<string name="screenOn">L’écran est allumé</string>
+	<string name="screenOff">L’écran est éteint</string>
+	<string name="screenPortrait">L’écran est en mode portrait</string>
+	<string name="screenLandscape">L’écran est en mode paysage</string>
+	<string name="wifiConnectedToNetwork">Connecté au réseau wifi&#160;</string>
+	<string name="wifiDisconnectedFromNetwork">Déconnecté du réseau wifi</string>
+	
+	<string name="layoutMainMessages">Messages</string>
+	<string name="layoutMainCalls">Appels</string>
+	<string name="layoutMainContacts">Contacts</string>
+	<string name="layoutMainMusic">Musique</string>
+	<string name="layoutMainBrowser">Internet</string>
+	<string name="layoutMainAlarms">Alarmes</string>
+	<string name="layoutMainSettings">Configuration</string>
+	<string name="layoutMainStatus">Etat</string>
+	<string name="layoutMainOnResume">Vous est dans Menu Principal</string>
+	
+	<string name="layoutAlarmsNotifierShutdown">Faites glisser vers le haut ou bas pour éteindre l’alarme</string>
+	
+	<string name="layoutAlarmsList">Liste d’alarmes</string>
+	<string name="layoutAlarmsCreate">Créer une alarme</string>
+	<string name="layoutAlarmsAlarmCreated">Vous avez créé une alarme. Vous est dans Menu alarmes</string>
+	<string name="layoutAlarmsOnResume">Vous vous trouvez dans Menu Alarmes</string>
+	
+	<string name="layoutAlarmsCreateMessage">- inséré message -</string>
+	<string name="layoutAlarmsCreateMessage2">Message d’alarme. Glisser vers la droite pour accéder.</string>
+	<string name="layoutAlarmsCreateMessage3">Message d’alarme:\n</string>
+	<string name="layoutAlarmsCreateMessage4">Message d’alarme.&#160;</string>
+	<string name="layoutAlarmsCreateCreate">Créer une alarme</string>
+	<string name="layoutAlarmsCreateDay">Jour alarme:&#160;</string>
+	<string name="layoutAlarmsCreateDay2">Jour alarme.&#160;</string>
+	<string name="layoutAlarmsCreateTimeHour">Heure alarme:&#160;</string>
+	<string name="layoutAlarmsCreateTimeHour2">Heure alarma.&#160;</string>
+	<string name="layoutAlarmsCreateTimeMinute">Minutes alarme:&#160;</string>
+	<string name="layoutAlarmsCreateTimeMinute2">Minutes alarme.&#160;</string>
+	<string name="layoutAlarmsCreateHours">&#160;heures</string>
+	<string name="layoutAlarmsCreateMinutes">&#160;minutes</string>
+	<string name="layoutAlarmsCreateErrorNoMessage">Erreur. Vous devez insérer un message.</string>
+	<string name="layoutAlarmsCreateErrorAlarmConflict">Erreur. Autre alarme est activé pour ce jour et heure.</string>
+	<string name="layoutAlarmsCreateOnResume">Vous est dans Menu création d’alarme</string>
+	
+	<string name="layoutAlarmsListNoAlarms">Pas d’alarmes établies</string>
+	<string name="layoutAlarmsListList">Alarmes</string>
+	<string name="layoutAlarmsListAlarmAlarmsCount">&#160;alarmes établies</string>
+	<string name="layoutAlarmsListAt">&#160;a&#160;</string>
+	<string name="layoutAlarmsListForToday">&#160;hoy párr. Glisser vers la droite ou gauche pour écouter.</string>
+	<string name="layoutAlarmsListDelete">Eliminer alarme sélectionnée</string>
+	<string name="layoutAlarmsListDeleted">Alarme éliminer avec succès, vous est dans Menu liste alarmes</string>
+	<string name="layoutAlarmsListDeleteSelectError">Vous devez sélectionner une alarme</string>
+	<string name="layoutAlarmsListOnResume">Vous est dans Menu liste alarmes</string>
+	<string name="layoutAlarmsListOnResume2">Toutes les alarmes ils ont étais supprimer avec succès et vous vous trouvez dans le menu d\'alarmes</string>
+		
+	<string name="layoutAlarmsDeleteSelected">L’alarme sélectionnée va être éliminé.&#160;</string>
+	<string name="layoutAlarmsDeleteDelete">Confirmer élimination</string>
+	<string name="layoutAlarmsDeleteOnResume">Vous est dans Menu élimination alarmes</string>
+
+	<string name="layoutAlarmsDeleteAllDelete">Supprimer toutes les alarmes. Faites glisser vers la droite pour confirmer</string>
+	<string name="layoutAlarmsDeleteAllDeleteDelete">Supprimer toutes les alarmes</string>
+	<string name="layoutAlarmsDeleteAllOnResume">Vous vous trouvez dans le menu de confirmation de élimination d\'alarmes</string>
+		
+	<string name="layoutVoiceRecorderList">Liste d’enregistrements vocaux</string>
+	<string name="layoutVoiceRecorderCreate">Créer enregistrement vocale</string>
+	<string name="layoutVoiceRecorderOnResume">Vous est dans Menu enregistrement vocale</string>
+	<string name="layoutVoiceRecorderOnResume2">Vous avez sauvegardé avec succès l’enregistrement vocale, et vous est dans Menu enregistrement vocaux</string>
+	
+	<string name="layoutVoiceRecorderCreateCreate">Créer enregistrement vocale</string>
+	<string name="layoutVoiceRecorderCreateCreate2">Créer enregistrement vocale. Glisser vers la droite pour démarrer l’enregistrement y glisser encore une fois pour l’arrêter.</string>
+	<string name="layoutVoiceRecorderCreateError">Erreur. S\'il te plaît, vérifié si votre dispositif possède une carte mémoire.</string>
+	<string name="layoutVoiceRecorderCreateOnResume">Vous est dans Menu création enregistrement vocale</string>
+	
+	<string name="layoutVoiceRecorderListList">Enregistrements vocaux</string>
+	<string name="layoutVoiceRecorderListList2">Enregistrements Vocaux. Glisser vers la droite ou gauche pour sélectionner.</string>
+	<string name="layoutVoiceRecorderListPlay">Reproduire enregistrement vocale</string>
+	<string name="layoutVoiceRecorderListPlay2">Reproduire enregistrement vocale sélectionnée. Glisser vers la droite pour reproduire et vers la gauche pour arrêter.</string>
+	<string name="layoutVoiceRecorderListDelete">Eliminer enregistrement vocale</string>
+	<string name="layoutVoiceRecorderListDelete2">Eliminer enregistrement vocale sélectionnée</string>
+	<string name="layoutVoiceRecorderListItem">Enregistrement vocale&#160;</string>
+	<string name="layoutVoiceRecorderListItemOf">&#160;de&#160;</string>
+	<string name="layoutVoiceRecorderListNoVoiceRecords">Vous n’avez pas d’enregistrement vocal</string>
+	<string name="layoutVoiceRecorderListPleaseWait">S\'il te plaît, attendes quelques secondes, une fois le processus fini réessayer à nouveau.</string>
+	<string name="layoutVoiceRecorderListError">Vous devez sélectionner un enregistrement vocal</string>
+	<string name="layoutVoiceRecorderListOnResume">Vous est dans Menu liste d’enregistrements</string>
+	<string name="layoutVoiceRecorderListOnResume2">L’enregistrement est définitivement éliminé, vous est dans Menu liste d’enregistrements</string>
+	
+	<string name="layoutVoiceRecorderDeleteDelete">Vous avez sélectionné un enregistrement vocal pour son élimination&#160;</string>
+	<string name="layoutVoiceRecorderDeleteDelete2">. Glisser vers la droite pour reproduire et vers la gauche pour arrêter.</string>
+	<string name="layoutVoiceRecorderDeleteToDelete">Enregistrement vocal&#160;</string>
+	<string name="layoutVoiceRecorderDeleteConfirm">Vous devez confirmer pour éliminer</string>
+	<string name="layoutVoiceRecorderDeleteOnResume">Vous est dans Menu élimination enregistrement vocal</string>
+	
+	<string name="layoutApplicationsList">Applications</string>
+	<string name="layoutApplicationsList2">Applications. Glisser vers la droite ou gauche pour écouter.</string>
+	<string name="layoutApplicationsListPleaseWait">S\'il te plaît, attendes quelques secondes, une fois le processus fini réessayer à nouveau.</string>
+	<string name="layoutApplicationsLaunch">Exécuter l’application sélectionnée</string>
+	<string name="layoutApplicationsLaunchError">Vous devez sélectionner une application.</string>
+	<string name="layoutApplicationsNoApps">Il n’a pas d’application</string>
+	<string name="layoutApplicationsOnResume">Vous est dans Menu applications</string>
+	
+	<string name="layoutSettingsReadingSpeed">V. lecture:&#160;</string>
+	<string name="layoutSettingsReadingSpeed2">Vitesse de lecture.&#160;</string>
+	<string name="layoutSettingsScreenTimeout">A. Ecran:\n</string>
+	<string name="layoutSettingsScreenTimeout2">Eteindre l’écran après&#160;</string>
+	<string name="layoutSettingsToneNotAvailable">Non disponible</string>
+	<string name="layoutSettingsAlarmTone">T. alarme:\n</string>
+	<string name="layoutSettingsAlarmTone2">Tonalité d’alarme.&#160;</string>
+	<string name="layoutSettingsAlarmToneNotAvailable">Tonalité d’alarme. Non disponible dans cet appareil</string>
+	<string name="layoutSettingsNotifyTone">T. notif:\n</string>
+	<string name="layoutSettingsNotifyTone2">Tonalité de notification.&#160;</string>
+	<string name="layoutSettingsNotifyToneNotAvailable">Tonalité de notification. Non disponible dansa cet appareil</string>
+	<string name="layoutSettingsCallTone">T. Appel:\n</string>
+	<string name="layoutSettingsCallTone2">Tonalité d’appel.&#160;</string>
+	<string name="layoutSettingsCallToneNotAvailable">T. appel: -</string>
+	<string name="layoutSettingsCallToneNotAvailable2">Tonalité d’appel. Non disponible dans cet appareil.</string>
+	<string name="layoutSettingsProfileNormal">Profil: Normal</string>
+	<string name="layoutSettingsProfileNormal2">Profil. Normal</string>
+	<string name="layoutSettingsProfileSilent">Profil: Silence</string>
+	<string name="layoutSettingsProfileSilent2">Profil. Silence</string>
+	<string name="layoutSettingsProfileVibrate">Profil: Vibreur</string>
+	<string name="layoutSettingsProfileVibrate2">Profil. Vibreur</string>
+	<string name="layoutSettingsWifiOn">Wifi: Activé</string>
+	<string name="layoutSettingsWifiOn2">Le Wifi est activé</string>
+	<string name="layoutSettingsWifiOn2WithoutNetwork">Wifi. Le wifi est activé, mais pas connecté au réseau wifi.</string>
+	<string name="layoutSettingsWifiOn2WithNetwork">Wifi. Le wifi est activé et connecté au réseau wifi&#160;</string>
+	<string name="layoutSettingsWifiOff">Wifi: Pas activé</string>
+	<string name="layoutSettingsWifiOff2">Wifi. Le wifi n’est pas activé</string>
+	<string name="layoutSettingsWifiOff3">Le Wifi n’est pas activé</string>
+	<string name="layoutSettingsBluetoothOn">Bluetooth: Activé</string>
+	<string name="layoutSettingsBluetoothOn2">Le Bluetooth est activé</string>
+	<string name="layoutSettingsBluetoothOff">Bluetooth: Pas activé</string>
+	<string name="layoutSettingsBluetoothOff2">Le Bluetooth n’est pas activé</string>
+	<string name="layoutSettingsInputMode">Introduction:&#160;</string>
+	<string name="layoutSettingsInputMode2">Insérer information&#160;</string>
+	<string name="layoutSettingsInputModeKeyboard">Clavier</string>
+	<string name="layoutSettingsInputModeKeyboard2">depuis clavier physique et écran tactile</string>
+	<string name="layoutSettingsInputModeVoice">Voix</string>
+	<string name="layoutSettingsInputModeVoice2">Pour reconnaissance de vocale. Peut nécessiter Internet.</string>
+	<string name="layoutSettingsInputModeKeyboardTalkback">Clavier avec TalkBack</string>
+	<string name="layoutSettingsInputModeKeyboardTalkback2">depuis clavier androïde traditionnel avec TalkBack. TalkBack doit être activé.</string>
+	<string name="layoutSettingsSystemSettings">Configuration système</string>
+	<string name="layoutSettingsSeconds">&#160;secs</string>
+	<string name="layoutSettingsSeconds2">&#160;secondes d’inactivité</string>
+	<string name="layoutSettingsMinute">&#160;min</string>
+	<string name="layoutSettingsMinute2">&#160;minutes d’inactivité </string>
+	<string name="layoutSettingsMinutes">&#160;mins</string>
+	<string name="layoutSettingsMinutes2">&#160;minutes d’inactivité</string>
+	<string name="layoutSettingsPrivacyPolicy">Politique de confidentialité</string>
+	<string name="layoutSettingsPrivacyPolicy2">Blind Communicator Politique de confidentialité. Paru le 21 décembre 2016. Je, Leonardo Javier Russo, considérez vos informations importantes et publiez cette Déclaration de confidentialité pour vous informer des informations que je recueille et comment je les utilise pour personnaliser et améliorer continuellement votre expérience. Cette Déclaration de confidentialité s\'applique à App Blind Communicator et à ses services et ne s\'applique pas au produit ou au service qui ne lie pas à cette déclaration ou à sa déclaration de confidentialité respectivement. 1 - Collecte d\'informations. une. Informations personnelles. Je ne recueille pas d\'informations personnelles. Les informations personnelles sont des informations qui vous identifient ou une autre personne, telles que votre prénom et votre nom de famille, adresses physiques, adresses électroniques, téléphone, télécopieur, appareil photo, microphone, GPS ou toute information stockée dans votre appareil. B. Renseignements non personnels. Je ne recueille pas vos informations non personnelles lorsque vous utilisez le Communicateur App Blind ou visitez mon site Web, y compris les informations de votre appareil, le système d\'exploitation, les journaux. C. Informations que vous fournissez. Je ne recueille pas vos informations lorsque vous communiquez avec moi. Comment utiliser les informations. une. Informations personnelles. Je ne conserve pas de renseignements personnels et, par conséquent, je ne divulgue pas vos renseignements personnels. B. Renseignements non personnels. Je ne vends pas, ne transige, ou autrement transférer à des tiers vos informations. Je ne combine pas les informations non personnelles avec les informations personnelles (telles que la combinaison de votre nom avec votre numéro d\'utilisateur unique). Contactez moi. Si vous avez des questions ou des commentaires au sujet de cette politique ou de nos pratiques en matière de confidentialité, ou pour signaler toute violation de la politique ou de l\'abus de l\'App Blind Communicator ou du site Web, contactez-moi à contacto@lrusso.com.ar. Changements. Cette politique de confidentialité peut changer, ce qui ne réduira pas vos droits en vertu de cette politique de confidentialité de temps en temps, je publierai toute modification de la politique de confidentialité sur cette page. Si vous n\'acceptez aucune modification à cette Politique, vous pourriez immédiatement cesser toute utilisation de tous les Services. Votre utilisation continue de l\'App Blind Communicator suite à l\'affichage de toute modification de cette Politique constituera votre acceptation de la Politique révisée.</string>
+	<string name="layoutSettingsOnResume">Vous est dans Menu configuration</string>
+	
+	<string name="layoutContactsList">Liste de contacts</string>
+	<string name="layoutContactsCreate">Créer contact</string>
+	<string name="layoutContactsOnResumeCreated">Le contact est enregistré. Vous est dans Menu de Contacts</string>
+	<string name="layoutContactsOnResume">Vous est dans Menu de Contacts</string>
+	
+	<string name="layoutContactsCreateName">- insérer nom -</string>
+	<string name="layoutContactsCreateName2">Nom du contact. Glisser vers la droite pour commencer.</string>
+	<string name="layoutContactsCreateName3">Nom du contact.&#160;</string>
+	<string name="layoutContactsCreatePhone">- insérer téléphone -</string>
+	<string name="layoutContactsCreatePhone2">Numéro de téléphone. Glisser vers la droite pour commencer.</string>
+	<string name="layoutContactsCreatePhone3">Numéro de téléphone.&#160;</string>
+	<string name="layoutContactsCreateCreate">Créer contact</string>
+	<string name="layoutContactsCreateErrorComplete">Erreur. Vous devez remplir tous les champs pour créer votre contact.</string>
+	<string name="layoutContactsCreateOnResume">Vous est dans Menu création contact</string>
+	
+	<string name="layoutContactsListContactsList">Contacts</string>
+	<string name="layoutContactsListContactsList2">Contacts. Glisser vers la droite ou vers la gauche pour écouter.</string>
+	<string name="layoutContactsListNoContacts">Il n’a pas des contacts</string>
+	<string name="layoutContactsListWithThePhoneNumber">&#160;avec le numéro de téléphone&#160;</string>
+	<string name="layoutContactsListCall">Appeler</string>
+	<string name="layoutContactsListCall2">Sélection de contact et appel</string>
+	<string name="layoutContactsListSendMessage">Ecrire un message</string>
+	<string name="layoutContactsListSendMessage2">Sélectionner contact et écrire message</string>
+	<string name="layoutContactsListDelete">Eliminer contact</string>
+	<string name="layoutContactsListDelete2">Sélection et élimination de contact</string>
+	<string name="layoutContactsListError">Vous devez sélectionner un contact</string>
+	<string name="layoutContactsListPleaseWait">S\'il te plaît, attendes quelques secondes, une fois le processus fini réessayer à nouveau.</string>
+	<string name="layoutContactsListOnResumeContactDeleted">Contact éliminé avec succès. Vous est dans Menu liste de contacts</string>
+	<string name="layoutContactsListOnResume">Vous est dans Menu liste de contacts</string>
+	<string name="layoutContactsListOnResume2">Message envoyée. Vous est dans Menu liste de Contacts</string>
+			
+	<string name="layoutContactsDeleteSelected">Contact sélectionnée pour son élimination.&#160;</string>
+	<string name="layoutContactsDeleteDelete">Confirmer élimination</string>
+	<string name="layoutContactsDeleteOnResume">Vous est dans élimination de contact</string>
+	
+	<string name="layoutMusicPlayerNowPlaying">S. Maintenant</string>
+	<string name="layoutMusicPlayerNowPlaying2">En écoute</string>
+	<string name="layoutMusicPlayerNowPlaying3">&#160;chanson&#160;</string>
+	<string name="layoutMusicPlayerNowPlaying4">&#160;de&#160;</string>
+	<string name="layoutMusicPlayerNowPlaying5">&#160;de&#160;</string>
+	<string name="layoutMusicPlayerNowPlayingError1">Vous devez sélectionner un artiste et un album</string>
+	<string name="layoutMusicPlayerNowPlayingError2">Il n’a pas de musique en reproduction</string>
+	<string name="layoutMusicPlayerPlay">Reproduire</string>
+	<string name="layoutMusicPlayerStop">Arrêter</string>
+	<string name="layoutMusicPlayerPreviousTrack">C. précédente</string>
+	<string name="layoutMusicPlayerPreviousTrack2">Chanson précédente</string>
+	<string name="layoutMusicPlayerNextTrack">C. Suivante</string>
+	<string name="layoutMusicPlayerNextTrack2">Chanson suivante</string>
+	<string name="layoutMusicPlayerLowerVolume">Moins de Vol.</string>
+	<string name="layoutMusicPlayerLowerVolume2">Moins de volume</string>
+	<string name="layoutMusicPlayerHigherVolume">Plus de Vol.</string>
+	<string name="layoutMusicPlayerHigherVolume2">Plus de volume</string>
+	<string name="layoutMusicPlayerArtists">Artistes</string>
+	<string name="layoutMusicPlayerAlbums">Albums</string>
+	<string name="layoutMusicPlayerUnknown">Inconnu</string>
+	<string name="layoutMusicPlayerOnResume">Vous est dans Menu Reproducteur de Musique</string>
+	
+	<string name="layoutMusicPlayerArtistsList">Artistes</string>
+	<string name="layoutMusicPlayerArtistsList2">Artistes. Glisser vers la droite ou vers la gauche pour écouter.</string>
+	<string name="layoutMusicPlayerArtistsNoArtists">Il n’a pas d’artistes.</string>
+	<string name="layoutMusicPlayerArtistsAlbumsList">Albums de l’artiste</string>
+	<string name="layoutMusicPlayerArtistsAlbumsList2">Albums de l’artiste. Glisser vers la droite ou vers la gauche pour écouter.</string>
+	<string name="layoutMusicPlayerArtistsAlbumsList3">Vous devez sélectionner un artiste.</string>
+	<string name="layoutMusicPlayerArtisrsAlbumsNoAlbums">Il n’a pas d’albums.</string>
+	<string name="layoutMusicPlayerArtistsPleaseWait">S\'il te plaît, attendes quelques secondes, une fois le processus fini réessayer à nouveau.</string>
+	<string name="layoutMusicPlayerArtistsPlayAlbum">Reproduire l’album</string>
+	<string name="layoutMusicPlayerArtistsPlayError">Vous devez sélectionner un album.</string>
+	<string name="layoutMusicPlayerArtistsPlayError2">Erreur. Nous ne pouvons pas exécuter le fichier musical.</string>
+	<string name="layoutMusicPlayerArtistsOnResume">Vous est dans Menu des Artistes</string>
+	
+	<string name="layoutBrowserSearchInGoogle">Chercher en Google</string>
+	<string name="layoutBrowserListBookmarks">Liste de Favoris</string>
+	<string name="layoutBrowserAWebPageItsBeenLoading">. S\'il te plaît, merci de bien vouloir patientez le temps de téléchargement de la page sollicité.</string>
+	<string name="layoutBrowserErrorPendingRequest">Erreur. La page est en train de charger, merci de bien vouloir patientez.</string>
+	<string name="layoutBrowserLoadingPagePleaseWait">En train de charger, merci de bien vouloir patientez</string>
+	<string name="layoutBrowserPageNotFound">Page non trouvé. S\'il te plaît, vérifié la connexion internet et l’adresse Web.</string>
+	<string name="layoutBrowserOnResume">Vous est dans Menu Navigateur internet</string>
+	
+	<string name="layoutBrowserPageViewerReadTitle">Lire le titre de la page</string>
+	<string name="layoutBrowserPageViewerReadTitle2">Le titre de la page est&#160;</string>
+	<string name="layoutBrowserPageViewerReadText">Lire texte de la page</string>
+	<string name="layoutBrowserPageViewerPageLinks">Lien de la page</string>
+	<string name="layoutBrowserPageViewerPageLinks2">Lien de la page. Glisser vers la droite ou vers la gauche pour écouter.</string>
+	<string name="layoutBrowserPageViewerPageLinks3">Lien&#160;</string>
+	<string name="layoutBrowserPageViewerPageLinks3Of">&#160;de&#160;</string>
+	<string name="layoutBrowserPageViewerPageLinks4">La Page Web actuel ne possède pas de lien.</string>
+	<string name="layoutBrowserPageViewerPageLinkSelectError">Vous devez sélectionner un lien.</string>
+	<string name="layoutBrowserPageViewerGoToLink">Aller au lien sélectionné</string>
+	<string name="layoutBrowserPageViewerAddToBookmarks">Ajouter page actuel aux favoris</string>
+	<string name="layoutBrowserPageViewerAddToBookmarksAdded">Vous avez ajouté un favori</string>
+	<string name="layoutBrowserPageViewerAddToBookmarksRepeated">Le favori n’existe pas</string>
+	<string name="layoutBrowserPageViewerOnResume">Vous est dans Menu d’une Page Web Navigateur</string>
+	
+	<string name="layoutBookmarksListList">Liste de Favoris</string>
+	<string name="layoutBookmarksListList2">Liste de Favoris. Glisser vers la droite ou vers la gauche pour écouter.</string>
+	<string name="layoutBookmarksListList3">Vous n’avez pas de favori</string>
+	<string name="layoutBookmarksListGoToLink">Aller à favori sélectionné</string>
+	<string name="layoutBookmarksListDelete">Elimination de favori sélectionné</string>
+	<string name="layoutBookmarksListDeleted">Favori éliminé avec succès. Vous est dans Menu liste de favoris</string>
+	<string name="layoutBookmarksListSelectError">Vous devez sélectionner un Favori</string>
+	<string name="layoutBookmarksListOnResume">Vous est dans Menu liste de Favoris</string>
+	
+	<string name="layoutBookmarksDeleteToDelete">Sélection et élimination d’un favori.&#160;</string>
+	<string name="layoutBookmarksDeleteDelete">Confirmer élimination</string>
+	<string name="layoutBookmarksDeleteOnResume">Vous est dans Menu élimination de favoris</string>
+	
+	<string name="layoutCallsMissedCallsList">Registre des appels</string>
+	<string name="layoutCallsDeleteCallLogs">Eliminer registres des appels</string>
+	<string name="layoutCallsDeleteCallLogs2">Eliminer tous les registres des appels</string>
+	<string name="layoutCallsMakeCall">Faire un appel</string>
+	<string name="layoutCallsOnResume">Vous est dans Menu appels</string>
+	<string name="layoutCallsOnResume2">Tous les registres d’appels ils ont étais éliminer avec succès. Vous est dans Menu appels</string>
+		
+	<string name="layoutCallsMakeCallPhone">- insérer téléphone -</string>
+	<string name="layoutCallsMakeCallPhone2">Numéro de téléphone. Glisser vers la droite pour commencer.</string>
+	<string name="layoutCallsMakeCallPhone3">Numéro de téléphone.&#160;</string>
+	<string name="layoutCallsMakeCallCall">Appeler</string>
+	<string name="layoutCallsMakeCallCallError">Vous devez insérer un numéro de téléphone</string>
+	<string name="layoutCallsMakeCallOnResume">Vous est dans Menu appeler</string>
+	
+	<string name="layoutCallsLogsLogs">Registre d’appels</string>
+	<string name="layoutCallsLogsLogs2">Registre d’appels. Glisser vers la droite ou vers la gauche pour écouter chaque contact.</string>
+	<string name="layoutCallsLogsAddToNewContact">Ajouter à nouveau contact</string>
+	<string name="layoutCallsLogsCall">Appeler</string>
+	<string name="layoutCallsLogsCall2">Appeler un numéro sélectionné</string>
+	<string name="layoutCallsLogsSendMessage">Envoyer un message</string>
+	<string name="layoutCallsLogsSendMessage2">Envoyer un message au numéro sélectionnée</string>
+	<string name="layoutCallsLogsNoLogs">Il n’a pas de registre d’appels</string>
+	<string name="layoutCallsLogsOutgoingCall">Appel sortant</string>
+	<string name="layoutCallsLogsIncomingCall">Appel entrant</string>
+	<string name="layoutCallsLogsMissedCall">Appel manqué</string>
+	<string name="layoutCallsLogsLogItem">Registre&#160;</string>
+	<string name="layoutCallsLogsOfNumber">&#160;de&#160;</string>
+	<string name="layoutCallsLogsAt">&#160;à&#160;</string>
+	<string name="layoutCallsLogsHours">&#160;heures&#160;</string>
+	<string name="layoutCallsLogsMinutes">&#160;minutes&#160;</string>
+	<string name="layoutCallsLogsSeconds">&#160;secondes.</string>
+	<string name="layoutCallsLogsCallTo">&#160;à&#160;</string>
+	<string name="layoutCallsLogsCallFrom">&#160;de&#160;</string>
+	<string name="layoutCallsLogsError">Vous devez sélectionner un registre</string>
+	<string name="layoutCallsLogsPleaseTryAgain">S\'il te plaît, attendes quelques secondes, une fois le processus fini réessayer à nouveau.</string>
+	<string name="layoutCallsLogsOnResume">Vous est dans Menu de Registre d’appels</string>
+	<string name="layoutCallsLogsOnResume2">Message envoyé avec succès. Vous est dans Menu de Registre d’appels</string>
+
+	<string name="layoutCallsLogsDelete">Eliminer tous les registres d’appels. Glisser vers la droite pour confirmer.</string>
+	<string name="layoutCallsLogsDeleteOnResume">Vous est dans Menu de confirmation d’élimination de registre d’appels</string>
+				
+	<string name="layoutMessagesInbox">Reçus</string>
+	<string name="layoutMessagesInboxNew">nouveaux messages</string>
+	<string name="layoutMessagesInboxNoNew">Reçus. Vous n’avez pas des nouveaux messages</string>
+	<string name="layoutMessagesInboxOneNew">Reçus. Nouveau message</string>
+	<string name="layoutMessagesSent">Envoyés</string>
+	<string name="layoutMessagesMessageLogs">Registre des messages</string>
+	<string name="layoutMessagesMessageLogsDelete">Eliminer registres</string>
+	<string name="layoutMessagesMessageLogsDelete2">Eliminer tous les registres des messages</string>
+	<string name="layoutMessagesNew">Rédiger</string>
+	<string name="layoutMessagesNew2">Rédiger message</string>
+	<string name="layoutMessagesOnResume">Vous est dans Menu Messages</string>
+	<string name="layoutMessagesOnResume2">Message envoyé avec succès. Vous est dans Menu Messages</string>
+	
+	<string name="layoutMessagesDeleteNameFrom">Message à éliminer de&#160;</string>
+	<string name="layoutMessagesDeleteNameTo">Message à éliminer pour&#160;</string>
+	<string name="layoutMessagesDeleteDelete">Confirmer élimination</string>
+	<string name="layoutMessagesDeleteOnResume">Vous est dans Menu élimination des Message</string>
+	
+	<string name="layoutMessagesSentSent">Envoyés</string>
+	<string name="layoutMessagesSentSent2">Messages envoyés. Glisser vers la droite ou vers la gauche pour écouter chaque message.</string>
+	<string name="layoutMessagesSentDelete">Eliminer message</string>
+	<string name="layoutMessagesSentMessageItem">Message&#160;</string>
+	<string name="layoutMessagesSentMessageOf">&#160;de&#160;</string>
+	<string name="layoutMessagesSentMessageSent">Envoyé à&#160;</string>
+	<string name="layoutMessagesSentMessageMessageBody">Le message dit,&#160;</string>
+	<string name="layoutMessagesSentTryAgain">S\'il te plaît, attendes quelques secondes, une fois le processus fini réessayer à nouveau.</string>
+	<string name="layoutMessagesSentNoMessages">Vous n’avez pas des messages</string>
+	<string name="layoutMessagesSentError">Vous devez sélectionner un message</string>
+	<string name="layoutMessagesSentOnResume">Vous est dans Menu envoyés</string>
+	<string name="layoutMessagesSentOnResume2">Message éliminé avec succès. Vous est dans Menu envoyés</string>
+	<string name="layoutMessagesSentOnResume3">Tous les messages envoyés ils sont étais éliminés avec succès et vous vous trouvez dans le menu de messages envoyés</string>
+					
+	<string name="layoutMessagesSentDeleteAllDelete">Effacés tous les messages envoyés. Faites glisser vers la droite pour confirmer</string>
+	<string name="layoutMessagesSentDeleteAllDeleteDelete">Effacés tous les messages envoyés</string>
+	<string name="layoutMessagesSentDeleteAllOnResume">Vous vous trouvez dans le menu de confirmation de élimination de messages envoyés</string>
+		
+	<string name="layoutMessagesInboxInbox">Reçus</string>
+	<string name="layoutMessagesInboxInbox2">Reçus. Glisser vers la droite ou vers la gauche pour écouter chaque message.</string>
+	<string name="layoutMessagesInboxReply">Ecrire message</string>
+	<string name="layoutMessagesInboxDelete">Eliminer message</string>
+	<string name="layoutMessagesInboxDeleteAll">Pour effacés tous les messages reçu</string>
+	<string name="layoutMessagesInboxCallTo">Appeler contact</string>
+	<string name="layoutMessagesInboxAddToNewContact">Ajouter à nouveau contact</string>
+	<string name="layoutMessagesInboxMessageReceived">Reçu de&#160;</string>
+	<string name="layoutMessagesInboxMessageOn">&#160;le jour&#160;</string>
+	<string name="layoutMessagesInboxMessageItem">Message&#160;</string>
+	<string name="layoutMessagesInboxMessageOf">&#160;de&#160;</string>
+	<string name="layoutMessagesInboxMessageAt">&#160;à&#160;</string>
+	<string name="layoutMessagesInboxMessageHours">&#160;heures&#160;</string>
+	<string name="layoutMessagesInboxMessageMinutes">&#160;minutes&#160;</string>
+	<string name="layoutMessagesInboxMessageSeconds">&#160;secondes.&#160;</string>
+	<string name="layoutMessagesInboxMessageMessageBody">Le message dit,&#160;</string>
+	<string name="layoutMessagesInboxTryAgain">S\'il te plaît, attendes quelques secondes, une fois le processus fini réessayer à nouveau.</string>
+	<string name="layoutMessagesInboxError">Vous devez sélectionner un message</string>
+	<string name="layoutMessagesInboxNoMessages">Vous n’avez pas des messages</string>
+	<string name="layoutMessagesInboxOnResume">Vous est dans Menu Reçus</string>
+	<string name="layoutMessagesInboxOnResume2">Message envoyée avec succès. Vous est dans Menu Reçus</string>
+	<string name="layoutMessagesInboxOnResume3">Message éliminé avec succès. Vous est dans Menu Messages Reçus</string>
+	<string name="layoutMessagesInboxOnResume4">Tous les messages reçu ils ont étais effacés avec sucées et vous vous trouvez dans le menu de messages reçu</string>
+					
+	<string name="layoutMessagesInboxDeleteAllDelete">Pour effacés tous les messages reçu. Faites glisser vers la droite pour confirmer</string>
+	<string name="layoutMessagesInboxDeleteAllDeleteDelete">Pour effacés tous les messages reçu</string>
+	<string name="layoutMessagesInboxDeleteAllOnResume">Vous vous trouvez dans le menu de confirmation de élimination de messages reçu</string>
+					
+	<string name="layoutMessagesComposeAddressee">Destinataire</string>
+	<string name="layoutMessagesComposeAddressee2">Destinataire. Faites glisser vers la droite ou gauche pour écouter chaque contact.</string>
+	<string name="layoutMessagesComposeAddressee3">Destinataire.&#160;</string>
+	<string name="layoutMessagesComposeMessage">Message</string>
+	<string name="layoutMessagesComposeMessage2">Message. Glisser vers la droite pour insérer le message.</string>
+	<string name="layoutMessagesComposeMessage3">Message.&#160;</string>
+	<string name="layoutMessagesComposeSend">Envoyer message</string>
+	<string name="layoutMessagesComposeSending">Envoi en cours, merci de bien vouloir patientez...</string>
+	<string name="layoutMessagesComposeSendingError">Envoi en cours, merci de bien vouloir patientez...</string>
+	<string name="layoutMessagesComposeSendingError2">Le message n’a pas étais envoyée, vérifié l’état de l’opérateur téléphonique et ressayer ultérieurement.</string>
+	<string name="layoutMessagesComposeErrorComplete">Erreur. Vous devez remplir tous les champs pour envoyer un message.</string>
+	<string name="layoutMessagesComposeOnResume">Vous est dans Menu Message Nouveau</string>
+	
+	<string name="layoutInputKeysOnResume">Vous est dans Mode insertion de texte à travers du clavier physique ou écran tactile. Si vous aller utiliser l’écran tactile, faites glisser vers le haut ou bas pour sélectionner un caractère. Glisser vers la droite pour confirmer caractère ou touche et déplacer vers la gauche pour éliminer le dernier caractère.</string>
+	<string name="layoutInputKeysTips">Mode insertion de texte\n\n* Appuyer Haut et Bas pour sélectionner un caractère\n\n*Appuyer Droite pour confirmer caractère ou touche et déplacer au suivant caractère\n\n*Appuyer Gauche pour éliminer le dernier caractère\n\n*Compatible avec clavier physiques</string>
+	<string name="layoutInputKeysKeyEnter">[Entrée]</string>
+	<string name="layoutInputKeysKeyEnter2">Entrée</string>
+	<string name="layoutInputKeysKeyRead">[Lire]</string>
+	<string name="layoutInputKeysKeyReadText">Lire texte</string>
+	<string name="layoutInputKeysKeyReadNumber">Lire numéro</string>
+	<string name="layoutInputKeysKeySpace">Espace</string>
+	<string name="layoutInputKeysNothingToRead">Il n’a rien à lire</string>
+	<string name="layoutInputKeysEmptyField">L’espace texte est vide</string>
+	<string name="layoutInputKeysEntered">&#160;déjà inséré</string>
+		
+	<string name="layoutInputVoiceOnResume">Vous est dans Menu insertion des textes avec reconnaissance vocale</string>
+	<string name="layoutInputVoiceStartRecognition">Démarrer reconnaissance vocale</string>
+	<string name="layoutInputVoiceStartRecognition2">Reconnaissance vocale. Glisser vers la droite et parler</string>
+	<string name="layoutInputVoicePossibleResult">Résultat&#160;</string>
+	<string name="layoutInputVoicePossibleResults">Résultats (</string>
+	<string name="layoutInputVoicePossibleResults2">Résultats possibles.&#160;</string>
+	<string name="layoutInputVoicePossibleResults3">. Glisser vers la droite pour écouter</string>
+	<string name="layoutInputVoiceEnterSelectedResult">Insérer le résultat sélectionné</string>
+	<string name="layoutInputVoiceNoResultToSelect">Vous devez sélectionner un résultat</string>
+	<string name="layoutInputVoiceNoRecognition">Pas de résultat. Essayer plus tard. Vérifié si la reconnaissance vocale est activé au nécessite une connexion internet. D’être le cas vérifié l’état de la connexion.</string>
+	<string name="layoutInputVoiceSystemError">Erreur du système. La reconnaissance vocale n’a pas pu être reconnue.</string>
+	<string name="layoutInputVoiceCancelAndGoBack">Annuler et revenir au menu précédent</string>
+
+	<string name="layoutInputKeyboardTalkbackOnResume">Vous est en mode insérer texte via clavier traditionnel Androïde avec TalkBack. TalkBack doit être activé pour son utilisation. Vous avez sélectionnée l’espace texte, et dans le bas de l’écran vous dispose du clavier traditionnel Androïde. Ecrivez ce que vous souhaitais et appuyer sur la touche enter pour commencer. Appuyer sur le bouton arrière pour revenir ou annuler.</string>
+		
+	<string name="callFrom">Appel de&#160;</string>
+	<string name="callFromUnknown">Appel entrant numéro inconnu</string>
+	<string name="callingTo">Appel en cours&#160;</string>
+	<string name="callingToUnknown">Vous est en train d’appeler un numéro non enregistrée</string>
+	<string name="callEnded">L’appel est fini</string>
+			
+	<string name="backToPreviousMenu">Revenir en arrière</string>
+	<string name="backToMainMenu">Revenir au menu principal</string>
+
+	<string name="googleRequestTitle">Demande de permission</string>
+	<string name="googleRequest1">Accordez l’autorisation à \'Blind Communicator\' dans la boîte de dialogue suivante. Cela vous permettra de répondre à un appel ou de le rejeter en glissant vers le haut ou vers le bas dans Android 8.0 et supérieur.\n\nDepuis novembre 2018, Google exige que chaque application soit destinée à Android 8.0, ce qui signifie que vous devez maintenant accorder manuellement (vous n’avez qu’à le faire une fois) pour que l’application fonctionne correctement.</string>
+	<string name="googleRequest2">Sélectionnez \'Blind Communicator\' dans la boîte de dialogue suivante. Cela permettra au guide vocal de l\'application (si le périphérique est désactivé) d\'être entendu et de modifier les profils (Normal, Vibreur et Silence) dans Android 8.0 et versions ultérieures.\n\nDepuis novembre 2018, Google exige que chaque application soit destinée à Android 8.0, ce qui signifie que vous devez maintenant accorder manuellement (vous n’avez qu’à le faire une fois) pour que l’application fonctionne correctement.</string>
+	<string name="googleRequestOk">OK, je vais.</string>
+	
+	<string-array name="keysAll">
+		<item>A</item>
+		<item>B</item>
+		<item>C</item>
+		<item>D</item>
+		<item>E</item>
+		<item>F</item>
+		<item>G</item>
+		<item>H</item>
+		<item>I</item>
+		<item>J</item>
+		<item>K</item>
+		<item>L</item>
+		<item>M</item>
+		<item>N</item>
+		<item>O</item>
+		<item>P</item>
+		<item>Q</item>
+		<item>R</item>
+		<item>S</item>
+		<item>T</item>
+		<item>U</item>
+		<item>V</item>
+		<item>W</item>
+		<item>X</item>
+		<item>Y</item>
+		<item>Z</item>
+		<item>À</item>
+		<item>Â</item>
+		<item>É</item>
+		<item>È</item>
+		<item>Ë</item>
+		<item>Î</item>
+		<item>Ï</item>
+		<item>Ô</item>
+		<item>Ù</item>
+		<item>Û</item>
+		<item>Ü</item>
+		<item>Ç</item>
+		<item>0</item>
+		<item>1</item>
+		<item>2</item>
+		<item>3</item>
+		<item>4</item>
+		<item>5</item>
+		<item>6</item>
+		<item>7</item>
+		<item>8</item>
+		<item>9</item>
+		<item>.</item>
+		<item>,</item>
+		<item>:</item>
+		<item>;</item>
+		<item>¡</item>
+		<item>!</item>
+		<item>¿</item>
+		<item>\?</item>
+		<item>+</item>
+		<item>-</item>
+		<item>*</item>
+		<item>#</item>
+		<item>%</item>
+		<item>&amp;</item>
+		<item>$</item>
+		<item>/</item>
+		<item>"\\"</item>
+		<item>(</item>
+		<item>)</item>
+		<item>{</item>
+		<item>}</item>
+		<item>\"</item>
+		<item>\@</item>
+		<item>[Lire]</item>
+		<item>[Entrée]</item>
+		<item>_</item>
+	</string-array>
+
+	<string-array name="keysOnlyNumbers">
+		<item>#</item>
+	    <item>*</item>
+	    <item>0</item>
+		<item>1</item>
+		<item>2</item>
+		<item>3</item>
+		<item>4</item>
+		<item>5</item>
+		<item>6</item>
+		<item>7</item>
+		<item>8</item>
+		<item>9</item>
+		<item>[Lire]</item>
+		<item>[Entrée]</item>
+	</string-array>
+</resources>
